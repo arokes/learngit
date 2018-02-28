@@ -1,0 +1,40 @@
+<extend name="/admin_base" />
+<block name="main" >
+<center>
+<table id="table-5">
+<thead><th>编号</th><th>销售方式</th><th>公司</th><th>银行</th><th>付款日期</th><th>汇款客户</th><th>汇款国家</th><th>币别</th><th>到账金额</th><th>业务员</th><th>开票员</th></thead>
+<tbody>
+<tr><td>{$data.0.id}</td><td>{$data.0.foreign_trade}</td><td>{$data.0.company_name}</td><td>{$data.0.bank_name}</td><td>{$data.0.pay_dd}</td><td>{$data.0.bank_cust}</td><td>{$data.0.country}</td><td>{$data.0.CUR_ID}</td><td>{$data.0.amount}</td><td>{$data.0.sal_name}</td><td>{$data.0.getlz_name}</td></tr>
+</tbody>
+</table>
+<br />
+<form method="post" action="__URL__/deleteClaimResult" >
+<table id="table-5">
+<thead>
+
+<th>到账金额</th><th>手续费</th><th>订单号</th><th>订单PI总金额</th><th>是否报关</th><th>合同客户</th><th>开票客户</th><th>联系客户</th><th>罚款/扣款</th><th>备注</th></thead>
+<tbody>
+<volist name="data" id="vo">
+<tr>
+<input type="hidden" value="{$vo.id}" name="id" />
+<input type="hidden" value="{$vo.itm}" name="itm[]" />
+<td>{$vo.amount_apart}</td>
+<td>{$vo.brokerage}</td>
+<td>{$vo.so_no|htmlspecialchars_decode}</td>
+<td>{$vo.so_pi}</td>
+<td>{$vo['is_declare']}</td>
+<td>{$vo.contract_cust|htmlspecialchars_decode}</td>
+<td>{$vo.lz_cust|htmlspecialchars_decode}</td>
+<td>{$vo.connect_cust|htmlspecialchars_decode}</td>
+<td>{$vo.debit|htmlspecialchars_decode}</td>
+<td>{$vo.rem|htmlspecialchars_decode}</td>
+</tr>
+</volist>
+</tbody>
+</table>
+<br />
+<input type="submit" value="删除" /><a href={$url}>返回</a></form>
+
+<br />
+</center>
+</block>

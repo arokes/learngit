@@ -1,0 +1,14 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<form action="FindTemporaryStockSumResult" method="post">
+工厂:<select name="factory" class="select"><option value="DB_MK15">浙江美科电器</option><option value="DB_JX16">江西美科光电科技</option><option value="DB_JM17">江海江门美科电器</option></select><br />
+贸易:<select name="company" class="select"><option value="DB_MKJC">绍兴美科进出口</option><option value="DB_SXMK">绍兴美科照明科技</option><option value="DB_JXOK">景德镇欧科</option><option value="DB_OK01">上虞欧科</option></select><br />
+批号:<input type="text" name="bat_no" class="select" ><br />
+参数:<input type="text" name="param" class="select" ><br />
+截止:<input type="text" name="date_max" class="select" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" onClick="laydate()" ><br />
+<br />
+<input type="submit" value="查询">
+</form>
+</center>
+</block> 

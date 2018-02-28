@@ -1,0 +1,17 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>公司修改</h3>
+<form method="POST" action="__URL__/ModifyCompanyResult" id="contact-form">
+<input type="hidden" name="company_id" value="{$datacompany.company_id}">
+<label>公司全称:</label>
+<input type="text" name="company_name" value="{$datacompany.company_name}" />
+<label>公司简称:</label>
+<input type="text" name="company_snm" value="{$datacompany.company_snm}" />
+<input type="submit" value="修改" id="submit-button">
+<p></p>
+</form>
+</center>
+</block>
+
+<block name="left"></block>

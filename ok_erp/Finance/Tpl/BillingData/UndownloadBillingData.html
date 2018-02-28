@@ -1,0 +1,49 @@
+<extend name="/admin_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".button").click(function(){
+		if(confirm("确认下载完成了吗？")){
+		var data=$(this).attr('bill_id');
+		$.ajax({
+			type:'POST',
+			url: 'DownloadConfirmBillingData',
+			cache : false,
+			traditional : true,
+			data:{id: data},
+			
+			success:function(msg){
+				alert(msg);
+				window.location.reload();
+			},
+			error:function(){
+				alert("修改失败");
+			}
+		});
+	}		
+			
+	});
+});
+</script>
+</block>
+<block name="main">
+<center>
+<empty name="billingdata_data">
+<h2>没有新上传的开票资料了</h2>
+<else />
+<h3>新上传开票资料</h3>
+<table id="table-4">
+<thead>
+<th width="220px">合同协议号</th><th>业务员</th><th>报关公司</th><th>预录入单</th><th>内销合同</th><th>清关资料</th><th>发货清单</th><th>上传时间</th><th>修改时间</th><th>备注</th><th>确认下载</th>
+</thead>
+<tbody>
+<volist name="billingdata_data" id="vo">
+<tr><td width="220px">{$vo.contract_no}</td><td>{$vo.sale_name}</td><td>{$vo.company_name}</td><td><a href="__URL__/DownloadBillingData?filename={$vo.prerecorded_file}&showname={$vo.contract_no}预录入单">预录入单</a></td><td><a href="__URL__/DownloadBillingData?filename={$vo.contract_file}&showname={$vo.contract_no}内销合同">内销合同</a></td><td><a href="__URL__/DownloadBillingData?filename={$vo.clearance_file}&showname={$vo.contract_no}清关资料">清关资料</a></td>
+<td><a href="__URL__/DownloadBillingData?filename={$vo.sendgoods_file}&showname={$vo.contract_no}发货清单">发货清单</a></td><td>{$vo.upload_date}</td><td>{$vo.change_date}</td><td>{$vo.rem}</td><td><button bill_id="{$vo.ID}" class="button">下载完成</button></td><td><a href="__URL__/DownloadAllBillingData?id={$vo.ID}">下载全部</a></td>
+</tr>
+</volist>
+</tbody>
+</table>
+</empty>
+</center>
+</block>

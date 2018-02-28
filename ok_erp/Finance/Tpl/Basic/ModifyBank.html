@@ -1,0 +1,17 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>银行修改</h3>
+<form method="POST" action="__URL__/ModifyBankResult" id="contact-form">
+<input type="hidden" name="bank_id" value="{$databank.bank_id}">
+<label>银行全称:</label>
+<input type="text" name="bank_name" value="{$databank.bank_name}" />
+<label>银行简称:</label>
+<input type="text" name="bank_snm" value="{$databank.bank_snm}" />
+<input type="submit" value="修改" id="submit-button">
+<p></p>
+</form>
+</center>
+</block>
+
+<block name="left"></block>

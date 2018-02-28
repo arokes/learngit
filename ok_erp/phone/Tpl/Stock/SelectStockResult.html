@@ -1,0 +1,30 @@
+<extend name="/base" />
+<block name="index_script"></block>
+<block name="once_script"></block>
+<block name="menu"></block>
+<block name="main">
+<volist name="stock_data" id="vo_1" >
+<empty name="vo_1"><php>$j++;</php><else/>
+<b>{$key}</b>
+<volist name="vo_1" id="vo">
+<table id="table-5">
+<thead>
+<th></th><th></th>
+</thead>
+<tr><td style="width:55px">订单号</td><td >{$vo.bat_no}</td></tr>
+<tr><td style="width:55px">品号</td><td >{$vo.prd_no}</td></tr>
+<tr><td style="width:55px">品名</td><td >{$vo.prd_name|iconv="GBK","utf-8",###}</td></tr>
+<tr><td style="width:55px">客户编号</td><td >{$vo.prd_mark}</td></tr>
+<tr><td style="width:55px">库存数</td><td >{$vo.stock|round=###,2}</td></tr>
+<tr><td style="width:55px">入库</td><td >{$vo.pc|round=###,2}</td></tr>
+<tr><td style="width:55px">收票</td><td >{$vo.pc_qty_fp|round=###,2}</td></tr>
+<tr><td style="width:55px">出库</td><td >{$vo.sa|round=###,2}</td></tr>
+<tr><td style="width:55px">开票</td><td >{$vo.sa_qty_fp|round=###,2}</td></tr>
+
+</table>
+</volist>
+</empty>
+</volist>
+<in name="j" value="3">查询不到数据</in>
+</block>
+<block name="footer"></block>

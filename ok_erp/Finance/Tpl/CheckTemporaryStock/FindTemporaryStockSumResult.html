@@ -1,0 +1,54 @@
+<extend name="/admin_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".newwincheck").click(function(){
+		document.form1.action=$(this).attr("url");
+		//window.open('','NEW','height=600, width=1000, top=0, left=25%, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');
+		document.form1.target='_blank';
+		document.form1.submit();
+
+	});
+
+	$(".newwindpo").click(function(){
+		url=$(this).attr("url");
+		window.open(url,'newwindow','height=600, width=1000, top=0, left=25%, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');
+
+	});
+	
+});
+</script>
+</block>
+<block name="main">
+<center>
+<font>截止日期为{$other_param.date_max}</font><br />
+参数筛选:<input id="screen" name="screen" type="text" /> <br />
+<font>{$other_param.factory_name}</font>
+<form name="form1" method="post">
+<table id="table-5">
+<thead>
+<th id="os_no">批号</th><th id="os_no">品号</th><th width="300px">品名</th><th>订单数量</th><th>缴库数量</th><th>出库数量</th><th>美科结存</th><th>开票数量</th><th>开票金额</th><th>对方暂估</th><th>发出商品</th><th>选择</th>
+</thead>
+<tbody>
+<volist name="factory_list" id="vo">
+<tr class="screen" name="{$vo.prd_name|iconv='GBK','UTF-8',###}"><td id="os_no"><a class="newwindpo" url="FindNakedDetail?bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no}">{$vo.bat_no|iconv="GBK","UTF-8",###}</a></td><td id="os_no"><a target="_blank" href="../SendGoods/SelectFactoryStockDetail?factory_db={$other_param['factory_db']}&bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no}">{$vo.prd_no}</td><td width="300px">{$vo.prd_name|iconv="GBK","UTF-8",###}</td><td><a class="newwindpo" url="FindSoDetail?bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no}">{$vo.so_qty}</a></td><td>{$vo.mm_qty}</td><td>{$vo.sa_qty}</td><td>{$vo['mm_qty']-$vo['sa_qty']}</td><td>{$vo.lz_qty}</td><td>{$vo.lz_amtn_net}</td><td>{$vo['mm_qty']-$vo['lz_qty']}</td><td>{$vo['sa_qty']-$vo['lz_qty']}</td>
+<td><input type="radio" name="factory_param" id="factory_param" value="{$other_param.factory_db};{$vo.bat_no};{$vo.prd_no}"></td></tr>
+</volist>
+</tbody>
+</table>
+<font>{$other_param.company_name}</font>
+<table id="table-5">
+<thead>
+<th id="os_no">批号</th><th id="os_no">品号</th><th width="300px">品名</th><th>特征</th><th>入库数量</th><th>收票数量</th><th>收票金额</th><th>出库数量</th><th>开票数量</th><th>暂估数量</th><th>选择</th>
+</thead>
+<tbody>
+<volist name="company_list" id="vo">
+<tr class="screen" name="{$vo.prd_name|iconv='GBK','UTF-8',###}"><td id="os_no"><a class="newwindpo" url="FindPoDetail?bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no|urlencode=###}">{$vo.bat_no|iconv="GBK","UTF-8",###}</a></td><td id="os_no"><a target="_blank" href="../SendGoods/SelectStockDetailResult?bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no|urlencode=###}">{$vo.prd_no|iconv="GBK","UTF-8",###}</a></td><td width="300px">{$vo.prd_name|iconv="GBK","UTF-8",###}</td><td><a target="_blank" href="../SendGoods/SelectStockDetailResult?bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no|urlencode=###}&prd_mark={$vo.prd_mark|urlencode=###}">{$vo.prd_mark|iconv="GBK","UTF-8",###}</td><td>{$vo.pc_qty}</td><td>{$vo.lz1_qty}</td><td>{$vo.lz1_amtn_net}</td><td>{$vo.sa_qty}</td><td>{$vo.lz_qty}</td><td>{$vo['pc_qty']-$vo['lz1_qty']}</td>
+<td><input type="radio" name="company_param" id="company_param" value="{$other_param.company_db};{$vo.bat_no};{$vo.prd_no|iconv='GBK','UTF-8',###};{$vo.prd_mark|iconv='GBK','UTF-8',###}"></td></tr>
+</volist>
+</tbody>
+</table>
+<button type="button" class="newwincheck" url="FindTemporaryStockDetailResult" >对比</button>&nbsp;<button type="button" onclick="javascript:history.back(-1)">返回</button>
+</form>
+</center>
+</block> 

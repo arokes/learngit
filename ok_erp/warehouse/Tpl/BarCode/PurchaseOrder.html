@@ -1,0 +1,70 @@
+<extend name="/wh_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function() { 
+	var bat_no=$.cookie('bat_no');
+	var parameter=$.cookie('parameter');
+	$.cookie('bat_no',null);
+	$.cookie('parameter',null);
+	if(parameter=='null'){
+
+	}else{
+		$("#parameter").val(parameter);
+	}
+	if(bat_no=='null'){
+
+	}else{
+		$("#bat_no").val(bat_no);
+		$("#select_storage").click();
+	}
+	
+
+}); 
+
+
+function doPrint() { 
+	bdhtml=window.document.body.innerHTML; 
+	var bat_no=document.getElementById("bat_no").value;
+	var parameter=document.getElementById("parameter").value;
+	document.cookie="bat_no="+bat_no;
+	document.cookie="parameter="+parameter;
+	sprnstr="<!--startprint-->"; 
+	eprnstr="<!--endprint-->"; 
+	prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17); 
+	prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr)); 
+	window.document.body.innerHTML=prnhtml; 
+	window.print();
+	window.location.reload(); 
+	
+}
+</script>
+</block>
+<block name="main">
+<form action="" method="post">
+请输入批号:<input type="text" name="bat_no" id="bat_no" value="" ><br />
+请输入参数:<input type="text" name="parameter" id="parameter"><br />
+<input type="button" id="select_storage" value="查询" url="SelectPrd">
+</form>
+<div id="storage"></div>
+<div id="div_print">
+<!--startprint-->
+<div id="company"></div>
+<div id="barcode_container"></div>
+<div id="prd_name"></div>
+<!--endprint-->
+</div>
+<input name="print" type="button"  value="点击打印" onClick="doPrint()" /> 
+<br />
+
+<script type="text/javascript">
+window.onload=function(){ 
+	var val=document.getElementById('bat_no').value.length;
+	if(val!==0){
+		document.getElementById('parameter').focus();
+	}else{
+		document.getElementById('bat_no').focus();
+	}
+}
+</script>
+
+</block>

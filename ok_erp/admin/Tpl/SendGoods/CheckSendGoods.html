@@ -1,0 +1,21 @@
+<extend name="/admin_base" />
+
+<block name="main">
+<center>
+<empty name="sendgoods_data">没有需要核对的发出商品<else/>
+<h3>核对发出商品</h3>
+截至8月已经出库没有开票的单据
+<table id="table-4">
+<thead>
+<th width="60px">公司名称</th><th>客户名称</th><th>批号</th><th width="300px">品名</th><th>客户编号</th><th width="80px">出库日期</th><th>出库数量</th><th width="70px"></th>
+</thead>
+<tbody>
+<volist name="sendgoods_data" id="vo">
+<tr><td width="60px">{$vo.company_name}</td><td>{$vo.cust_name}</td><td>{$vo.so_no}</td><td width="300px">{$vo.prd_name}</td><td>{$vo.prd_mark}</td><td width="80px">{$vo.ps_dd}</td><td>{$vo.out_qty}</td><td width="70px"><a href="CheckSendGoodsDetail?so_no={$vo.so_no}">核对这个批号</a></td></tr>
+</volist>
+</tbody>
+</table>
+</empty>
+</center>
+</block>
+<block name="footer"></block>

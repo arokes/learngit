@@ -1,0 +1,19 @@
+<extend name="/base" />
+<block name="main">
+<h3>添加订单发货单</h3>
+<form action="NewSendResult" method="post" enctype="multipart/form-data" >
+进仓编号:<input type="text" name="warehouse_no" />*<br />
+进仓单:<input type="file" name="warehouse_file" />*<br />
+发货单位:<select name="company_name"><volist name="company_data" id="vo_com"><option value="{$vo_com.company_name}">{$vo_com.company_name}</option></volist></select>*<br />
+合同编号:<input type="text" name="bat_no" />*<br />
+发货时间:<input type="text" name="send_time" onfocus="laydate()" />*<br />
+出货地点:<input type="text" name="send_add" value="华派仓库" /><br />
+跟单员&电话:<input type="text" name="sale_name" />*<br />
+
+到货地址<input type="text" name="arrive_add" value="见进仓单"><br />
+
+外箱正唛:<input type="file" name="box_mark" /><br />
+备注:<input type="text" name="rem" /><br />
+<input type="submit" value="保存,并添加发货明细" />
+</form>
+</block> 

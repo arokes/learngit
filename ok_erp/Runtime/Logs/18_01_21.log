@@ -1,0 +1,225 @@
+[ 2018-01-21T00:37:59+08:00 ] 115.237.21.3 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004435s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004531s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.065884s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.033043s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049156s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004603s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004746s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010994s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000981s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2018-01-21T00:38:01+08:00 ] 115.237.21.3 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000817s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `storagegoods` [ RunTime:0.023368s ]
+SQL: SELECT * FROM `storagegoods` WHERE ( is_check='0' ) ORDER BY company_name,so_no  [ RunTime:0.012687s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021650s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002166s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000549s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003994s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-01-21T00:38:08+08:00 ] 115.237.21.3 /ok_erp/index.php/SendGoods/SelectStock
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027428s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000366s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000348s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001567s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-01-21T00:38:14+08:00 ] 115.237.21.3 /ok_erp/index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%V171011F%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark [ RunTime:0.046716s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%V171011F%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark [ RunTime:0.051891s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%V171011F%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark [ RunTime:0.032550s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026655s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000466s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000366s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001714s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-01-21T00:38:43+08:00 ] 106.120.160.109 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+
+[ 2018-01-21T00:38:50+08:00 ] 106.120.161.68 /ok_erp/index.php/SendGoods/SelectStock
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000818s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+
+[ 2018-01-21T00:38:58+08:00 ] 106.120.161.68 /ok_erp/index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000814s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-01-21T00:39:39+08:00 ] 0.0.0.0 /ok_erp/index.php/SendGoods/SelectStock
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000818s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-21T00:39:50+08:00 ] 0.0.0.0 /ok_erp/index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-21T00:39:54+08:00 ] 220.181.132.197 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2018-01-21T10:30:22+08:00 ] 106.120.160.109 /ok_erp/index.php/BillingData/UploadBillingDataResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001054s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+
+[ 2018-01-21T10:31:14+08:00 ] 101.199.112.52 /ok_erp/index.php/BillingData/UploadBillingDataResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000858s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+
+[ 2018-01-21T13:36:06+08:00 ] 188.244.47.215 /ok_erp/index.php/BillingData/UploadBillingDataResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001053s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2018-01-21T14:50:18+08:00 ] 106.120.160.109 /ok_erp/index.php/Account/SelectAccountDetail?so_id=1016
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001049s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+
+[ 2018-01-21T14:50:30+08:00 ] 220.181.132.193 /ok_erp/index.php/Account/SelectAccountDetail?so_id=1016
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000817s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2018-01-21T15:30:28+08:00 ] 106.120.161.68 /ok_erp/index.php/BillingData/UploadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001054s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+
+[ 2018-01-21T15:31:11+08:00 ] 220.181.132.195 /ok_erp/index.php/BillingData/UploadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+
+[ 2018-01-21T18:20:22+08:00 ] 106.120.160.109 /ok_erp/index.php/Claim/selectClaimResult/company_id/%25/sal_name/%E5%91%A8%E6%B2%99/p/7.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2018-01-21T18:22:19+08:00 ] 220.181.132.196 /ok_erp/index.php/Claim/selectClaimResult/company_id/%25/sal_name/%E5%91%A8%E6%B2%99/p/7.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2018-01-21T19:40:23+08:00 ] 106.120.160.109 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001053s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2018-01-21T19:41:51+08:00 ] 220.181.132.196 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000818s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+

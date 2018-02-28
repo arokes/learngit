@@ -1,0 +1,56 @@
+[ 2017-12-24T18:14:06+08:00 ] 60.55.12.57 /ok_erp/index.php/Claim/NewClaim/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004140s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004235s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+
+[ 2017-12-24T18:14:16+08:00 ] 60.55.12.57 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.010413s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.008833s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.101100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101186s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003410s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005853s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000862s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010986s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001002s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2017-12-24T18:15:06+08:00 ] 120.204.17.69 /ok_erp/index.php/claim/newclaim/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001058s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+ERR: 无法加载模块:claim
+
+[ 2017-12-24T18:15:16+08:00 ] 120.204.17.68 /ok_erp/index.php/claim/newclaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000817s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+ERR: 无法加载模块:claim
+
+[ 2017-12-24T19:33:48+08:00 ] 78.106.119.52 /ok_erp/index.php/BillingData/UploadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+

@@ -1,0 +1,20 @@
+<extend name="/admin_base" />
+<block name="main">
+
+<h4>修改用户</h4>
+<form action="ModifyUserResult" method="post" id="contact-form">
+<input type="hidden" name="user_id" value="{$listuser.user_id}">
+<label>帐号:</label>
+<input type="text" name="user_name"  class="input_style" value="{$listuser.user_name}" />
+<label>姓名:</label>
+<input type="text" name="name" class="input_style" value="{$listuser.name}" />
+<label>用户组:</label>
+<input name="user_group"  class="input_style" value="{$listuser.user_group}">
+<label>部门:</label>
+<input name="user_dep_no"  class="input_style" value="{$listuser.user_dep_no}" >
+<label>等级:</label>
+<input type="text" name="user_level"  class="input_style" value="{$listuser.user_level}" />
+<input type="submit" value="修改" id="submit-button">
+<p></p>
+</form>
+</block>

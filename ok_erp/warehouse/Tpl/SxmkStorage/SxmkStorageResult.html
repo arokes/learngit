@@ -1,0 +1,19 @@
+<extend name="/sxmk_base" />
+<block name="title"></block>
+<block name="menu"></block>
+<block name="index_script"></block>
+<block name="main">
+
+<table id="table-4" >
+<thead>
+<th>品号</th><th>品名</th><th>库存量</th><th>在途量</th>
+</thead>
+<tbody>
+<volist name="storage_data" id="vo">
+<tr><td>{$vo.prd_no|iconv='GBK','utf-8',###}</td><td>{$vo.name|iconv='GBK','utf-8',###}</td><td>{$vo.qty}</td><td>{$vo.qty_on_way}</td></tr>
+</volist>
+</tbody>
+
+</table>
+</block>
+<block name="footer"></block>

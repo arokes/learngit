@@ -1,0 +1,30 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>基础资料设定</h3>
+</center>
+<div class="bill_box_big">
+<div class="bill_box">
+<div class="bill_box_name">
+<volist name="bank" id="voc">
+{$voc.bank_name}<br />
+</volist>
+<br /><br /><br />
+<form method="post" action="__URL__/AddBank">
+银行全称:<input type="text" name="bank_name" /><br />
+银行简称:<input type="text" name="bank_snm" /><br />
+<br />
+<center>
+<input type="submit" value="添加" />
+</center>
+</form>
+</div>
+<div class="bill_box_linkid">
+<volist name="bank" id="voc">
+<a href="Deletebank?bank_id={$voc.bank_id}">删除</a><br />
+</volist>
+</div>
+</div>
+</div>
+</block>
+<block name="left"></block>

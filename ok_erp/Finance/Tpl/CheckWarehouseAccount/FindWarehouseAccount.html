@@ -1,0 +1,31 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>美科缴库单与销售公司入库数据对比</font>
+<table id="table-4">
+<p>浙江美科成品缴库</p>
+<thead>
+<th>批号</th><th>品号</th><th style="width:400px">品名</th><th>缴库日期</th><th>生效日期</th><th>缴库数量</th>
+</thead>
+<tbody>
+<volist name="mekamm_list" id="vo">
+<tr><td>{$vo.bat_no}</td><td>{$vo.prd_no}</td><td style="width:400px">{$vo.name|iconv="GBK","utf-8",###}</td><td>{$vo.mm_dd}</td><td>{$vo.eff_dd}</td><td>{$vo.qty}</td></tr>
+</volist>
+</tbody>
+<volist name="storage_list" id="company_list" >
+<table id="table-4">
+<p>{$key}</p>
+<empty name="company_list"> 没有数据<else />
+<thead>
+<th>批号</th><th>品号</th><th style="width:400px">品名</th><th>库位</th><th>单据日期</th><th>入库数量</th><th>制单人</th>
+</thead>
+<tbody>
+<volist name="company_list" id="vo"  >
+<tr><td>{$vo.bat_no}</td><td>{$vo.prd_no|iconv="GBK","utf-8",###}</td><td style="width:400px">{$vo.prd_name|iconv="GBK","utf-8",###}</td><td>{$vo.wh}</td><td>{$vo.ps_dd}</td><td>{$vo.qty}</td><td>{$vo.name|iconv="GBK","utf-8",###}</td></tr>
+</volist>
+</tbody>
+</empty>
+</table>
+</volist>
+</center>
+</block>

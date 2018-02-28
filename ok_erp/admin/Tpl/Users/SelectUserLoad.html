@@ -1,0 +1,15 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h4>查询用户登录情况</h4>
+
+<form action="SelectUserLoadResult" method="post">
+用户:<input id="date"  name="user_name" type="text" >   IP:<input id="date"  name="user_ip" type="text"><br /><br />
+日期:<input id="date"  name="date_min" type="text" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();">----<input id="date"  name="date_max" type="text" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();"><br /><br />
+
+<input type="submit" value="查询">
+
+
+</form>
+</center>
+</block>

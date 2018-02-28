@@ -1,0 +1,21 @@
+<extend name="/admin_base" />
+<block name="menu">
+</block>
+<block name="main">
+<center>
+<volist name="billdetail_naked_result" id ='vo'>
+<font>{$key}--裸灯缴库</font>
+<table id="table-2">
+<thead>
+<th>批号</th><th>成品品号</th><th>裸灯品号</th><th width="300px">裸灯品名</th><th>缴库数量</th>
+</thead>
+<volist name="vo" id="vo_1">
+<tbody>
+<tr><td width="100px">{$vo_1.bat_no|iconv="GBK","UTF-8",###}</td><td>{$vo_1.mrp_no_so|iconv="GBK","UTF-8",###}</td><td>{$vo_1.prd_no}</td><td width="300px">{$vo_1.prd_name|iconv="GBK","UTF-8",###}</td><td>{$vo_1.qty|round=###,0}</td>
+</tbody>
+</volist>
+</table>
+</volist>
+
+</center>
+</block> 

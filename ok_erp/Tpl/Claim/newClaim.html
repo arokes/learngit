@@ -1,0 +1,14 @@
+<extend name="/base" />
+<block name="main">
+<font>新到汇款</font>
+<table id="table-5">
+<thead>
+<th>销售方式</th><th>公司</th><th>银行</th><th>到款日期</th><th>汇款人名字</th><th>汇款人国家</th><th>币别</th><th>到账金额</th></thead>
+<tbody>
+<volist name="NewClaim" id="vo">
+<tr><td>{$vo.foreign_trade}</td><td>{$vo.company_name}</td><td>{$vo.bank_name}</td><td>{$vo.pay_dd}</td><td>{$vo.bank_cust}</td><td>{$vo.country}</td><td>{$vo.CUR_ID}</td><td>{$vo.amount}</td><td><a href="__URL__/claimDetail?id={$vo.id}">认领</a></td></tr>
+</volist>
+</tbody>
+</table>
+{$page}
+</block>

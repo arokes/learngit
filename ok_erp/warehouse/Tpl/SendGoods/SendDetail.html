@@ -1,0 +1,109 @@
+<extend name="/wh_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function() { 
+	$("#back_id").click(function(){
+  		if(confirm("确认返回去修改吗？")){
+  			var data=$(this).attr('data');
+			$.ajax({
+				type:'POST',
+				url:'SendBack',
+				cache : false,
+				traditional : true,
+				data:{shipment_id : data},
+				success:function(msg){
+					window.location.reload();
+				},
+				error:function(){
+					alert("修改失败");
+				}
+			});
+		}
+	});
+
+	$("#send_id").click(function(){
+  		if(confirm("确认发货完成吗？")){
+  			var data=$(this).attr('data');
+			$.ajax({
+				type:'POST',
+				url:'SendOut',
+				cache : false,
+				traditional : true,
+				data:{shipment_id : data},
+				success:function(msg){
+					window.location.reload();
+				},
+				error:function(){
+					alert("修改失败");
+				}
+			});
+		}
+	});
+
+}); 
+
+function doPrint() { 
+	bdhtml=window.document.body.innerHTML; 
+	sprnstr="<!--startprint-->"; 
+	eprnstr="<!--endprint-->"; 
+	prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17); 
+	prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr)); 
+	window.document.body.innerHTML=prnhtml; 
+	window.print();
+	window.location.reload(); 
+	
+}
+</script>
+</block>
+<block name="main">
+<!--startprint-->
+<h3>{$shipment_data.warehouse_no}发货单明细</h3>
+<table id="table-3">
+
+<thead>
+<th>进仓编号</th><th>发货单位</th><th>合同编号</th><th> 外箱整唛</th>
+</thead>
+<tbody><tr><td>{$shipment_data.warehouse_no}</td><td>{$shipment_data.company_name}</td><td>{$shipment_data.bat_no}</td>
+<td rowspan="5"><img src="../../Tpl/Public/upload/{$shipment_data.box_mark_savename}" ></td>
+</tr>
+<th>发货时间</th><th>出货地点</th><th>跟单员</th>
+<tr><td>{$shipment_data.send_time}</td><td>{$shipment_data.send_add}</td><td>{$shipment_data.sale_name}</td></tr>
+<th>到货地址</th><th>进仓单</th><th>备注</th>
+<tr><td>{$shipment_data.arrive_add}</td><td><a href="DownloadFile?filename={$shipment_data.warehouse_file_savename}&showname={$shipment_data.warehouse_no}">{$shipment_data.warehouse_no}.doc</a></td><td>{$shipment_data.rem}</td>
+</tbody>
+</table>
+
+<empty name="ship_detail_data" ><else />
+<table id="table-3">
+<thead>
+<th>合同号</th><th>品号</th><th width="200px">品名</th><th>唛头&号数</th><th>发货数量</th><th>装箱规格</th><th>箱数</th><th>重量(KG)</th><th>体积(m³)</th><th id="date">生产厂商</th><th>备注</th>
+</thead>
+<tbody>
+<volist name="ship_detail_data" id="vo_detail">
+<tr><td>{$vo_detail.bat_no}</td>
+<td>{$vo_detail.prd_no}</td>
+<td width="200px">{$vo_detail.prd_name}</td>
+<td>{$vo_detail.mark_no}</td>
+
+<td>{$vo_detail.send_qty}</td>
+<td>{$vo_detail.packing_spc}</td>
+<td>{$vo_detail.packing_qty}</td>
+<td>{$vo_detail.package_weight}</td>
+<td>{$vo_detail.package_volume}</td>
+<td>{$vo_detail.factory}</td>
+<td>{$vo_detail.rem}</td></tr>
+</volist>
+<tr><td>合计</td><td></td><td></td><td></td><td>{$shipment_data.totle_qty}</td><td></td><td>{$shipment_data.totle_packing_qty}</td><td>{$shipment_data.totle_weight}</td><td>{$shipment_data.totle_volume}</td></tr>
+</tbody>
+</table>
+<!--endprint-->
+<eq name="shipment_data.up_id" value="T">
+<button onClick="doPrint()">打印发货单</button>
+<eq name="shipment_data.cls_id" value="F">&nbsp;
+<button id="back_id" data="{$shipment_data.shipment_id}">返审核</button>&nbsp;
+<button id="send_id" data="{$shipment_data.shipment_id}" >发货完成</button>
+</eq>
+ </eq>
+</empty>
+<br />
+</block>

@@ -1,0 +1,18 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>{$factory_name}--存货明细账</font>
+<table id="table-5">
+<thead>
+<th>类别</th><th>单号</th><th>批号</th><th>品号</th><th width="350px">品名</th><th>日期</th><th>缴库数量</th><th>出库数量</th><th>开票数量</th><th>出库金额</th><th>结存数量</th>
+</thead>
+<tbody>
+<php>$stock=0;</php>
+<volist name="list_result" id ="vo">
+<tr><td>{$vo.ps_id}</td><td>{$vo.ps_no}</td><td>{$vo.bat_no|iconv="GBK","UTF-8",###}</td><td>{$vo.prd_no}</td><td width="350px">{$vo.prd_name|iconv="GBK","UTF-8",###}</td><td>{$vo.eff_dd}</td><td>{$vo.pc_qty|round=###,2}</td><td>{$vo.sa_qty|round=###,2}</td><td>{$vo.qty_fp|round=###,2}</td><td>{$vo.sa_amtn_net|round=###,2}</td><td><php>$stock=$stock+$vo['pc_qty']-$vo['sa_qty'];</php>{$stock}</td>
+</volist>
+</tbody>
+</table>
+<br />
+</center>
+</block>

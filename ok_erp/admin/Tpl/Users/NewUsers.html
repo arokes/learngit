@@ -1,0 +1,22 @@
+<extend name="/admin_base" />
+<block name="main">
+
+<h4>新建用户</h4>
+<form action="NewUsersResult" method="post" id="contact-form">
+<label>帐号:</label>
+<input type="text" name="user_name" placeholder="新建用户初始密码0000" />
+<label>姓名:</label>
+<input type="text" name="name" placeholder="员工姓名" />
+<label>用户组:</label>
+<select name="user_group"><volist name="user_group_data" id="vo_group"><option value="{$vo_group.user_group}">{$vo_group.user_group_name}</option></volist></select>
+<label>部门:</label>
+<select name="user_dep_no" ><volist name="dep_data" id="vo_dep"><option value="{$vo_dep.dep_no}">{$vo_dep.dep_name}</option></volist></select>
+<select name="is_follow"><option value="T">属于部门员工</option><option value="F">属于部门领导</option></select>
+<label>等级:</label>
+<input type="text" placeholder="销售上传开票资料用户等级需要2" name="user_level" />
+
+<input type="submit"  value="新增" id="submit-button">
+<p></p>
+</form>
+
+</block>

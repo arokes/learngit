@@ -1,0 +1,40 @@
+<extend name="/base" />
+<block name="main">
+<font>修改客户台帐金额</font>
+
+<form method="post" action="ModifyAccountResult" id="contact-form">
+<input type="hidden" readonly name="so_id" value={$account.so_id} />
+<label>客户名称</label>
+<input type="text" readonly name="cust_name" value="{$account.cust_name}"  />
+<label>国家</label>
+<input type="text" readonly name="country" value="{$account.country}"  />
+<label>订单号</label>
+<input type="text" readonly name="so_no" value="{$account.so_no}" />
+<label>币别</label>
+<select name="CUR_ID">
+<option value="USD" {$account['CUR_ID']=='USD'?'selected="selected"':''}>USD</option>
+<option value="RMB" {$account['CUR_ID']=='RMB'?'selected="selected"':''}>RMB</option>
+<option value="EUR" {$account['CUR_ID']=='EUR'?'selected="selected"':''}>EUR</option>
+</select>
+<label>与香港公司PI金额</label>
+<input type="text" name="HONGKONG_PI" value="{$account.HONGKONG_PI}" />
+<label>与国内公司PI金额</label>
+<input type="text" name="CHINA_PI" value="{$account.CHINA_PI}" />
+<label>预计出货时间</label>
+<input type="text" name="expect_sale" value="{$account.expect_sale}" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" />
+<label>应收款</label>
+<input type="text" name="receivable" value="{$account.receivable}"  />
+<label>账期</label>
+<input type="text" name="recevable_dd" value="{$account.recevable_dd}" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" />
+<label>应收款日期</label>
+<input type="text" name="recevable_dd" value="{$account.recevable_dd}" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" />
+<label>业务员</label>
+<input type="text" readonly name="sal_name" value="{$account.sal_name}" />
+<label>备注</label>
+<input type="text" name="rem" value="{$account.rem}" />
+
+<button id="submit-button" onclick="javascript:history.back(-1);">返回</button><input type="submit" value="修改" id="submit-button" />
+<p></p><p></p>
+
+</form>
+</block>

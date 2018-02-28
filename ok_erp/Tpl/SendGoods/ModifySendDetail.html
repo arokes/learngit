@@ -1,0 +1,113 @@
+<extend name="/base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$("input[name='send_qty[]']").blur(function(){
+		var totle_qty = 0;
+		 $("input[name='send_qty[]']").each(function(i){
+   			 totle_qty += +$(this).val();
+      	});
+		$("input[name='totle_qty']").val(totle_qty);
+	});
+
+	$("input[name='packing_qty[]']").blur(function(){
+		
+		var totle_packing_qty = 0;
+		 $("input[name='packing_qty[]']").each(function(i){
+   			 totle_packing_qty += +$(this).val();
+      	});
+		$("input[name='totle_packing_qty']").val(totle_packing_qty);
+	});
+
+	$("input[name='package_weight[]']").blur(function(){
+		var totle_weight = 0.00;
+		 $("input[name='package_weight[]']").each(function(i){
+   			 totle_weight += +$(this).val();
+      	});
+		$("input[name='totle_weight']").val(totle_weight);
+	});
+
+	$("input[name='package_volume[]']").blur(function(){
+		var totle_volume = 0.00;
+		 $("input[name='package_volume[]']").each(function(i){
+   			 totle_volume += +$(this).val();
+      	});
+		$("input[name='totle_volume']").val(totle_volume);
+	});
+
+	$("#url_back").click(function(){
+		history.go(-1);
+	});
+});
+</script>
+</block>
+<block name="main">
+<h3>新增发货清单明细</h3>
+<table id="table-4">
+
+<thead>
+<th>进仓编号</th><th>发货单位</th><th>合同编号</th><th> 外箱整唛</th>
+</thead>
+<tbody><tr><td>{$shipment_data.warehouse_no}</td><td>{$shipment_data.company_name}</td><td>{$shipment_data.bat_no}</td>
+<td rowspan="5"><img src="../Public/upload/{$shipment_data.box_mark_savename}" ></td>
+</tr>
+<th>发货时间</th><th>出货地点</th><th>跟单员</th>
+<tr><td>{$shipment_data.send_time}</td><td>{$shipment_data.send_add}</td><td>{$shipment_data.sale_name}</td></tr>
+<th>到货地址</th><th>进仓单</th><th>备注</th>
+<tr><td>{$shipment_data.arrive_add}</td><td><a href="DownloadFile?filename={$shipment_data.warehouse_file_savename}&showname={$shipment_data.warehouse_no}">{$shipment_data.warehouse_no}.doc</a></td><td>{$shipment_data.rem}</td>
+</tbody>
+</table>
+<if condition="($ship_detail_data eq null) and ($cart_data eq null)"><a href="AddSendDetail?shipment_id={$shipment_data.shipment_id}">添加发货清单</a>&nbsp;<a href="ModifyShipment?shipment_id={$shipment_data.shipment_id}">修改发货单</a><br /><button class="delete_shipment" url="DeleteShipment" data="{$shipment_data.shipment_id}">删除发货单</button><br /><else />
+<form action="AddSendDetailResult" methon="post">
+<input type="hidden" value="{$shipment_data.shipment_id}" name="shipment_id">
+<table id="table-6">
+<thead>
+<th >合同号</th><th >品号</th><th width="200px" >品名</th><th >唛头&号数</th><th >库存数量</th><th >发货数量</th><th >装箱规格</th><th >箱数</th><th>重量(KG)</th><th >体积(m³)</th><th id="date">生产厂商</th><th >备注</th>
+
+</thead>
+<tbody>
+<empty name="ship_detail_data" ><else />
+<volist name="ship_detail_data" id="vo_detail">
+<tr><td><input type="hidden" name="bat_no[]" value="{$vo_detail.bat_no}" />{$vo_detail.bat_no}</td>
+<td><input type="hidden" name="prd_no[]" value="{$vo_detail.prd_no}" />{$vo_detail.prd_no}</td>
+<td width="200px"><input type="hidden" name="prd_name[]" value="{$vo_detail.prd_name}" />{$vo_detail.prd_name}</td>
+<td><input type="text" name="mark_no[]" id="qty" value="{$vo_detail.mark_no}"  /></td>
+<td><input type="hidden" name="stock[]" value="{$vo_detail.stock}" />{$vo_detail.stock}</td>
+<td><input type="text" name="send_qty[]" id="qty" value="{$vo_detail.send_qty}" ></td>
+<td><input type="text" name="packing_spc[]" id="qty" value="{$vo_detail.packing_spc}" /></td>
+<td><input type="text" name="packing_qty[]"  id="qty" value="{$vo_detail.packing_qty}" /></td>
+<td><input type="text" name="package_weight[]" id="size" value="{$vo_detail.package_weight}" /></td>
+<td><input type="text" name="package_volume[]" id="qty" value="{$vo_detail.package_volume}" /></td>
+<td><input type="text" name="factory[]" id="date" value="{$vo_detail.factory}" /></td>
+<td><input type="text" name="rem[]" value="{$vo_detail.rem}" /></td>
+<td><input type="button" value="删除" class="delete_detail" url="DeleteDetailItem" data="{$vo_detail.shipment_id}&{$vo_detail.itm}" /></td></tr>
+</volist>
+</empty>
+<empty name="cart_data" ><else />
+<volist name="cart_data" id="vo_cart">
+<eq name="vo_cart.shipment_id" value="$shipment_data.shipment_id">
+<tr><td><input type="hidden" name="bat_no[]" value="{$vo_cart.bat_no}" />{$vo_cart.bat_no}</td>
+<td><input type="hidden" name="prd_no[]" value="{$vo_cart.prd_no}" />{$vo_cart.prd_no}</td>
+<td width="200px"><input type="hidden" name="prd_name[]" value="{$vo_cart.prd_name}" />{$vo_cart.prd_name}</td>
+<td><input type="text" name="mark_no[]" id="qty"  /></td>
+<td><input type="hidden" name="stock[]" value="{$vo_cart.stock}" />{$vo_cart.stock}</td>
+<td><input type="text" name="send_qty[]" id="qty" ></td>
+<td><input type="text" name="packing_spc[]" id="qty"  /></td>
+<td><input type="text" name="packing_qty[]"  id="qty" /></td>
+<td><input type="text" name="package_weight[]" id="size"  /></td>
+<td><input type="text" name="package_volume[]" id="qty"  /></td>
+<td><input type="text" name="factory[]" id="date" /></td>
+<td><input type="text" name="rem[]"  /></td>
+<td><input type="button" value="删除" class="delete_detail" url="UnSetCart" data="{$vo_cart.shipment_id}{$vo_cart.bat_no}{$vo_cart.prd_no}" /></td></tr>
+</eq>
+</volist>
+</empty>
+<tr><td>合计</td><td></td><td></td><td></td><td></td><td><input type="text" name="totle_qty" id="qty" value="{$shipment_data.totle_qty}"></td><td></td><td><input type="text" name="totle_packing_qty" id="qty" value="{$shipment_data.totle_packing_qty}"></td>
+<td><input type="text" name="totle_weight" id="qty" value="{$shipment_data.totle_weight}"></td>
+<td><input type="text" name="totle_volume" id="qty" value="{$shipment_data.totle_volume}"></td></tr>
+</tbody>
+</table>
+<input type="submit" value="保存">&nbsp;<button id="url_back">返回</button>
+</form>
+</if>
+</block>

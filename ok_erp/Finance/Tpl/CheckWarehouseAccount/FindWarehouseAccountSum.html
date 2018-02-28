@@ -1,0 +1,45 @@
+<extend name="/admin_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".newwindows").click(function(){
+		url=$(this).attr("url");
+		window.open(url,'NEW','height=600, width=1000, top=0, left=25%, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');
+	});
+});
+</script>
+</block>
+<block name="main">
+<center>
+<font>美科缴库总数据与销售公司入库总数据对比</font>
+<table id="table-4">
+<p>浙江美科成品缴库</p>
+<thead>
+<th>批号</th><th>品号</th><th>品名</th><th>总缴库数量</th>
+</thead>
+<tbody>
+<volist name="mekamm_list" id="vo">
+<tr><td>{$vo.bat_no}</td><td><a href="" class="newwindows" url="FindMekaMMDetail?bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no}">{$vo.prd_no}</a></td><td>{$vo.name|iconv="GBK","utf-8",###}</td><td>{$vo.qty}</td></tr>
+</volist>
+</tbody>
+<?php $k=0; ?>
+<volist name="storage_list" id="company_list" >
+<table id="table-4">
+<empty name="company_list"><?php $k++; ?><else />
+<p>{$key}入库</p>
+<thead>
+<th>批号</th><th>品号</th><th style="width:400px">品名</th><th>客户编号</th><th>库位</th><th>总入库数量</th>
+</thead>
+<tbody>
+<?php $company=$key; ?>
+<volist name="company_list" id="vo"  >
+<tr><td>{$vo.bat_no}</td><td><a href="" url="FindWarehouseAccountDetail?mk_bat_no={$mekamm_list[0]['bat_no']|urlencode=###}&mk_prd_no={$mekamm_list[0]['prd_no']}&mk_qty={$mekamm_list[0]['qty']}&sale_bat_no={$vo.bat_no|urlencode=###}&sale_prd_no={$vo.prd_no}&sale_prd_mark={$vo.prd_mark}&sale_qty={$vo.qty}&company={$company}" class="newwindows" />{$vo.prd_no|iconv="GBK","utf-8",###}</a></td><td >{$vo.prd_name|iconv="GBK","utf-8",###}</td><td>{$vo.prd_mark}</td><td>{$vo.wh}</td><td>{$vo.qty}</td><td>{$vo.name|iconv="GBK","utf-8",###}</td></tr>
+</volist>
+</tbody>
+</empty>
+</table>
+</volist>
+<eq name="k" value="4">销售公司没有数据<else /><b>点击对应品号链接查看明细</b></eq><br />
+<button type="button" onclick="javascript:history.back(-1);">返回</button>
+</center>
+</block>

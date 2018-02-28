@@ -1,0 +1,39 @@
+[ 2018-01-12T10:04:32+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/BillingData/getGfmcData
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `billingcompany` [ RunTime:0.002365s ]
+SQL: SELECT * FROM `billingcompany` WHERE ( mekacompany='绍兴美科照明科技有限公司' )  [ RunTime:0.000726s ]
+
+[ 2018-01-12T10:04:34+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/BillingData/getCompanyBasic
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `billingcompany` [ RunTime:0.002437s ]
+SQL: SELECT * FROM `billingcompany` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.029556s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: title C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\b872d843c3d629b74b95c514a30e9614.php 第 5 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031475s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000384s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000331s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000215s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001409s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005986s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010830s ]
+
+[ 2018-01-12T10:04:34+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/BillingData/need/laydate.css
+ERR: 非法操作:need
+
+[ 2018-01-12T10:04:34+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/BillingData/skins/danlan/laydate.css
+ERR: 非法操作:skins
+
+[ 2018-01-12T11:01:30+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/SendGoods/SelectBillDetail?ps_no=PC69240011&ps_id=PC&company_name=%E4%B8%8A%E8%99%9E%E6%AC%A7%E7%A7%91%E7%94%B5%E5%99%A8
+ERR: 非法操作:SelectBillDetail
+
+[ 2018-01-12T11:01:40+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/SendGoods/SelectPsBillDetail?ps_no=PC69160048&ps_id=PC&company_name=%E4%B8%8A%E8%99%9E%E6%AC%A7%E7%A7%91%E7%94%B5%E5%99%A8
+ERR: 模板不存在[./Finance/Tpl/SendGoods/SelectPsBillDetail.html]
+

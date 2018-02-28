@@ -1,0 +1,20 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>查询购方公司基础资料</h3>
+<table id="table-5">
+<thead>
+<th>购方公司</th><th>购方税号</th><th>购方银行账号</th><th>购方地址电话</th><th>复核人</th><th>收款人</th><th>销售公司</th><th width="100px"></th>
+</thead>
+<tbody>
+<volist name="listbillingcompany" id="vo">
+<tr>
+<td>{$vo.Gfmc}</td><td>{$vo.Gfsh}</td><td>{$vo.Gfyhzh}</td><td>{$vo.Gfdzdh}</td><td>{$vo.Fhr}</td><td>{$vo.Skr}</td><td>{$vo.mekacompany}</td><td width="100px"><button class="modify" url="__URL__/ModifyBillingCompanyBasicDetail?id={$vo.id}">修改</button><button class="deletebasic" url="__URL__/DeleteBillingCompanyBasic?id={$vo.id}" >删除</button></td>
+</tr>
+</volist>
+
+</tbody>
+
+</table>
+</center>
+</block> 

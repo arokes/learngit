@@ -1,0 +1,47 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>修改汇款</h3>
+</center>
+<form method="post" action="__URL__/ModifyExchangeResult" id="contact-form">
+<input type="hidden" name="id" value="{$listmf.id}" />
+<input type="hidden" name="claim" value="0" />
+
+<label>销售方式:</label>
+<select name="foreign_trade">
+<option value="外销" {$listmf['foreign_trade']=='外销'?'selected=\"selected\"':''} >外销</option>
+<option value="内销" {$listmf['foreign_trade']=='内销'?'selected=\"selected\"':''} >内销</option>
+</select>
+<label>公司:</label>
+<select name="company_id" >
+<volist name="company" id="voc" >
+<option value="{$voc.company_id}" {$listmf['company_id']==$voc['company_id']?'selected=\"selected\"':''} >{$voc.company_name}</option>
+</volist>
+</select>
+<label>银行:</label>
+<select name="bank_id" >
+<volist name="bank" id="vob">
+<option value="{$vob.bank_id}" {$listmf['bank_id']==$vob['bank_id']?'selected=\"selected\"':''} >{$vob.bank_name}</option>
+</volist>
+</select>
+<label>到款日期:</label>
+<input type="text"  value="{$listmf.pay_dd}"  onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" name="pay_dd" onClick="laydate()" class="input_style" />
+<label>汇款人:</label>
+<input type="text" value="{$listmf.bank_cust}" name="bank_cust" class="input_style" />
+<label>汇款国家:</label>
+<input type="text" value="{$listmf.country}" name="country" class="input_style" />
+<label>币别:</label>
+<select name="CUR_ID"  >
+<option value="USD" {$listmf['CUR_ID']=='USD'?'selected="selected"':''} >------USD------</option>
+<option value="RMB" {$listmf['CUR_ID']=='RMB'?'selected="selected"':''} >------RMB------</option>
+<option value="EUR" {$listmf['CUR_ID']=='EUR'?'selected="selected"':''} >------EUR------</option>
+</select>
+<label>到账金额:</label>
+<input type="text" value="{$listmf.amount}" name="amount" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9.]+/,'');}).call(this)" onblur="this.v();"  class="input_style" /><br />
+<label>备注:</label>
+<input type="text" name="rem" value="{$listmf.rem}"  class="input_style"/>
+<input type="submit" value="修改" id="submit-button" />
+<p></p>
+</form>
+
+</block>

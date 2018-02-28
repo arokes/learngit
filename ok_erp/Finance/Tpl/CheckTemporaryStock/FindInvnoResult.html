@@ -1,0 +1,72 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<p>参数筛选:<input id="screen" name="screen" type="text" /> </p>
+	<volist name="factory_result" id="vo_1">
+	<font>{$key}</font>
+	<php>$factory_name=$key;</php>
+<table id="table-5">
+<thead>
+	<th>发票号码</th>
+	<th>开票单号</th>
+	<th>单据日期</th>
+	<th width="250px">备注</th>
+	<th >批号</th>
+	<th>品号</th>
+	<th width="350px">品名</th>
+	<th>数量</th>
+	<th>金额</th>
+</thead>
+<tbody>
+<volist name="vo_1" id="vo" >
+	<tr class="screen" name="{$vo.prd_name|iconv='GBK','UTF-8',###}"><td>{$vo.inv_no|iconv="GBK","utf-8",###}</td>
+	<td><a target="_blank" href="FindLzDetail?lz_no={$vo.lz_no}&factory_name={$factory_name}">{$vo.lz_no|iconv="GBK","utf-8",###}</a></td>
+	<td>{$vo.lz_dd}</td>
+	<td width="250px">{$vo.rem|iconv="GBK","utf-8",###}</td>
+	<td >{$vo.bat_no|iconv="GBK","utf-8",###}</td>
+	<td>{$vo.prd_no|iconv="GBK","utf-8",###}</td>
+	<td width="350px"width="250px">{$vo.prd_name|iconv="GBK","utf-8",###}</a></td>
+	<td>{$vo.qty}</td>
+	<td>{$vo.amtn_net}</td>
+	</tr>
+</volist>
+</tbody>
+</table>
+</volist>
+<volist name="company_result" id="vo_1">
+	<font>{$key}</font>
+	<php>$company_name=$key;</php>
+	<table id="table-5">
+		<thead>
+			<th>发票号码</th>
+			<th>收票单号</th>
+			<th>单据日期</th>
+			<th width="250px">备注</th>
+			<th >批号</th>
+			<th>品号</th>
+			<th width="350px">品名</th>
+			<th>数量</th>
+			<th>金额</th>
+		</thead>
+		<tbody>
+			<volist name="vo_1" id="vo">
+				<tr class="screen" name="{$vo.prd_name|iconv='GBK','UTF-8',###}"><td>{$vo.inv_no|iconv="GBK","utf-8",###}</td>
+					<td><a target="_blank" href="FindLpDetail?lz_no={$vo.lz_no}&company_name={$company_name}">{$vo.lz_no|iconv="GBK","utf-8",###}</td>
+					<td>{$vo.lz_dd}</td>
+					<td width="250px">{$vo.rem|iconv="GBK","utf-8",###}</td>
+					<td >{$vo.bat_no|iconv="GBK","utf-8",###}</td>
+					<td>{$vo.prd_no|iconv="GBK","utf-8",###}</td>
+					<td width="350px"width="250px">{$vo.prd_name|iconv="GBK","utf-8",###}</a></td>
+					<td>{$vo.qty}</td>
+					<td>{$vo.amtn_net}</td>
+				</tr>
+			</volist>
+		</tbody>
+	</table>
+</volist>
+
+
+<a href="javascript:history.back(-1);">返回</a>
+<br />
+</center>
+</block>

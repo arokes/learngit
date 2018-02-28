@@ -1,0 +1,11 @@
+<extend name="/sxmk_base" />
+<block name="main">
+<h3>查询库存</h3>
+<form action="SxmkAccountStatementResult" mothed="post" >
+起始时间:<input type="text" name="date_min" id="date_min"  onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();"><br />
+截至时间:<input type="text" name="date_max" id="date_max"  onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();"><br />
+厂商代号:<input type="text" name="cusno" id="cusno"><br />
+<input type="submit" value="查询" />
+</form>
+<div id="account"></div>
+</block>

@@ -1,0 +1,31 @@
+<extend name="/admin_base" />
+
+<block name="main">
+<center>
+<h3>查询已删除汇款</h3>
+</center>
+<form method="POST" action="__URL__/DeletedExchangeResult" id="contact-form">
+<label>客户名称:</label>
+<input type="text" name="bank_cust" />
+<label>公司:</label>
+<select name="company_id">
+<option value=''>---------</option>
+<volist name="listcompany" id="voc" >
+<option value="{$voc.company_id}" >{$voc.company_name}</option>
+</volist>
+</select>
+<label>银行:</label>
+<select name="bank_id">
+<option value=''>---------</option>
+<volist name="listbank" id="vob">
+<option value="{$vob.bank_id}" >{$vob.bank_name}</option>
+</volist>
+</select>
+<label>金额:</label>
+<input type="text" name="amount">
+<input type="submit" value="查询">
+<p></p>
+</form>
+
+
+</block>

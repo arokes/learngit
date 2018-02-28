@@ -1,0 +1,30 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<table id="table-4">
+<thead><th>销售方式</th><th>公司</th><th>银行</th><th>到款日期</th><th>汇款人名字</th><th>汇款人国家</th><th>币别</th><th>到账金额</th></thead>
+<tbody>
+<tr><td>{$data_mf.foreign_trade}</td><td>{$data_mf.company_name}</td><td>{$data_mf.bank_name}</td><td>{$data_mf.pay_dd}</td><td>{$data_mf.bank_cust}</td><td>{$data_mf.country}</td><td>{$data_mf.CUR_ID}</td><td>{$data_mf.amount}</td></tr>
+</tbody>
+</table>
+<br /><br /><br />
+收汇确认业务员或跟单:<b>{$data_acc[0]['sal_name']}</b>
+<empty name="data_acc">没有可以选择的订单!<else />
+<form action="writeExchangeValue" method="post">
+<input type="hidden" name="id" value="{$data_mf.id}" />
+<table id="table-4">
+<thead>
+<th></th><th>客户名称</th><th>国家</th><th>订单号</th><th>币别</th><th>香港PI金额</th><th>国内PI金额</th><th>预交货日期</th><th>应付账款</th><th>预付款日期</th><th>备注</th>
+</thead>
+<tbody>
+<volist name="data_acc" id="vo">
+<tr><td><input type="checkbox" name="so_id[]" value="{$vo.so_id}" /></td><td>{$vo.cust_name}</td><td>{$vo.country}</td><td>{$vo.so_no}</td><td>{$vo.CUR_ID}</td><td>{$vo.HONGKONG_PI}</td><td>{$vo.CHINA_PI}</td><td>{$vo.expect_sale}</td><td>{$vo.receivable}</td><td>{$vo.recevable_dd}</td><td>{$vo.rem}</td></tr>
+</volist>
+</tbody>
+</table>
+</empty>
+<input type="submit" value="选择完毕" />&nbsp;<a href="{$url_back}">返回</a><br /><br />
+<b>如果没有您想选的订单，请更新台账</b>
+</form>
+</center>
+</block>

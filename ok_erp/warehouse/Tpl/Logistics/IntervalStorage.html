@@ -1,0 +1,13 @@
+<extend name="/base" />
+<block name="main">
+<h2>查询区间贸易公司出入库数据</h2>
+<form action="" method="post" name="form1">
+出库入库:<select name="state" id="state"><option value="PC">入库</option><option value="SA">出库</option></select>
+&nbsp;&nbsp;公司:<select name="company" id="company"><option value="DB_OK01">上虞欧科电器</option><option value="DB_MKJC">绍兴美科进出口</option><option value="DB_JXOK">景德镇欧科电器</option><option value="DB_SXMK">绍兴美科照明科技</option></select><br /><br />
+查询时间:<input type="text" class="date" name="date_min" id="date_min" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" />------
+<input type="text" class="date"  name="date_max" id="date_max" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();"/>
+<br />
+<input type="button" value="查询" url="SelectIntervalStorage" id="select_storage">&nbsp;&nbsp;<input type="button" value="下载" id="button" onClick="manySend('DownloadStorage')" />
+</form>
+<div id="storage"></div>
+</block>

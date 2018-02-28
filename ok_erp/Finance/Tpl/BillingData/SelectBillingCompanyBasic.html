@@ -1,0 +1,21 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>查询购方公司基础资料</h3>
+</center>
+<form method="POST" action="SelectBillingCompanyBasicResult" id="contact-form" >
+<label>查询方式:</label>
+<select name="selectmode">
+	<option value="Gfmc">购方公司名称</option>
+	<option value="mekacompany">销售公司名称</option>
+</select>
+<label></label>
+<input type="text" name="parameter" />
+
+<input type="submit" value="查询" ><button type="button" class="tolink" url="FormatBillingDetailList" id="submit-button">返回</button>
+<p></p>
+</form>
+
+
+
+</block> 

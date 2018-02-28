@@ -1,0 +1,19 @@
+<extend name="/base" />
+
+<block name="main">
+<empty name="storagegoods_data">没有需要核对的库存商品<else/>
+<h3>核对库存商品</h3>
+截至9月17日系统库存
+<table id="table-4">
+<thead>
+<th>公司名称</th><th>订单号</th><th width="500px">品名</th><th>库存数量</th><th></th>
+</thead>
+<tbody>
+<volist name="storagegoods_data" id="vo">
+<tr><td>{$vo.company_name}</td><td>{$vo.so_no}</td><td width="500px">{$vo.prd_name}</td><td>{$vo.qty}</td><td><a href="CheckStorageGoodsDetail?so_no={$vo.so_no}">核对这个批号</a></td></tr>
+
+</volist>
+</tbody>
+</table>
+</empty>
+</block>

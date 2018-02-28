@@ -1,0 +1,2133 @@
+[ 2018-01-13T09:22:40+08:00 ] 106.120.160.109 /ok_erp/index.php/Claim/NewClaim/p/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-01-13T09:24:18+08:00 ] 101.199.112.49 /ok_erp/index.php/Claim/NewClaim/p/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+
+[ 2018-01-13T10:16:49+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001117s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+
+[ 2018-01-13T10:17:00+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001148s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001359s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004624s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038473s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000732s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000672s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000619s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003141s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001021s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2018-01-13T10:17:06+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000858s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001280s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 15,15   [ RunTime:0.004397s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011656s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000400s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000597s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-01-13T10:17:11+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000874s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000912s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024066s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000411s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000390s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001719s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000637s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2018-01-13T10:17:20+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '周沙' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-13' ) ) AND ( a.claim = '1' ) LIMIT 1   [ RunTime:0.017585s ]
+SQL: SELECT * FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '周沙' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-13' ) ) AND ( a.claim = '1' ) ORDER BY b.record_dd LIMIT 0,15   [ RunTime:0.005651s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018595s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000480s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000382s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001787s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000640s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2018-01-13T10:17:24+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimResult/company_id/%25/sal_name/%E5%91%A8%E6%B2%99/p/7.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '周沙' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-13' ) ) AND ( a.claim = '1' ) LIMIT 1   [ RunTime:0.002465s ]
+SQL: SELECT * FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '周沙' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-13' ) ) AND ( a.claim = '1' ) ORDER BY b.record_dd LIMIT 90,15   [ RunTime:0.005520s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012426s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000432s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001643s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000936s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2018-01-13T10:17:44+08:00 ] 106.120.161.68 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000852s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2018-01-13T10:17:54+08:00 ] 106.120.160.109 /ok_erp/index.php/Claim/selectClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-01-13T10:17:56+08:00 ] 106.120.160.109 /ok_erp/index.php/Claim/selectClaimResult/company_id/%25/sal_name/%E5%91%A8%E6%B2%99/p/7.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000846s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+
+[ 2018-01-13T10:18:00+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001089s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-01-13T10:18:52+08:00 ] 220.181.132.196 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001071s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+
+[ 2018-01-13T10:19:53+08:00 ] 0.0.0.0 /ok_erp/index.php/Claim/selectClaimResult/company_id/%25/sal_name/%E5%91%A8%E6%B2%99/p/7.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-13T10:20:03+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001272s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004312s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018792s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000665s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000621s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000461s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002664s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-01-13T10:20:13+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000995s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018110s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000399s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2018-01-13T10:20:49+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007409s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000359s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001573s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000606s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-01-13T10:20:57+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.014552s ]
+SQL: SELECT * FROM `billingdata` WHERE ( contract_no='DS170425' )  [ RunTime:0.007944s ]
+SQL: INSERT INTO `billingdata` (`company_name`,`contract_no`,`sale_name`,`user_name`,`upload_date`,`prerecorded_file`,`contract_file`,`clearance_file`,`sendgoods_file`) VALUES ('绍兴美科进出口','DS170425','虞梦岚','yml02','2018-01-13 10:20:57','E:/upload/billingdata/DS170425/5a596d09b411c.png','E:/upload/billingdata/DS170425/5a596d09b4b04.rar','E:/upload/billingdata/DS170425/5a596d09b5c5c.xlsx','E:/upload/billingdata/DS170425/5a596d09b814b.xls') [ RunTime:0.014891s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007612s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000352s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000359s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001658s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-01-13T10:20:58+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010409s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000377s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-01-13T10:21:03+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataSelect
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000830s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012828s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000386s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001606s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000606s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-01-13T10:21:04+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `billingdata` WHERE ( `contract_no` LIKE '%%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0201%') and sale_name like '虞梦岚%')  ) LIMIT 1   [ RunTime:0.040533s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `contract_no` LIKE '%%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0201%') and sale_name like '虞梦岚%')  ) LIMIT 0,15   [ RunTime:0.002253s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033902s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000528s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000388s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001860s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2018-01-13T10:21:07+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataSelectResult/sale_name/%E8%99%9E%E6%A2%A6%E5%B2%9A/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `billingdata` WHERE ( `contract_no` LIKE '%%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0201%') and sale_name like '虞梦岚%')  ) LIMIT 1   [ RunTime:0.006806s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `contract_no` LIKE '%%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0201%') and sale_name like '虞梦岚%')  ) LIMIT 15,15   [ RunTime:0.006815s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013437s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000429s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000379s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001770s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000623s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2018-01-13T10:22:37+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001261s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004249s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013255s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000658s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000623s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002658s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-01-13T10:23:04+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1414
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001087s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1414 )  [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.017351s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.002912s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029787s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000709s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000615s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000507s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002725s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000884s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2018-01-13T10:23:15+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000830s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1414 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001115s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('相青青','') ) ORDER BY so_no  [ RunTime:0.004428s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024544s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000428s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000361s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001658s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2018-01-13T10:28:27+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001263s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004323s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013089s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001017s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000628s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000490s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003066s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000866s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2018-01-13T10:28:58+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1451
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000846s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 )  [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001087s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.001903s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013329s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000437s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000380s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000273s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001805s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000679s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2018-01-13T10:29:17+08:00 ] 115.231.193.202 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `storagegoods` [ RunTime:0.018566s ]
+SQL: SELECT * FROM `storagegoods` WHERE ( is_check='0' ) ORDER BY company_name,so_no  [ RunTime:0.017321s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014323s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002249s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000572s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004127s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000597s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-01-13T10:29:18+08:00 ] 115.231.193.202 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `storagegoods` [ RunTime:0.001068s ]
+SQL: SELECT * FROM `storagegoods` WHERE ( is_check='0' ) ORDER BY company_name,so_no  [ RunTime:0.008589s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012880s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002241s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000591s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000228s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004131s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-01-13T10:29:18+08:00 ] 115.231.193.202 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `storagegoods` [ RunTime:0.001111s ]
+SQL: SELECT * FROM `storagegoods` WHERE ( is_check='0' ) ORDER BY company_name,so_no  [ RunTime:0.008686s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013151s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002199s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000560s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004040s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2018-01-13T10:29:29+08:00 ] 106.120.160.109 /ok_erp/index.php/Claim/claimDetail?id=1451
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2018-01-13T10:29:33+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001297s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004430s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013456s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000638s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000607s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000472s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002633s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2018-01-13T10:29:38+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1451
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 )  [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001133s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.001914s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012647s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000460s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001681s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-01-13T10:29:49+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001065s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('金晶','') ) ORDER BY so_no  [ RunTime:0.001480s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014010s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000424s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000385s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001712s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2018-01-13T10:30:00+08:00 ] 106.120.161.68 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001078s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+
+[ 2018-01-13T10:30:38+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001080s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('陈江银','') ) ORDER BY so_no  [ RunTime:0.001464s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013465s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000378s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000355s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001597s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000618s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2018-01-13T10:31:05+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001066s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('陈江银','陈江银') ) ORDER BY so_no  [ RunTime:0.001706s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020067s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000649s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000607s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000466s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002644s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-01-13T10:31:14+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000840s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001058s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('金晶','陈江银') ) ORDER BY so_no  [ RunTime:0.001487s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013111s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000397s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001614s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000589s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-01-13T10:31:45+08:00 ] 0.0.0.0 /ok_erp/index.php/SendGoods/CheckStorageGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-13T10:32:08+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024989s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000621s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000592s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002602s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000957s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2018-01-13T10:32:13+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) LIMIT 1   [ RunTime:0.001171s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) ORDER BY so_id LIMIT 0,15   [ RunTime:0.001397s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000419s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000363s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001688s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000624s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2018-01-13T10:32:21+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountDetail?so_id=292
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.000983s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` = 292 ) LIMIT 1   [ RunTime:0.000549s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( so_id=292 )  [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018374s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000387s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000365s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001626s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2018-01-13T10:33:01+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001461s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004217s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012306s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000434s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000401s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001764s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2018-01-13T10:33:19+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000874s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010015s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000415s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000378s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000249s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001762s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-01-13T10:33:20+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001214s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009535s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000354s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000345s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001584s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-01-13T10:33:20+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000989s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000287s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012533s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000615s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000587s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000454s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002536s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000830s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2018-01-13T10:33:40+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) LIMIT 1   [ RunTime:0.001168s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) ORDER BY so_id LIMIT 0,15   [ RunTime:0.001342s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012473s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000406s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000361s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001676s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2018-01-13T10:33:52+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountResult/sal_name/%E9%87%91%E6%99%B6/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001498s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) LIMIT 1   [ RunTime:0.001186s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) ORDER BY so_id LIMIT 15,15   [ RunTime:0.002257s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012332s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000443s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000400s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001821s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000651s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2018-01-13T10:33:57+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountResult/sal_name/%E9%87%91%E6%99%B6/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000839s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) LIMIT 1   [ RunTime:0.001110s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) ORDER BY so_id LIMIT 0,15   [ RunTime:0.001385s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012732s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000434s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000362s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001692s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000637s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-01-13T10:34:07+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountDetail?so_id=292
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.000958s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` = 292 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( so_id=292 )  [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013773s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000373s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000355s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001673s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000620s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-01-13T10:34:56+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001404s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004453s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011843s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000409s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001635s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-01-13T10:34:59+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1451
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000872s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 )  [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001115s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.001973s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012707s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000388s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000606s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-01-13T10:35:09+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000874s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001017s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('金晶','') ) ORDER BY so_no  [ RunTime:0.001502s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013569s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000407s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000354s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001618s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-01-13T10:36:06+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id= ) LIMIT 1   [ RunTime:0.000148s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001057s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('','') ) ORDER BY so_no  [ RunTime:0.001397s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007639s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000342s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001573s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000703s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-01-13T10:36:16+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001178s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001276s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004330s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014070s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000714s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000612s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000484s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002916s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000858s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2018-01-13T10:36:19+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1451
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000830s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 )  [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001098s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.001944s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012976s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000398s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001619s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-01-13T10:36:24+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001121s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('金晶','') ) ORDER BY so_no  [ RunTime:0.001497s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013503s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000401s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000358s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001815s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000643s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-01-13T10:36:30+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001080s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1451 ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.000969s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` IN ('292') ) ORDER BY so_no  [ RunTime:0.000283s ]
+SQL: SELECT `sal_name` FROM `account` WHERE ( `so_id` IN ('292') ) GROUP BY sal_name  [ RunTime:0.000201s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020109s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000659s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000599s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002730s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000842s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2018-01-13T10:37:34+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000831s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010116s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000375s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000354s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001629s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-01-13T10:37:38+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000855s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) LIMIT 1   [ RunTime:0.001277s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like '%' and sal_name like '金晶' ) ORDER BY so_id LIMIT 0,15   [ RunTime:0.001431s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012383s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000421s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000364s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001698s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2018-01-13T10:37:46+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountDetail?so_id=292
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000840s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.000915s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` = 292 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( so_id=292 )  [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013699s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000378s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000358s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001654s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000615s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2018-01-13T10:46:47+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001288s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001389s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004728s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014475s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000699s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000617s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002685s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000972s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2018-01-13T10:46:50+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013189s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000768s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000641s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000517s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002933s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000997s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2018-01-13T10:47:44+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008781s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000566s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000590s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002701s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-01-13T10:48:13+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001418s ]
+SQL: SELECT * FROM `billingdata` WHERE ( contract_no='PO5309-2' )  [ RunTime:0.000223s ]
+SQL: INSERT INTO `billingdata` (`company_name`,`contract_no`,`sale_name`,`user_name`,`upload_date`,`prerecorded_file`,`contract_file`,`clearance_file`,`sendgoods_file`) VALUES ('绍兴美科进出口','PO5309-2','任静','rj02','2018-01-13 10:48:13','E:/upload/billingdata/PO5309-2/5a59736d21ab8.png','E:/upload/billingdata/PO5309-2/5a59736d21f6d.rar','E:/upload/billingdata/PO5309-2/5a59736d250cf.xls','E:/upload/billingdata/PO5309-2/5a59736d294ac.xls') [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007454s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000351s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000378s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000254s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002118s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000637s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-01-13T10:48:47+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001272s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004239s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011938s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000399s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001980s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2018-01-13T10:48:49+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010830s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000399s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000358s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001996s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000613s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-01-13T10:48:51+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataSelect
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000845s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010418s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000370s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001941s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000605s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2018-01-13T10:48:57+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000847s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `billingdata` WHERE ( `contract_no` LIKE '%po5325-2%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0203%') and sale_name like '任静%')  ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `contract_no` LIKE '%po5325-2%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0203%') and sale_name like '任静%')  ) LIMIT 0,15   [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007412s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000332s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000355s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001929s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000598s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2018-01-13T10:49:07+08:00 ] 115.231.193.202 /ok_erp/index.php/BillingData/UploadBillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000977s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `billingdata` WHERE ( `contract_no` LIKE '%po5323-2%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0203%') and sale_name like '任静%')  ) LIMIT 1   [ RunTime:0.000961s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `contract_no` LIKE '%po5323-2%' ) AND (  (`user_name` in (select user_name from user where user_dep_no like 'jcksalesy0203%') and sale_name like '任静%')  ) LIMIT 0,15   [ RunTime:0.000877s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013608s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000401s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000359s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002152s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000628s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2018-01-13T10:54:47+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001086s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001286s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004549s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013839s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000751s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000604s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000470s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002751s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-01-13T10:55:02+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000933s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011200s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000390s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001603s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000588s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2018-01-13T10:55:05+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/NewAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000839s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018383s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000403s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000360s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001669s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000595s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-01-13T10:55:07+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000952s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001281s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004378s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012259s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000420s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000357s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002029s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000626s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2018-01-13T10:55:16+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000839s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009856s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2018-01-13T10:55:23+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.000997s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `account` WHERE ( so_no like 'Wol170719' and sal_name like '%' ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'Wol170719' and sal_name like '%' ) ORDER BY so_id LIMIT 0,15   [ RunTime:0.003812s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012259s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000384s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000359s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001967s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000627s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2018-01-13T10:55:25+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/SelectAccountDetail?so_id=866
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000840s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.000944s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` = 866 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( so_id=866 )  [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013889s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000391s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000357s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001622s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2018-01-13T10:55:36+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/ModifyAccountAmount?so_id=866
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.000859s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` = 866 ) LIMIT 1   [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000386s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000359s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001733s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000656s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2018-01-13T10:57:17+08:00 ] 115.231.193.202 /ok_erp/index.php/Account/ModifyAccountResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001092s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.002960s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.000992s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` = 866 ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: UPDATE `account` SET `cust_name`='Wolta',`country`='俄罗斯',`so_no`='Wol170719',`CUR_ID`='USD',`HONGKONG_PI`=0,`CHINA_PI`=47952.92,`expect_sale`='2017-11-08',`receivable`=47567.72,`account_period`='90',`recevable_dd`='2017-11-17',`sal_name`='陈江银',`rem`='有60个灯没有发出',`change_dd`='2018-01-13 10:57:17' WHERE ( `so_id` = 866 ) [ RunTime:0.030627s ]
+SQL: UPDATE `tf_exchange` SET `so_pi`=47952.92 WHERE ( so_id='866' ) [ RunTime:0.022630s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009062s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000568s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000587s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002489s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000846s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2018-01-13T10:58:12+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001099s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001057s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( `id` = 1451 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001002s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'Wol170324' )  [ RunTime:0.000303s ]
+SQL: INSERT INTO `tf_exchange` (`id`,`itm`,`CUR_ID`,`amount_apart`,`brokerage`,`so_id`,`so_no`,`so_pi`,`is_declare`,`contract_cust`,`lz_cust`,`connect_cust`,`debit`,`rem`,`record_dd`) VALUES (1451,1,'USD',28374.87,0,292,'Wol170324',494298,'是','Wolta','Wolta','Wolta','3953.13usd 为 Wol170719订单扣款','190usd.  有400个灯未发. ','2018-01-13 10:58:12') [ RunTime:0.019742s ]
+SQL: UPDATE `mf_exchange` SET `getlz_name`='金晶',`sal_name`='金晶',`CUR_ID`='USD',`claim`=1,`change_dd`='2018-01-13 10:58:12' WHERE ( `id` = 1451 ) [ RunTime:0.016365s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008498s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000562s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000581s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000662s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003106s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001053s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2018-01-13T10:58:13+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001283s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004495s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012051s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000410s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000355s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000581s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002335s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000598s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2018-01-13T11:04:25+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+
+[ 2018-01-13T11:04:33+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001234s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004352s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011997s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000650s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000364s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000592s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-01-13T11:04:51+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1440
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1440 )  [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001070s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.001937s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013318s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000402s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000358s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001627s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2018-01-13T11:05:07+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000873s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1440 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001090s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('王叶萍','') ) ORDER BY so_no  [ RunTime:0.001994s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013869s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000438s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000360s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001687s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000609s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2018-01-13T11:05:23+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000841s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1440 ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001071s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` IN ('950') ) ORDER BY so_no  [ RunTime:0.000303s ]
+SQL: SELECT `sal_name` FROM `account` WHERE ( `so_id` IN ('950') ) GROUP BY sal_name  [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014051s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000922s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000381s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002192s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000637s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-01-13T11:06:05+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001123s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( `id` = 1440 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.000988s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'DDG170411-4' )  [ RunTime:0.000328s ]
+SQL: INSERT INTO `tf_exchange` (`id`,`itm`,`CUR_ID`,`amount_apart`,`brokerage`,`so_id`,`so_no`,`so_pi`,`is_declare`,`contract_cust`,`lz_cust`,`connect_cust`,`debit`,`rem`,`record_dd`) VALUES (1440,1,'USD',88078.28,10,950,'DDG170411-4',418402,'是','GALAXY','GALAXY PARTICIPACOES, IMPORTACAO E EXPORTACAO LTDA','GALAXY','','','2018-01-13 11:06:04') [ RunTime:0.027597s ]
+SQL: UPDATE `mf_exchange` SET `getlz_name`='陈佳倩',`sal_name`='王叶萍',`CUR_ID`='USD',`claim`=1,`change_dd`='2018-01-13 11:06:05' WHERE ( `id` = 1440 ) [ RunTime:0.010911s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008647s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000640s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000593s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000461s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002579s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001018s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2018-01-13T11:06:06+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001294s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004372s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011755s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000402s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001618s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000598s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-01-13T11:17:20+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001083s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001485s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004368s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013351s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000691s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000598s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002884s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000869s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2018-01-13T11:17:25+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000842s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001273s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 15,15   [ RunTime:0.004182s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011519s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000401s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002014s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000622s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2018-01-13T11:20:04+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1469
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001119s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1469 )  [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001096s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.002007s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015384s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000652s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000458s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002664s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000905s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-01-13T11:20:34+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001081s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1469 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001118s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('陈江银','') ) ORDER BY so_no  [ RunTime:0.001441s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014751s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000648s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000596s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002588s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000834s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2018-01-13T11:20:41+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1469 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001096s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` IN ('865') ) ORDER BY so_no  [ RunTime:0.000301s ]
+SQL: SELECT `sal_name` FROM `account` WHERE ( `so_id` IN ('865') ) GROUP BY sal_name  [ RunTime:0.000191s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014154s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000404s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000358s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000252s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001657s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2018-01-13T11:21:45+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001028s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( `id` = 1469 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001017s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like '（1711）QHN01' )  [ RunTime:0.000312s ]
+SQL: INSERT INTO `tf_exchange` (`id`,`itm`,`CUR_ID`,`amount_apart`,`brokerage`,`so_id`,`so_no`,`so_pi`,`is_declare`,`contract_cust`,`lz_cust`,`connect_cust`,`debit`,`rem`,`record_dd`) VALUES (1469,1,'RMB',119352,0,865,'（1711）QHN01',149190,'是','厦门贝锝','厦门贝锝照明电器有限公司','厦门贝锝照明电器有限公司','','订单尾款','2018-01-13 11:21:45') [ RunTime:0.028306s ]
+SQL: UPDATE `mf_exchange` SET `getlz_name`='',`sal_name`='陈江银',`CUR_ID`='RMB',`claim`=1,`change_dd`='2018-01-13 11:21:45' WHERE ( `id` = 1469 ) [ RunTime:0.014890s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007611s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000337s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000378s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000228s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001614s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-01-13T11:21:46+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000834s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001481s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004250s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011951s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000418s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000358s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001644s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000592s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2018-01-13T11:22:11+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001078s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001301s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 15,15   [ RunTime:0.004425s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013511s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000641s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000594s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002619s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000868s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2018-01-13T11:22:24+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001275s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004649s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011408s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000390s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000350s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001644s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000963s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2018-01-13T11:22:28+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001256s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 15,15   [ RunTime:0.004340s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011638s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000387s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000553s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001802s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000589s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2018-01-13T15:20:16+08:00 ] 106.120.160.109 /ok_erp/index.php/Claim/selectClaimResult/company_id/%25/sal_name/%E7%8E%8B%E5%8F%B6%E8%90%8D/p/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+
+[ 2018-01-13T18:18:16+08:00 ] 60.55.12.5 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001128s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001391s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004452s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012938s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000648s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000594s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002615s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2018-01-13T18:18:20+08:00 ] 60.55.12.5 /ok_erp/index.php/SendGoods/SelectStock
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016099s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000601s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000582s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002512s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000821s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2018-01-13T18:18:26+08:00 ] 60.55.12.5 /ok_erp/index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%170921%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark [ RunTime:0.868887s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%170921%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark [ RunTime:0.160320s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%170921%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark [ RunTime:0.237148s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027116s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000439s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000416s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000288s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001839s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000625s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2018-01-13T18:18:50+08:00 ] 106.120.161.68 /ok_erp/index.php/SendGoods/SelectStock
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001012s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-01-13T18:19:07+08:00 ] 106.120.161.68 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+
+[ 2018-01-13T18:19:11+08:00 ] 106.120.161.68 /ok_erp/index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000813s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+
+[ 2018-01-13T18:19:16+08:00 ] 220.181.132.193 /ok_erp/index.php/SendGoods/SelectStock
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-01-13T18:19:24+08:00 ] 101.199.108.54 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2018-01-13T18:19:33+08:00 ] 101.199.108.53 /ok_erp/index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+

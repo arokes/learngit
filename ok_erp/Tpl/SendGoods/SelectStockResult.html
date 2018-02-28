@@ -1,0 +1,44 @@
+<extend name="/base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.screen').keyup(function(){
+		var str_name=$(this).val().split(' ');
+		if(!str_name){
+			$("tr[class]").show();
+		}else{
+			var contain='';
+			for(var i=0;i<str_name.length;i++){
+				contain=contain+"[name*="+str_name[i].toUpperCase()+"]";
+			}
+			$("tr[class]").hide();
+			$("tr[class]"+contain).show();
+		}
+	});
+});
+</script>
+</block>
+<block name="main">
+<center>
+参数筛选:<input class="screen" type="text" name="screen" /><br />
+<php>$j=0;</php>
+<volist name="stock_data" id="vo_1" >
+<empty name="vo_1"><php>$j++;</php><else/>
+<b>{$key}---进销存统计表</b>
+<table id="table-4">
+<thead>
+<th>订单号</th><th>品号</th><th>品名</th><th>客户编号</th><th>入库</th><th>出库</th><th>库存数</th>
+</thead>
+<tbody>
+<volist name="vo_1" id="vo">
+<tr class="screen" name="{$vo.prd_name|iconv='GBK','utf-8',###}"><td>{$vo.bat_no}</td><td><a href="SelectStockDetailResult?bat_no={$vo.bat_no}&prd_no={$vo.prd_no}&prd_mark={$vo.prd_mark}" target="_parent">{$vo.prd_no}</a></td><td>{$vo.prd_name|iconv="GBK","utf-8",###}</td><td>{$vo.prd_mark}</td><td>{$vo.pc|round=###,2}</td><td>{$vo.sa|round=###,2}</td><td>{$vo.stock|round=###,2}</td></tr>
+
+</volist>
+</tbody>
+</table>
+</empty>
+</volist>
+<in name="j" value="3">查询不到数据</in>
+<a href="javascript:history.back(-1);">返回</a>
+</center>
+</block>

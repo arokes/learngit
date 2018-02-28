@@ -1,0 +1,22 @@
+<extend name="/admin_base" />
+<block name="index_script"></block>
+<block name="menu"></block>
+<block name="main">
+
+<font>美科成品缴库数据明细</font>
+<br />
+<b>美科批号</b>:{$mekamm_list[0]['bat_no']} &nbsp;<b>美科品号</b>:{$mekamm_list[0]['prd_no']}&nbsp;
+<b>美科品名</b>:{$mekamm_list[0]['name']|iconv="GBK","utf-8",###}&nbsp;<b>美科总缴库数</b>:{$qty['mk_qty']}<br />
+<p>浙江美科成品缴库</p>
+<table id="table-3" >
+<thead>
+<th>缴库单号</th><th>缴库日期</th><th>审核日期</th><th>缴库数量</th>
+</thead>
+<tbody>
+<volist name="mekamm_list" id="vo">
+<tr><td>{$vo.mm_no}</td><td>{$vo.mm_dd}</td><td>{$vo.eff_dd}</td><td>{$vo.qty}</td></tr>
+</volist>
+</tbody> 
+</table>
+</block>
+<block name="footer"></block>

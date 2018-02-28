@@ -1,0 +1,84 @@
+[ 2018-01-14T06:42:30+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=677
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002394s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+
+[ 2018-01-14T06:43:46+08:00 ] 0.0.0.0 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=677
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-14T09:20:18+08:00 ] 106.120.160.109 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2018-01-14T09:21:17+08:00 ] 0.0.0.0 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-14T10:40:32+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=676
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+
+[ 2018-01-14T10:44:40+08:00 ] 0.0.0.0 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=676
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001105s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-14T17:50:27+08:00 ] 106.120.160.109 /ok_erp/finance_index.php/Exchange/ModifyExchangeDetail?id=1435
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2018-01-14T17:51:39+08:00 ] 0.0.0.0 /ok_erp/finance_index.php/Exchange/ModifyExchangeDetail?id=1435
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php 第 734 行.
+
+[ 2018-01-14T19:50:40+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=682
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001049s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-01-14T19:52:19+08:00 ] 220.181.132.198 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=682
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+

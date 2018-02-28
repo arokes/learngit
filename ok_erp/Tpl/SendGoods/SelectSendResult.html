@@ -1,0 +1,22 @@
+<extend name="/base" />
+<block name="main">
+<h3>查询发货单结果</h3>
+<table id="table-4">
+<thead>
+<th>进仓单号</th><th>发货单位</th><th>合同编号</th><th>发货时间</th><th>业务员</th><th>发货地点</th><th>到达地址</th><th>备注</th>
+</thead>
+<tbody>
+<volist name="list" id="vo">
+<tr><td><a href="SendDetail?shipment_id={$vo.shipment_id}">{$vo.warehouse_no}</a></td>
+<td>{$vo.company_name}</td>
+<td>{$vo.bat_no}</td>
+<td>{$vo.send_time}</td>
+<td>{$vo.sale_name}</td>
+<td>{$vo.send_add}</td>
+<td>{$vo.arrive_add}</td>
+<td>{$vo.rem}</td>
+</tr>
+</volist>
+</tbody>
+</table>
+</block>

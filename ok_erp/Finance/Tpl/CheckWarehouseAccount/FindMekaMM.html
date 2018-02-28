@@ -1,0 +1,13 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>查询美科缴库单数据</font>
+
+<form method="post" action="FindMekaMMResult" name="form1">
+开始时间:<input type="text" name="date_min" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" onClick="laydate()" /><br />
+截止时间:<input type="text" name="date_max" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" onClick="laydate()" /><br />
+查询批号:<input type = "text" name="bat_no" /><br />
+<input  type="button" value="查询" onclick="manySend('FindMekaMMResult')" /><button type="button" onclick="manySend('FindMekaMMSumResult')" >查询总数</button>
+</form>
+</center>
+</block>

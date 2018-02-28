@@ -1,0 +1,11 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>查询汇款</h3>
+<form method="post" action="__URL__/SelectExchangeResult">
+查询:<select name="selectmode" style="width:170px"><option value="bank_cust">汇款客户名</option><option value="sal_name">业务员</option><option value="pay_dd">到账日期</option><option value="amount">金额</option><option value="country">国家</option></select><br /><br />
+参数:<input name="parameter" type="text" style="width:170px" /><br /><br />
+<input type="submit" value="查询" />
+</form>
+</center>
+</block>

@@ -1,0 +1,22 @@
+<extend name="/admin_base" />
+
+<block name="main">
+<center>
+<table id="table-4">
+<thead><th>销售方式</th><th>公司</th><th>银行</th><th>到款日期</th><th>汇款人名字</th><th>汇款人国家</th><th>币别</th><th>到账金额</th></thead>
+<tbody>
+<volist name="data" id="vo">
+<tr><td>{$vo.foreign_trade}</td><td>{$vo.company_name}</td><td>{$vo.bank_name}</td><td>{$vo.pay_dd}</td><td>{$vo.bank_cust}</td><td>{$vo.country}</td><td>{$vo.CUR_ID}</td><td>{$vo.amount}</td></tr>
+</volist>
+</tbody>
+</table>
+<br /><br /><br />
+<form action="getAccountData" method="post">
+<input type="hidden" name="id" value="{$vo.id}" />
+请选择您的名字:<select name="sal_name" id="btext"><option >-------</option><foreach name="data_acc" item="vo_acc"><option value="{$vo_acc.sal_name}">{$vo_acc.sal_name}</option></foreach></select><br /><br />
+<input type="submit" value="查询可用订单" />&nbsp;<a href="{$url_back}">返回</a>
+<br /><br />
+<b>如果没有您的名字，请更新台账</b>
+</form>
+</center
+</block>

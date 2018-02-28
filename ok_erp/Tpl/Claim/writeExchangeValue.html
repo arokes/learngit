@@ -1,0 +1,94 @@
+<extend name="/base" />
+<block name="once_script">
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$(".amount_apart").keyup(function(){
+			var amount_sum=$("#amount_sum").val();
+			var amount=0.0000;
+			$(".amount_apart").each(function(){
+				amount=amount+Number($(this).val());
+			});
+			var balance_amount=amount_sum-amount;
+		$("#js_amount").html(amount.toFixed(2));
+		$("#balance_amount").html(balance_amount.toFixed(2));
+
+		});
+		var amount_init=0.0000;
+		var amount_sum=$("#amount_sum").val();
+		$(".amount_apart").each(function(){
+			amount_init=amount_init+Number($(this).val());
+		});
+		var balance_amount=amount_sum-amount_init;
+		$("#js_amount").html(amount_init.toFixed(2));
+		$("#balance_amount").html(balance_amount.toFixed(2));
+	});
+
+</script>
+</block>
+<block name="main">
+<font>请填写到款认领详细信息</font>
+<table id="table-4">
+
+<thead><th>销售方式</th><th>公司</th><th>银行</th><th>到款日期</th><th>汇款人名字</th><th>汇款人国家</th><th>币别</th><th>到账金额</th></thead>
+<tbody>
+<tr><td>{$data_mf.foreign_trade}</td><td>{$data_mf.company_name}</td><td>{$data_mf.bank_name}</td><td>{$data_mf.pay_dd}</td><td>{$data_mf.bank_cust}</td><td>{$data_mf.country}</td><td>{$data_mf.CUR_ID}</td><td>{$data_mf.amount}</td></tr>
+</tbody>
+</table>
+<br /><br />
+
+<form action="claimResult" method="post">
+收汇确认业务员或跟单:<b>{$sal_name}</b> &nbsp;&nbsp;提供开票业务员或跟单:<input type="text" name="getlz_name" id="cst" />
+<input type="hidden" name="id" value="{$data_mf.id}" />
+<input type="hidden" name="sal_name" value="{$sal_name}" />
+<input type="hidden" id="amount_sum" name="amount_sum" value="{$data_mf.amount}" />
+<input type="hidden" name="CUR_ID" value="{$data_mf.CUR_ID}" />
+<input type="hidden" name="claim" value="1" />
+<table id="table-5">
+<thead>
+<th>到账金额</th><th>手续费</th><th>订单号</th><th>剩余可收金额</th><th width="40px">报关</th><th>签约客户名称</th><th>开票客户名称</th><th>联系客户名称</th><th>罚款扣款情况</th><th>备注</th>
+</thead>
+<tbody>
+<volist name="data_acc" id="vo">
+<tr>
+<td><input type="text" class="amount_apart" name="amount_apart[]" id="cst" onkeyup="(this.v=function(){this.value=this.value.replace(/[^-0-9.]/,'');}).call(this)" onblur="this.v();" /></td>
+<td><input type="text" name="brokerage[]" id="cst" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9.]/,'');}).call(this)" onblur="this.v();" /></td>
+<td><input type="hidden" name="so_no[]" value="{$vo.so_no}" />{$vo.so_no}</td>
+<td><eq name="vo['CHINA_PI']" value="0"><input type="hidden" name="so_pi[]" value="{$vo.HONGKONG_PI}"><else /><input type="hidden" name="so_pi[]" value="{$vo.CHINA_PI}"></eq>{$vo.balance_amount}</td>
+<td width="40px"><input type="radio" name="is_declare{$i}" checked="checked" value="是" /> 是<input type="radio" name="is_declare{$i}" value="否" /> 否</td>
+<td><input type="hidden" name="contract_cust[]" value="{$vo.cust_name}" id="cust" />{$vo.cust_name}</td>
+<td><input type="text" name="lz_cust[]" /></td><td><input type="text" name="connect_cust[]" id="cust" /></td><td><input type="text" name="debit[]" /></td>
+<td><input type="text" name="rem[]" value="{$vo.rem}" /></td>
+</tr>
+</volist>
+</tbody>
+</table>
+输入总金额:<font id="js_amount"></font>剩余金额:<font id="balance_amount"></font>
+<br />
+<input type="submit" value="认领" />&nbsp;<a href="{$url_back}">返回</a>
+</form>
+
+<br />	
+
+<br />	
+填写的到账金额可自行拆分,总和必须等于总到账金额
+<br />	
+预收款的话备注填写预计出口日期
+<br />	
+原则上要求签约客户名称和开票客户名称必须要一致。				
+<br />																							
+<b>如果银行汇款人和与公司开票客户名称不一致，请提供委托付款函</b>														
+<br />	<br />	
+签约客户名称----与”公司”签合同的客户名称
+<br />	
+开票客户名称---提供给夏露萍开发票的客户名称
+<br />	
+实际客户名称---业务员直接联系的客户名称
+
+<br />	
+罚款扣款情况和金额---填写详细,并提供邮件、证明材料给财务陆丽燕
+<br />	
+收汇情况的备注---注明该笔款项的具体明细，例如**订单的*%的定金，或尾款等情况
+	
+<br />										
+</block>

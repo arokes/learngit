@@ -1,0 +1,16 @@
+<extend name="/base" />
+<block name="main">
+<h3>查看建议</h3>
+<table id='table-4'>
+
+<thead>
+<th style="width:100px">标题</th><th style="width:400px">内容</th><th>回复</th>
+</thead>
+<volist name="list" id="vo_1">
+<tbody>
+<tr><td style="width:100px">{$vo_1.title}</td><td style="width:400px">{$vo_1.text}</td><td>{$vo_1.answer}</td></tr>
+</tbody>
+</volist>
+</table>
+
+</block>

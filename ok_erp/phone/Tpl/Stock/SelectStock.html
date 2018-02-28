@@ -1,0 +1,30 @@
+<extend name="/base" />
+<block name="title"><title>{$title}</title></block>
+<block name="once_script">
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#selectstock").click(function(){
+			$("#stock").html("正在查询中，请稍后...");
+			url=$(this).attr('url');
+			batno_txt=$("#batno").val();
+			parameter_txt=$("#parameter").val();
+			mark_txt=$("#mark").val();
+			company_txt=$("#company").val();
+			$.post(url,{batno:batno_txt,parameter:parameter_txt,mark:mark_txt,company:company_txt},function(result){
+				$("#stock").html(result);
+			});
+		});
+	});
+</script>
+</block>
+<block name="main">
+<center>
+<form>
+请输入批号:<input type="text" name="batno" id="batno" /><br />
+请输入参数:<input type="text" name="parameter" id="parameter" /><br />
+请输入特征:<input type="text" name="mark" id="mark" /><br />
+<input type="button" value="查询" id="selectstock" url="SelectStockResult" />
+</form>
+<div id="stock"></div>
+</center>
+</block>

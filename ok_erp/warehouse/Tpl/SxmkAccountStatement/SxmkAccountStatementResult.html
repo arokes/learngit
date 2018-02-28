@@ -1,0 +1,14 @@
+<extend name="/sxmk_base" />
+<block name="main">
+<table id="table-5">
+<thead>
+<th>客户名称</th><th>日期</th><th>单号</th><th>单据种类</th><th>品名</th><th>单位</th><th>单价</th><th>数量</th><th>本位币</th><th>收款金额</th><th>未冲结余</th>
+</thead>
+<tbody>
+<volist name="list_account" id="vo">
+<tr><td>{$vo.name|iconv='GBK','utf-8',###}</td><td>{$vo.ps_dd}</td><td>{$vo.ps_no|iconv='GBK','utf-8',###}</td><td>{$vo.ps_id|iconv='GBK','utf-8',###}</td><td>{$vo.prd_name|iconv='GBK','utf-8',###}</td><td>{$vo.ut|iconv='GBK','utf-8',###}</td><td>{$vo.up}</td><td>{$vo.qty}</td><td>{$vo.amt}</td><td>{$vo.amtn_bc}</td><td>{$vo.init}</td>
+</tr>
+</volist>
+</tbody>
+</table>
+</block>

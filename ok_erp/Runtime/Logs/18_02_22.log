@@ -1,0 +1,8 @@
+[ 2018-02-22T02:46:41+08:00 ] 176.193.124.174 /ok_erp/index.php/BillingData/UploadBillingDataSelectResult/sale_name/%E5%91%A8%E5%BC%BA/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004269s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+

@@ -1,0 +1,24 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>基础资料设定</h3>
+</center>
+<div id="center" class="column">
+<div class="bill_box_name">
+<volist name="company" id="voc">
+{$voc.company_name}<br />
+</volist>
+<form method="post" action="__URL__/AddCompany">
+<input type="text" name="company_name" />
+<input type="text" name="company_snm" />
+<input type="submit" value="添加" />
+</form>
+</div>
+<div class="bill_box_linkid">
+<volist name="company" id="voc">
+<a href="DeleteCompany?company_id={$voc.company_id}">删除</a><br />
+</volist>
+</div>
+</div>
+</block>
+<block name="left"><div id="left" class="column">123123123asdasd</div></block>

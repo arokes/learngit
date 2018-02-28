@@ -1,0 +1,51 @@
+<extend name="/base" />
+<block name="main">
+<h3>发货单明细</h3>
+<table id="table-4">
+
+<thead>
+<th>进仓编号</th><th>发货单位</th><th>合同编号</th><th> 外箱整唛</th>
+</thead>
+<tbody><tr><td>{$shipment_data.warehouse_no}</td><td>{$shipment_data.company_name}</td><td>{$shipment_data.bat_no}</td>
+<td rowspan="5"><img src="../Public/upload/{$shipment_data.box_mark_savename}" ></td>
+</tr> 
+<th>发货时间</th><th>出货地点</th><th>跟单员</th>
+<tr><td>{$shipment_data.send_time}</td><td>{$shipment_data.send_add}</td><td>{$shipment_data.sale_name}</td></tr>
+<th>到货地址</th><th>进仓单</th><th>备注</th>
+<tr><td>{$shipment_data.arrive_add}</td><td><a href="DownloadFile?filename={$shipment_data.warehouse_file_savename}&showname={$shipment_data.warehouse_no}">{$shipment_data.warehouse_no}.doc</a></td><td>{$shipment_data.rem}</td>
+</tbody>
+</table>
+
+<empty name="ship_detail_data" ><eq name="shipment_data.up_id" value="F">
+<a href="AddSendDetail?shipment_id={$shipment_data.shipment_id}">添加发货清单</a>&nbsp;<a href="ModifyShipment?shipment_id={$shipment_data.shipment_id}">修改发货单</a>&nbsp;
+<a href="" class="delete_shipment" url="DeleteShipment" data="{$shipment_data.shipment_id}">删除发货单</a><br />
+</eq><else />
+<table id="table-6">
+<thead>
+<th>合同号</th><th>品号</th><th width="200px">品名</th><th>唛头&号数</th><th>库存数量</th><th>发货数量</th><th>装箱规格</th><th>箱数</th><th>重量(KG)</th><th>体积(m³)</th><th id="date">生产厂商</th><th>备注</th>
+</thead>
+<tbody>
+<volist name="ship_detail_data" id="vo_detail">
+<tr><td>{$vo_detail.bat_no}</td>
+<td>{$vo_detail.prd_no}</td>
+<td width="200px">{$vo_detail.prd_name}</td>
+<td>{$vo_detail.mark_no}</td>
+<td>{$vo_detail.stock}</td>
+<td>{$vo_detail.send_qty}</td>
+<td>{$vo_detail.packing_spc}</td>
+<td>{$vo_detail.packing_qty}</td>
+<td>{$vo_detail.package_weight}</td>
+<td>{$vo_detail.package_volume}</td>
+<td>{$vo_detail.factory}</td>
+<td>{$vo_detail.rem}</td></tr>
+</volist>
+<tr><td>合计</td><td></td><td></td><td></td><td></td><td>{$shipment_data.totle_qty}</td><td></td><td>{$shipment_data.totle_packing_qty}</td>
+<td>{$shipment_data.totle_weight}</td>
+<td>{$shipment_data.totle_volume}</td></tr>
+</tbody>
+</table>
+<eq name="shipment_data.up_id" value="F">
+<a href="AddSendDetail?shipment_id={$shipment_data.shipment_id}">继续添加发货清单</a>&nbsp;<a href="ModifySendDetail?shipment_id={$shipment_data.shipment_id}">修改发货明细单</a><br />
+<button class="Send_Up" url="SendUp" data="{$shipment_data.shipment_id}">提交</button><br /> </eq>
+</empty>
+</block>

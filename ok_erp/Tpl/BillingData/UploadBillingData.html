@@ -1,0 +1,32 @@
+<extend name="/base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.upload').click(function(){
+		 $(this).attr({"disabled":"disabled"});
+		 $('#show').html("正在上传中...");
+		 document.form1.submit();
+	});
+});
+</script>
+</block>
+
+<block name="main">
+<h3>上传开票资料</h3>
+<form method="POST" action="UploadBillingDataResult" enctype="multipart/form-data" name="form1" id="contact-form">
+<label>合同协议号:*</label>
+<input type="text" placeholder="合同协议号中的符号是-的仍是用-,符号是其他的改用--代替" name="contract_no" />
+<label>业务员名字:*</label><input type="text" name="sale_name" value="{$Think.session.name}" readonly>
+<label>报关公司名:*</label><select name="company_name"><option value="绍兴美科进出口">绍兴美科进出口</option><option value="景德镇欧科">景德镇欧科</option><option value="上虞欧科">上虞欧科</option></select>
+<label>预录入单:</label><input type="file" name="prerecorded_file"/>
+<label>内销合同:</label><input type="file" name="contract_file" />
+因开票需要客户地址电话，请在上传前确认<p><b style="color:red">清关资料中的地址电话和PI上一致</b></p>
+<label>清关资料:</label><input type="file" name="clearance_file"/>
+<label>发货清单:</label><input type="file" name="sendgoods_file" />
+<input type="submit" value="上传" class="upload" id="submit-button" />
+<p></p>
+<div id="show"></div>
+</form>
+
+
+</block>

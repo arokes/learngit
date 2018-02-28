@@ -1,0 +1,543 @@
+[ 2017-12-31T13:54:55+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001076s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000919s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031147s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000605s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000628s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000463s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002605s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000828s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2017-12-31T13:55:03+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStock
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012390s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000353s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000345s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001551s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-12-31T13:55:11+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.046921s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%cv171102%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.065079s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%cv171102%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.109796s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%cv171102%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.036094s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019232s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000358s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001570s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-12-31T13:55:19+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockDetailResult?bat_no=CV171102&prd_no=1C2000202023&prd_mark=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001775s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%CV171102%') and prd_no like '%1C2000202023%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.122463s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%CV171102%') and prd_no like '%1C2000202023%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.034709s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%CV171102%') and prd_no like '%1C2000202023%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.015779s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013046s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000360s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001562s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000597s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2017-12-31T14:26:31+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001752s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%fu171010%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.068869s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%fu171010%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.098093s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%fu171010%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.035669s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013511s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000595s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000585s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002505s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000840s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2017-12-31T15:56:07+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001068s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.039245s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%Ae161019%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.089560s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%Ae161019%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.109088s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%Ae161019%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.035901s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013498s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000593s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002526s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000847s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2017-12-31T16:01:16+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockDetailResult?bat_no=AE161019&prd_no=853950000000&prd_mark=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001074s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.037616s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%853950000000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.059456s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%853950000000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.030820s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%853950000000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.016388s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: stock C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php ç¬¬ 103 è¡Œ.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014251s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000598s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000597s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000468s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002545s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000856s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-12-31T16:01:28+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockDetailResult?bat_no=AE161019&prd_no=1150005410011000&prd_mark=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001740s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%1150005410011000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.042749s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%1150005410011000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.033254s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%1150005410011000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.015684s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: stock C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php ç¬¬ 103 è¡Œ.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012931s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000364s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000355s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001579s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2017-12-31T16:03:00+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001590s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%Ae161019%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.039524s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%Ae161019%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.040702s ]
+SQL: select bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='PB' then isnull(-qty,0) end) pc,sum(case when ps_id='SA' then isnull(qty,0) when ps_id='SB' then isnull(-qty,0) end) sa,sum(case when ps_id='PC' then isnull(qty,0) when ps_id='SA' then isnull(-qty,0) when ps_id='PB' then isnull(-qty,0) when ps_id='SB' then isnull(qty,0) else 0 end) stock from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%Ae161019%') and upper(prd_mark) like upper('%%') and upper(prd_name) like upper('%%')group by bat_no,prd_no,prd_name,prd_mark order by bat_no,prd_mark,prd_no [ RunTime:0.015138s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012420s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000357s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000354s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001578s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000612s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2017-12-31T16:03:02+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/SendGoods/SelectStockDetailResult?bat_no=AE161019&prd_no=1150005410011000&prd_mark=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001559s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%1150005410011000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.031048s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%1150005410011000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.024193s ]
+SQL: select case when ps_id='SA' then 'ÏúÊÛ³ö¿â' when ps_id='SB' then 'ÏúÊÛÍË»Ø' when ps_id='PC' then '²É¹ºÈë¿â' when ps_id='PB' then '²É¹ºÍË»Ø' end ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('%AE161019%') and prd_no like '%1150005410011000%' and prd_mark like '' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.005767s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: stock C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php ç¬¬ 103 è¡Œ.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013049s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000362s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000371s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000626s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2017-12-31T18:57:17+08:00 ] 218.205.55.175 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000942s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016255s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000593s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000669s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000467s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002615s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000834s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2017-12-31T19:01:51+08:00 ] 60.55.12.16 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001047s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000837s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000230s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011016s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000586s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000582s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000453s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002492s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000825s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2017-12-31T19:01:57+08:00 ] 60.55.12.16 /ok_erp/finance_index.php/CheckWarehouseAccount/FindMekaMM
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027630s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000601s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000593s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000457s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002523s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2017-12-31T19:02:17+08:00 ] 60.55.12.16 /ok_erp/finance_index.php/CheckWarehouseAccount/FindMekaMMResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_mm' [ RunTime:0.038879s ]
+SQL: select a.bat_no,a.prd_no,b.name,cast(sum(a.qty) as numeric(13,2)) qty from DB_MK15.DBO.tf_mm a,DB_MK15.DBO.prdt b where a.prd_no = b.prd_no and upper(a.bat_no) like upper('%PO5146%') and a.mm_dd>='2016-12-31' and a.mm_dd<='2017-12-31' and a.prd_no like '1%' group by a.bat_no,a.prd_no,b.name order by a.bat_no,a.prd_no [ RunTime:0.175940s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021018s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000364s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001567s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2017-12-31T19:02:20+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001064s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-12-31T19:02:24+08:00 ] 60.55.12.16 /ok_erp/finance_index.php/CheckWarehouseAccount/FindWarehouseAccountSum?bat_no=PO5146-TW&prd_no=195370208832
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_mm' [ RunTime:0.001295s ]
+SQL: select a.bat_no,a.prd_no,b.name,cast(sum(a.qty) as numeric(13,2)) qty from DB_MK15.DBO.tf_mm a,DB_MK15.DBO.prdt b where a.prd_no = b.prd_no and a.prd_no like '195370208832' and a.bat_no like '%PO5146-TW%' group by a.bat_no,a.prd_no,b.name order by a.bat_no,a.prd_no [ RunTime:0.010110s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001993s ]
+SQL: select a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,cast(sum(case when a.ps_id = 'PC' then a.qty else -a.qty end) as numeric(13,2)) qty from DB_MKJC.dbo.tf_pss a,DB_MKJC.dbo.mf_pss b where a.ps_no = b.ps_no and upper(a.bat_no) like upper('%PO5146%')  and (a.ps_id= 'PC' or a.ps_id = 'PB')  group by a.bat_no,a.prd_no,a.prd_name,a.wh,a.prd_mark order by a.bat_no,a.prd_no  [ RunTime:0.127936s ]
+SQL: select a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,cast(sum(case when a.ps_id = 'PC' then a.qty else -a.qty end) as numeric(13,2)) qty from DB_JXOK.dbo.tf_pss a,DB_JXOK.dbo.mf_pss b where a.ps_no = b.ps_no and upper(a.bat_no) like upper('%PO5146%')  and (a.ps_id= 'PC' or a.ps_id = 'PB')  group by a.bat_no,a.prd_no,a.prd_name,a.wh,a.prd_mark order by a.bat_no,a.prd_no  [ RunTime:0.042547s ]
+SQL: select a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,cast(sum(case when a.ps_id = 'PC' then a.qty else -a.qty end) as numeric(13,2)) qty from DB_OK01.dbo.tf_pss a,DB_OK01.dbo.mf_pss b where a.ps_no = b.ps_no and upper(a.bat_no) like upper('%PO5146%')  and (a.ps_id= 'PC' or a.ps_id = 'PB')  group by a.bat_no,a.prd_no,a.prd_name,a.wh,a.prd_mark order by a.bat_no,a.prd_no  [ RunTime:0.060132s ]
+SQL: select a.os_no bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,cast(sum(case when a.ps_id = 'PC' then a.qty else -a.qty end) as numeric(13,2)) qty from DB_SXMK.dbo.tf_pss a,DB_SXMK.dbo.mf_pss b where a.ps_no = b.ps_no and upper(a.os_no) like upper('%PO5146%') and (a.ps_id= 'PC' or a.ps_id = 'PB')  group by a.os_no,a.prd_no,a.prd_name,a.wh,a.prd_mark order by a.os_no,a.prd_no  [ RunTime:0.055199s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+NOTIC: [8] Undefined index:  name C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\a065f53a2802860b1f4bdfeacb96fc3f.php ç¬¬ 122 è¡Œ.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015459s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000405s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001737s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-12-31T19:02:25+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/CheckWarehouseAccount/FindMekaMM
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-12-31T19:02:28+08:00 ] 101.199.108.57 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-12-31T19:02:40+08:00 ] 60.55.12.16 /ok_erp/finance_index.php/CheckWarehouseAccount/FindWarehouseAccountDetail?mk_bat_no=PO5146-TW&mk_prd_no=195370208832&mk_qty=30000.00&sale_bat_no=PO5146&sale_prd_no=195370208812&sale_prd_mark=%20&sale_qty=77250.00&company=ç»å…´ç¾ç§‘è¿›å‡ºå£
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_mm' [ RunTime:0.001230s ]
+SQL: select a.mm_no,a.bat_no,a.prd_no,b.name,convert(varchar,a.mm_dd,023) mm_dd,convert(varchar,a.eff_dd,023) eff_dd,cast(a.qty as numeric(13,2)) qty from DB_MK15.DBO.tf_mm a,DB_MK15.DBO.prdt b where a.prd_no = b.prd_no and a.prd_no like '195370208832' and upper(a.bat_no) like ('%PO5146-TW%') order by a.mm_no,a.mm_dd,a.qty  [ RunTime:0.011097s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001833s ]
+SQL: select a.ps_no,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,convert(varchar,a.ps_dd,023) ps_dd,cast((case when a.ps_id = 'PC' then a.qty else -a.qty end) as numeric(13,2)) qty,c.name from DB_MKJC.dbo.tf_pss a,DB_MKJC.dbo.mf_pss b,TbrSystem.dbo.pswd c where a.ps_no = b.ps_no and a.bat_no like '%PO5146' and a.prd_no like '195370208812' and a.prd_mark like '' and (a.ps_id= 'PC' or a.ps_id = 'PB') and b.usr=c.usr and c.compno ='MKJC' order by a.ps_no,a.ps_dd,a.qty  [ RunTime:0.023922s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042392s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000577s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000584s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002525s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2017-12-31T19:02:40+08:00 ] 60.55.12.16 /ok_erp/finance_index.php/CheckWarehouseAccount/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000813s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+ERR: éæ³•æ“ä½œ:index
+
+[ 2017-12-31T19:03:07+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/CheckWarehouseAccount/FindMekaMMResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2017-12-31T19:03:17+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/CheckWarehouseAccount/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2017-12-31T19:03:29+08:00 ] 220.181.132.193 /ok_erp/finance_index.php/CheckWarehouseAccount/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-12-31T19:03:34+08:00 ] 0.0.0.0 /ok_erp/finance_index.php/CheckWarehouseAccount/FindMekaMM
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php ç¬¬ 734 è¡Œ.
+
+[ 2017-12-31T19:03:46+08:00 ] 0.0.0.0 /ok_erp/finance_index.php/CheckWarehouseAccount/FindMekaMMResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000818s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] Undefined offset:  0 C:\xampp\htdocs\thinkphp\Common\functions.php ç¬¬ 734 è¡Œ.
+

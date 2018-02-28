@@ -1,0 +1,9 @@
+<extend name="/sxmk_base" />
+<block name="main">
+<h3>查询库存</h3>
+<from action="" mothed="post">
+品名:<input type="text" name="prd_name" id="prd_name" onkeydown="if(event.keyCode==13) document.getElementById('select_storage').click();" ><br /><br />
+<input type="button" value="查询" url="SxmkStorageResult"  id="select_storage" />
+</from>
+<div id="storage"></div>
+</block>

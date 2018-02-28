@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'company_id', 1 => 'company_name', 2 => 'company_snm', 3 => 'send_out', '_autoinc' => true, '_pk' => 'company_id', '_type' => array ( 'company_id' => 'int(11)', 'company_name' => 'varchar(50)', 'company_snm' => 'varchar(4)', 'send_out' => 'varchar(1)', ), );?>

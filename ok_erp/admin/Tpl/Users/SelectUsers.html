@@ -1,0 +1,12 @@
+<extend name="/admin_base" />
+<block name="main">
+
+<h4>查询用户列表</h4>
+<center>
+<form action="SelectUsersResult" method="post">
+查询方式:<select name="selectmode" style="width:170px"><option value="user_name">用户名</option><option value="name">姓名</option><option value="user_group">用户组</option></select><br />
+查询参数:<input type="text" name="parameter" style="width:170px" /><br /><br />
+<input type="submit" value="查询">
+</form>
+</center>
+</block>

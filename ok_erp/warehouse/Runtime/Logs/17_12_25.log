@@ -1,0 +1,129 @@
+[ 2017-12-25T11:45:38+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: user_group C:\xampp\htdocs\ok_erp\warehouse\Runtime\Cache\2cd203163eeea819b6acc494662793b7.php 第 61 行.
+NOTIC: [8] Undefined index:  user_level C:\xampp\htdocs\ok_erp\warehouse\Runtime\Cache\2cd203163eeea819b6acc494662793b7.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000586s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000624s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000713s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002920s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000862s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2017-12-25T11:46:34+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorageResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001182s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: select a.prd_no,b.name,cast(a.qty as numeric(13,0)) qty,cast(a.qty_on_way as numeric(13,0)) qty_on_way from prdt1 a,prdt b where a.prd_no = b.prd_no and (a.wh='51' or a.wh='53') and upper(b.name) like upper('%8801%')  [ RunTime:0.021026s ]
+
+[ 2017-12-25T11:46:37+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorageResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: select a.prd_no,b.name,cast(a.qty as numeric(13,0)) qty,cast(a.qty_on_way as numeric(13,0)) qty_on_way from prdt1 a,prdt b where a.prd_no = b.prd_no and (a.wh='51' or a.wh='53') and upper(b.name) like upper('%8801%')  [ RunTime:0.003668s ]
+
+[ 2017-12-25T11:46:44+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorageResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: select a.prd_no,b.name,cast(a.qty as numeric(13,0)) qty,cast(a.qty_on_way as numeric(13,0)) qty_on_way from prdt1 a,prdt b where a.prd_no = b.prd_no and (a.wh='51' or a.wh='53') and upper(b.name) like upper('%8801%')  [ RunTime:0.003642s ]
+
+[ 2017-12-25T11:48:59+08:00 ] 101.226.65.107 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001069s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: user_group C:\xampp\htdocs\ok_erp\warehouse\Runtime\Cache\2cd203163eeea819b6acc494662793b7.php 第 61 行.
+NOTIC: [8] Undefined index:  user_level C:\xampp\htdocs\ok_erp\warehouse\Runtime\Cache\2cd203163eeea819b6acc494662793b7.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009591s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000578s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000575s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000452s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002471s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000820s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2017-12-25T11:48:59+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorageResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: select a.prd_no,b.name,cast(a.qty as numeric(13,0)) qty,cast(a.qty_on_way as numeric(13,0)) qty_on_way from prdt1 a,prdt b where a.prd_no = b.prd_no and (a.wh='51' or a.wh='53') and upper(b.name) like upper('%8801%')  [ RunTime:0.003641s ]
+
+[ 2017-12-25T11:49:01+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000818s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: user_group C:\xampp\htdocs\ok_erp\warehouse\Runtime\Cache\2cd203163eeea819b6acc494662793b7.php 第 61 行.
+NOTIC: [8] Undefined index:  user_level C:\xampp\htdocs\ok_erp\warehouse\Runtime\Cache\2cd203163eeea819b6acc494662793b7.php 第 67 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009662s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000580s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000576s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000451s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002470s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000822s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2017-12-25T11:49:17+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorageResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: select a.prd_no,b.name,cast(a.qty as numeric(13,0)) qty,cast(a.qty_on_way as numeric(13,0)) qty_on_way from prdt1 a,prdt b where a.prd_no = b.prd_no and (a.wh='51' or a.wh='53') and upper(b.name) like upper('%8801/5%')  [ RunTime:0.019476s ]
+
+[ 2017-12-25T11:49:18+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorageResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: select a.prd_no,b.name,cast(a.qty as numeric(13,0)) qty,cast(a.qty_on_way as numeric(13,0)) qty_on_way from prdt1 a,prdt b where a.prd_no = b.prd_no and (a.wh='51' or a.wh='53') and upper(b.name) like upper('%8801/5%')  [ RunTime:0.002698s ]
+
+[ 2017-12-25T11:49:19+08:00 ] 180.142.30.175 /ok_erp/warehouse_index.php/SxmkStorage/SxmkStorageResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: select a.prd_no,b.name,cast(a.qty as numeric(13,0)) qty,cast(a.qty_on_way as numeric(13,0)) qty_on_way from prdt1 a,prdt b where a.prd_no = b.prd_no and (a.wh='51' or a.wh='53') and upper(b.name) like upper('%8801/5%')  [ RunTime:0.002663s ]
+

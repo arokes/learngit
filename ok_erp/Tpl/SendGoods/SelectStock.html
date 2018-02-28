@@ -1,0 +1,27 @@
+<extend name="/base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.select').click(function(){
+		 $(this).attr({"disabled":"disabled"});
+		 $('#show').html("正在查询中...");
+		 document.form1.submit();
+	});
+});
+</script>
+</block>
+<block name="main">
+<h3>查询天思ERP系统库存</h3>
+
+<form action="SelectStockResult" name="form1" method="post" id="contact-form" >
+<label>批号:</label>
+<input type="text" name="bat_no" id="bat_no" />
+<label>参数:</label>
+<input type="text" placeholder="参数例:A60 E27 10W 2700 " name="parameter" id="parameter">
+<label>货号:</label>
+<input type="text" placeholder="货号或客户编号" name="prd_mark" id="prd_mark">
+<input type="submit" class="select" value="查询" url="SelectStockResult" />
+</form>
+<div id="show"></div>
+<br />
+</block> 

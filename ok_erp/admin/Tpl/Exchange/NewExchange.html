@@ -1,0 +1,50 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>新增汇款</h3>
+</center>
+<div class="newexchangebig">
+<div class="newexchange">
+<form method="post" action="__URL__/NewExchangeResult">
+<div class="bill_box_font">
+销售方式:<br />
+公司:<br />
+银行:<br />
+到款日期:<br />
+汇款人:<br />
+汇款国家:<br />
+币别:<br />
+到账金额:<br />
+
+</div>
+<div class="bill_box_input">
+<select name="foreign_trade"  style="font-size:16px">
+<option value="外销" >------外销------</option>
+<option value="内销" >------内销------</option>
+</select>
+
+<select name="company_id" style="font-size:16px">
+<volist name="company" id="voc" >
+<option value="{$voc.company_id}" >{$voc.company_name}</option>
+</volist>
+</select>
+
+<select name="bank_id" style="font-size:16px">
+<volist name="bank" id="vob">
+<option value="{$vob.bank_id}" >{$vob.bank_name}</option>
+</volist>
+</select>
+
+<input type="text" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" name="pay_dd" onClick="laydate()" style="font-size:16px" /><br />
+<input type="text" name="bank_cust"style="font-size:16px" /><br />
+<input type="text" name="country" style="font-size:16px"/>
+<select name="CUR_ID" style="font-size:16px" ><option value="USD">------USD------</option><option value="RMB">------RMB------</option></select>
+<input type="text" name="amount" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9.]+/,'');}).call(this)" onblur="this.v();"  style="font-size:16px"/><br />
+</div>
+
+<center>
+<input type="submit" value="新增" /></center>
+</form>
+</div>
+</div>
+</block>

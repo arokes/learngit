@@ -1,0 +1,18 @@
+<extend name="/base" />
+<block name="main">
+<h3>修改订单发货单</h3>
+<form action="ModifyShipmentResult" method="post" enctype="multipart/form-data" >
+<input type="hidden" name="shipment_id" value="{$shipment_data.shipment_id}" >
+进仓编号:<input type="text" name="warehouse_no" value="{$shipment_data.warehouse_no}" /><br />
+发货单位:<select name="company_name"><volist name="company_data" id="vo_com" ><option value="{$vo_com.company_name}" <eq name="shipment_data.company_name" value="$vo_com.company_name">selected="selected"</eq>>{$vo_com.company_name}</option></volist></select><br />
+合同编号:<input type="text" name="bat_no" value="{$shipment_data.bat_no}" /><br />
+发货时间:<input type="text" name="send_time" value="{$shipment_data.send_time}" /><br />
+出货地点:<input type="text" name="send_add" value="{$shipment_data.send_add}" /><br />
+跟单员  :<input type="text" name="sale_name" value="{$shipment_data.sale_name}" /><br />
+外箱正唛:<input type="file" name="box_mark" value="{$shipment_data.box_mark}" /><br />
+到货地址<input type="text" name="arrive_add" value="{$shipment_data.arrive_add}"><br />
+进仓单:<input type="file" name="warehouse_file" value="{$shipment_data.warehouse_file}" /><br />
+备注:<input type="text" name="rem" value="{$shipment_data.rem}" /><br />
+<input type="submit" value="保存,并添加发货明细" />
+</form>
+</block> 

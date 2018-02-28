@@ -1,0 +1,34 @@
+<extend name="/admin_base" />
+<block name="index_script"></block>
+<block name="menu"></block>
+<block name="main">
+<center>
+<input type="hidden" name="id" value="{$billingcompany_data.id}">
+<table id="table-4">
+<thead>
+<font>请核对公司信息</font>
+<th>购方公司名称</th><th>购方银行帐号</th><th>复核人</th>
+</thead>
+<tbody>
+<tr><td>{$billingcompany_data.Gfmc}</td><td>{$billingcompany_data.Gfyhzh}</td><td>{$billingcompany_data.Fhr}</td></tr>
+</tbody>
+<thead>
+<th>购方公司税号</th><th>购方地址电话</th><th>收款人</th><th>备注</th>
+</thead>
+<tbody>
+<tr><td>{$billingcompany_data.Gfsh}</td><td>{$billingcompany_data.Gfdzdh}</td><td>{$billingcompany_data.Skr}</td><td>{$billingcompany_data.Bz}</td></tr>
+</tbody>
+</table>
+<br />
+<p>请使用xls,xlsx文件格式上传开票清单</p>
+<p>↓</p>
+<table id="table-4">
+<thead>
+<th>名称</th><th>型号</th><th>单位</th><th>数量</th><th>单价(含税)</th><th>金额(含税)</th><th>税率</th><th>商品编码</th>
+<tbody>
+<tr><td>LED灯</td><td>*600*600 48W 白光</td><td>套</td><td>10</td><td>62</td><td>620</td><td>0.17</td><td>109042401</td></tr>
+</tbody>
+</table>
+</center>
+</block>
+<block name="footer"></block>

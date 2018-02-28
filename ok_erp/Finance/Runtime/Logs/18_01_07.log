@@ -1,0 +1,48 @@
+[ 2018-01-07T01:30:32+08:00 ] 106.120.160.109 /ok_erp/finance_index.php/Claim/selectClaimResult/company_id/%25/date_min/2017-12-05/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2018-01-07T04:30:27+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/BillingData/BillingDataSelect
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001053s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2018-01-07T07:56:15+08:00 ] 101.199.108.56 /ok_erp/finance_index.php/Claim/selectClaimResult/company_id/%25/date_min/2017-12-05/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001054s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-01-07T10:50:46+08:00 ] 101.199.112.53 /ok_erp/finance_index.php/BillingData/BillingDataSelect
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+
+[ 2018-01-07T11:10:23+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=686
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+
+[ 2018-01-07T18:20:06+08:00 ] 220.181.132.194 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=686
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+

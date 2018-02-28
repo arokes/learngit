@@ -1,0 +1,261 @@
+[ 2018-02-15T13:41:44+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004491s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004585s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.057888s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.039259s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.053916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000749s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000799s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000569s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003112s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000942s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2018-02-15T13:43:09+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/claimDetail?id=1510
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1510 )  [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.041991s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.003171s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022483s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000350s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000219s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001578s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000586s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-02-15T13:43:17+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1510 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001036s ]
+SQL: select a.sal_name,a.so_id,a.so_no,a.cust_name,a.country,a.CUR_ID,a.HONGKONG_PI,a.CHINA_PI,a.receivable,a.rem,sum(ifnull(b.amount_apart,0)) as amount_apart,(a.receivable-sum(ifnull(b.amount_apart,0))-sum(ifnull(b.brokerage,0))) as balance_amount,sum(ifnull(b.brokerage,0)) as brokerage FROM account as a left join tf_exchange as b on a.so_id = b.so_id  where a.write_off = 'F' AND a.sal_name in ('相青青') group by a.sal_name,a.so_id,a.so_no,a.cust_name,a.country,a.CUR_ID,a.HONGKONG_PI,a.CHINA_PI,a.receivable,a.rem  ORDER BY a.so_no [ RunTime:0.065612s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024836s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000436s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001676s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2018-02-15T13:44:05+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1510 ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001031s ]
+SQL: select a.so_id,a.so_no,a.cust_name,a.CUR_ID,a.CHINA_PI,a.HONGKONG_PI,a.rem,(a.receivable-sum(ifnull(b.amount_apart,0))) as balance_amount FROM account as a left join tf_exchange as b on a.so_id = b.so_id  where a.write_off = 'F' AND a.so_id IN (0,1049,1050,1051,1052) group by a.so_id,a.so_no,a.cust_name,a.CUR_ID,a.CHINA_PI,a.HONGKONG_PI,a.rem  ORDER BY a.so_no [ RunTime:0.001317s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000656s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000591s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002582s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2018-02-15T13:46:22+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/claimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.000874s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( `id` = 1510 ) LIMIT 1   [ RunTime:0.008146s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'FR171110' )  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'FR171116' )  [ RunTime:0.000318s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'FR171124' )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'FR171205' )  [ RunTime:0.000308s ]
+SQL: INSERT INTO `tf_exchange` (`id`,`itm`,`CUR_ID`,`amount_apart`,`brokerage`,`so_id`,`so_no`,`so_pi`,`is_declare`,`contract_cust`,`lz_cust`,`connect_cust`,`debit`,`rem`,`record_dd`) VALUES (1510,1,'EUR','5340.85','',1049,'FR171110','53678.60','是','OOO LAZURIT-ALYANS','OOO LAZURIT-ALYANS','FERON俄罗斯','','','2018-02-15 13:46:22'),(1510,2,'EUR','27041.67','',1050,'FR171116','32450.00','是','OOO LAZURIT-ALYANS','OOO LAZURIT-ALYANS','FERON俄罗斯','','','2018-02-15 13:46:22'),(1510,3,'EUR','24083.33','',1051,'FR171124','28900.00','是','OOO LAZURIT-ALYANS','OOO LAZURIT-ALYANS','FERON俄罗斯','','','2018-02-15 13:46:22'),(1510,4,'EUR','13552.15','',1052,'FR171205','155735.60','是','OOO LAZURIT-ALYANS','OOO LAZURIT-ALYANS','FERON俄罗斯','','','2018-02-15 13:46:22') [ RunTime:0.000478s ]
+SQL: UPDATE `mf_exchange` SET `getlz_name`='',`sal_name`='相青青',`CUR_ID`='EUR',`claim`=1,`change_dd`='2018-02-15 13:46:22' WHERE ( `id` = 1510 ) [ RunTime:0.004546s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016966s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000564s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000583s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000454s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002470s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000842s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2018-02-15T13:46:23+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001334s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004764s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011553s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000382s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000347s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001586s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000587s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-02-15T13:46:32+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/claimDetail?id=1560
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000830s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1560 )  [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001149s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.002263s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012172s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000372s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001575s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2018-02-15T13:46:47+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1560 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001040s ]
+SQL: select a.sal_name,a.so_id,a.so_no,a.cust_name,a.country,a.CUR_ID,a.HONGKONG_PI,a.CHINA_PI,a.receivable,a.rem,sum(ifnull(b.amount_apart,0)) as amount_apart,(a.receivable-sum(ifnull(b.amount_apart,0))-sum(ifnull(b.brokerage,0))) as balance_amount,sum(ifnull(b.brokerage,0)) as brokerage FROM account as a left join tf_exchange as b on a.so_id = b.so_id  where a.write_off = 'F' AND a.sal_name in ('相青青') group by a.sal_name,a.so_id,a.so_no,a.cust_name,a.country,a.CUR_ID,a.HONGKONG_PI,a.CHINA_PI,a.receivable,a.rem  ORDER BY a.so_no [ RunTime:0.004537s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013741s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000446s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000392s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001762s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000651s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-02-15T13:46:56+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1560 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001003s ]
+SQL: select a.so_id,a.so_no,a.cust_name,a.CUR_ID,a.CHINA_PI,a.HONGKONG_PI,a.rem,(a.receivable-sum(ifnull(b.amount_apart,0))) as balance_amount FROM account as a left join tf_exchange as b on a.so_id = b.so_id  where a.write_off = 'F' AND a.so_id IN (0,1052) group by a.so_id,a.so_no,a.cust_name,a.CUR_ID,a.CHINA_PI,a.HONGKONG_PI,a.rem  ORDER BY a.so_no [ RunTime:0.001147s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013946s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000384s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000586s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2018-02-15T13:47:13+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/claimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.000865s ]
+SQL: SELECT * FROM `tf_exchange` WHERE ( `id` = 1560 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SELECT * FROM `account` WHERE ( so_no like 'FR171205' )  [ RunTime:0.000288s ]
+SQL: INSERT INTO `tf_exchange` (`id`,`itm`,`CUR_ID`,`amount_apart`,`brokerage`,`so_id`,`so_no`,`so_pi`,`is_declare`,`contract_cust`,`lz_cust`,`connect_cust`,`debit`,`rem`,`record_dd`) VALUES (1560,1,'EUR','20500','',1052,'FR171205','155735.60','是','OOO LAZURIT-ALYANS','OOO LAZURIT-ALYANS','FERON俄罗斯','','','2018-02-15 13:47:13') [ RunTime:0.000316s ]
+SQL: UPDATE `mf_exchange` SET `getlz_name`='',`sal_name`='相青青',`CUR_ID`='EUR',`claim`=1,`change_dd`='2018-02-15 13:47:13' WHERE ( `id` = 1560 ) [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007148s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000315s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000343s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001640s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-02-15T13:47:14+08:00 ] 39.182.72.149 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001315s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004613s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011254s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000348s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001581s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000654s ]
+

@@ -1,0 +1,27 @@
+<extend name="/admin_base" />
+<block name="menu">
+</block>
+<block name="main">
+<center>
+<font>{$other['factory_name']}&nbsp;{$other['factory_lz_no']}&nbsp;&nbsp;&nbsp;对比&nbsp;&nbsp;&nbsp;{$other['company_name']}&nbsp;{$other['company_lz1_no']}</font><br />
+<br />
+<table id="table-2">
+<thead>
+<th>批号</th><th>品号</th><th>品名</th><th>编号</th><th>开票数量</th><th>开票金额</th><th>收票数量</th><th>收票金额</th>
+</thead>
+<php>$fc_sum_qty=0;$fc_sum_qmtn_net;$com_sum_qty;$com_sum_amtn_net;</php>
+<volist name="list_result" id="vo">
+<tbody>
+<tr><td >{$vo.bat_no|iconv="GBK","UTF-8",###}</td><td>{$vo.prd_no|iconv="GBK","UTF-8",###}</td><td>{$vo.prd_name|iconv="GBK","UTF-8",###}</td><td>{$vo.prd_mark|iconv="GBK","UTF-8",###}</td>
+	<td><php>$fc_sum_qty=$fc_sum_qty+$vo['fc_qty'];</php>{$vo.fc_qty}</td>
+	<td><php>$fc_sum_amtn_net=$fc_sum_amtn_net+$vo['fc_amtn_net'];</php>{$vo.fc_amtn_net}</td>
+	<td><php>$com_sum_qty=$com_sum_qty+$vo['com_qty'];</php>{$vo.com_qty}</td>
+	<td><php>$com_sum_amtn_net=$com_sum_amtn_net+$vo['com_amtn_net'];</php>{$vo.com_amtn_net}</td></tr>
+</tbody>
+
+</volist>
+<tr><td>合计</td><td></td><td></td><td></td><td>{$fc_sum_qty}</td><td>{$fc_sum_amtn_net}</td><td>{$com_sum_qty}</td><td>{$com_sum_amtn_net}</td></tr>
+</table>
+<br /><br />
+</center>
+</block> 

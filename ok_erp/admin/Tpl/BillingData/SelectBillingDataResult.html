@@ -1,0 +1,19 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>查询开票资料结果</h3>
+<table id="table-5">
+<thead><th width="220px">合同协议号</th><th>业务员</th><th>报关公司名</th><th>预录入单</th><th>内销合同</th><th>清关资料</th><th>发货清单</th><th>上传时间</th><th>修改时间</th><th>备注</th><th></th>
+</thead>
+<tbody>
+<volist name="list" id="vo">
+<tr><td width="220px">{$vo.contract_no}</td><td>{$vo.sale_name}</td><td>{$vo.company_name}</td><td><empty name="vo.prerecorded_file"><else /><a href="__URL__/DownloadBillingData?filename={$vo.prerecorded_file}&showname={$vo.contract_no}预录入单">预录入单</a></empty></td><td><empty name="vo.contract_file"><else /><a href="__URL__/DownloadBillingData?filename={$vo.contract_file}&showname={$vo.contract_no}内销合同">内销合同</a></empty></td><td><empty name="vo.clearance_file"><else /><a href="__URL__/DownloadBillingData?filename={$vo.clearance_file}&showname={$vo.contract_no}清关资料">清关资料</a></empty></td>
+<td><empty name="vo.sendgoods_file"><else /><a href="__URL__/DownloadBillingData?filename={$vo.sendgoods_file}&showname={$vo.contract_no}发货清单">发货清单</a></empty></td><td>{$vo.upload_date}</td><td>{$vo.change_date}</td><td>{$vo.rem}</td><td><button class="modify" url="__URL__/ModifyBillingData?id={$vo.ID}">修改</button></td>
+</tr>
+</volist>
+</tbody>
+</table>
+{$show}
+</center>
+
+</block> 

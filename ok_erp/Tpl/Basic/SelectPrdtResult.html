@@ -1,0 +1,25 @@
+<extend name="/base" />
+<block name="index_script"></block>
+<block name="menu"></block>
+<block name="main">
+<table id="table-4">
+<thead><th>成品代号</th><th width="250px">品名</th><th width="300px">规格</th><th>货品分类</th><th>货品分类名称</th>
+</thead>
+<tbody>
+<volist name="prdt_data" id="vo">
+<tr>
+<td>{$vo.prd_no}</td>
+<td width="250px">{$vo.prd_name|iconv="GBK","utf-8",###}</td>
+<td width="300px">{$vo.spc|iconv="GBK","utf-8",###}</td>
+<td>{$vo.obj_type}</td>
+<td>{$vo.obj_name|iconv="GBK","utf-8",###}</td>
+
+</tr>
+</volist>
+</tbody>
+</table>
+
+<br />
+
+</block> 
+<block name="footer"></block>

@@ -1,0 +1,24 @@
+<extend name="/base" />
+
+<block name="main">
+<empty name="sendgoods_data">没有需要核对的发出商品<else/>
+<h3>核对发出商品明细</h3>
+备注:已提交资料的请填合同协议号，不开的请填情况说明
+<table id="table-4">
+<thead>
+<th>公司名称</th><th>客户名称</th><th>批号</th><th width="200px">品名</th><th>客户编号</th><th>出库日期</th><th>出库数量</th><th >是否开票</th><th>备注</th>
+</thead>
+<tbody>
+<form method="POST" action="CheckSendGoodsDetailResult">
+<volist name="sendgoods_data" id="vo">
+<tr><input type="hidden" name="id[]" value="{$vo.id}"><td>{$vo.company_name}</td><td>{$vo.cust_name}</td><td>{$vo.so_no}</td><td width="200px">{$vo.prd_name}</td><td>{$vo.prd_mark}</td><td>{$vo.ps_dd}</td><td >{$vo.out_qty}</td><td ><select name="is_check[]"><option value="">======请选择======</option><option value="全开票已交资料">全开票已交资料</option><option value="全开票未交资料">全开票未交资料</option><option value="部分开已交资料">部分开已交资料</option><option value="部分开未交资料">部分开未交资料</option><option value="不开票">不开票</option><option value="以其它公司报关">以其它公司报关</option><option value="其它">其它</option></td><td><input type="text" name="rem[]"></td></tr>
+
+</volist>
+</tbody>
+</table>
+业务员名字:<input type="text" name="sale_name" /><br />
+<input type="submit" value="提交">&nbsp;<button onclick="javascript:history.back(-1);">返回</button>
+</form>
+</empty>
+</block>
+<block name="footer"></block>

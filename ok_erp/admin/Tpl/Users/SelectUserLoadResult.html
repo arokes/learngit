@@ -1,0 +1,19 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h4>查询用户登录列表结果</h4>
+<table id="table-4">
+<thead>
+<th>ID</th><th>用户姓名</th><th>用户账号</th><th>系统</th><th>浏览器</th><th>IP</th><th>地区</th><th>语言</th><th>登录时间</th>
+</thead>
+<tbody>
+<volist name="userload_result" id="vo">
+<tr><td>{$vo.id}</td><td>{$vo.name}</td><td>{$vo.user_name}</td><td>{$vo.user_os}</td><td>{$vo.user_browser}</td><td>{$vo.user_ip}</td><td>{$vo.user_area}</td>
+<td>{$vo.user_lang}</td><td>{$vo.load_date}</td>
+</tr>
+</volist>
+</tbody>
+</table>
+<div>{$show} <br /><button type="button" name="return" onclick="javascript:history.back(-1)">返回</button></div>
+</center>
+</block>

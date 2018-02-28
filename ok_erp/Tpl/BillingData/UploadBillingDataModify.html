@@ -1,0 +1,35 @@
+<extend name="/base" />
+<block name="main">
+
+
+<h3>修改已上传开票资料</h3>
+
+<form method="POST" action="UploadBillingDataModifyResult" enctype="multipart/form-data" id="contact-form">
+<input type="hidden" name="ID" value="{$billingdata_data.ID}" />
+<label>合同协议号:</label>
+<input type="text" name="contract_no" value="{$billingdata_data.contract_no}" />
+<label>业务员名字:</label>
+<input type="text" name="sale_name" value="{$billingdata_data.sale_name}" readonly />
+<label>报关公司名:</label>
+<select name="company_name">
+<option value="绍兴美科进出口" {$billingdata_data['company_name']=='绍兴美科进出口'?'selected="selected"':''} >绍兴美科进出口</option>
+<option value="景德镇欧科" {$billingdata_data['company_name']=='景德镇欧科'?'selected="selected"':''} >景德镇欧科</option>
+<option value="上虞欧科" {$billingdata_data['company_name']=='上虞欧科'?'selected="selected"':''} >上虞欧科</option>
+</select>
+<label>预录入单:</label>
+<input type="file" name="prerecorded_file"/>
+<label>内销合同:</label>
+<input type="file" name="contract_file"/>
+<label>清关资料:</label>
+<input type="file" name="clearance_file"  />
+<label>发货清单:</label>
+<input type="file" name="sendgoods_file"  />
+<label>填写备注:</label>
+<input type="text" name="rem" placeholder="填写修改过的内容" />
+<p>*只需要上传需要修改的文件*</p>
+<input type="submit" value="修改" id="submit-button" />
+<br />
+
+</form>
+
+</block> 

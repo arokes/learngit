@@ -1,0 +1,34 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>修改购方公司基础资料</h3>
+</center>
+<form method="POST" action="ModifyBillingCompanyBasicDetailResult" id="contact-form" >
+	<input type="hidden" name="id" value="{$listbillingcompany.id}" />
+<label>开票公司名称:</label>
+<select name="mekacompany">
+<volist name="company_data" id="vo">
+<option value="{$vo.company_name}" {$vo['company_name']==$listbillingcompany['mekacompany']?'selected=\"selected\"':''} >{$vo.company_name}</option>
+</volist>"
+</select>
+<label>购方公司名称:</label>
+<input type="text" name="Gfmc" value="{$listbillingcompany.Gfmc}" />
+<label>购方公司税号:</label>
+<input type="text" name="Gfsh" value="{$listbillingcompany.Gfsh}">
+<label>购方银行账号:</label>
+<input type="text" name="Gfyhzh" value="{$listbillingcompany.Gfyhzh}">
+<label>购方地址电话:</label>
+<input type="text" name="Gfdzdh" value="{$listbillingcompany.Gfdzdh}">
+<label>复核人:</label>
+<input type="text" name="Fhr" value="{$listbillingcompany.Fhr}">
+<label>收款人:</label>
+<input type="text" name="Skr" value="{$listbillingcompany.Skr}">
+<label>备注:</label>
+<input type="text" name="Bz" value="{$listbillingcompany.Bz}">
+<input type="submit" value="修改" id="submit-button">
+<p></p>
+</form>
+
+
+
+</block> 

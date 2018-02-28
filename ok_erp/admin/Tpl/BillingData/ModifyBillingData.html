@@ -1,0 +1,30 @@
+<extend name="/admin_base" />
+<block name="main">
+
+<h3>修改开票资料</h3>
+<form method="POST" action="ModifyBillingDataResult" id="contact-form" >
+<input type="hidden" name="id" value="{$listbillingdata.ID}" />
+<label>合同协议号:</label>
+<input type="text" name="contract_no" value="{$listbillingdata.contract_no}" />
+<label>公司名称:</label>
+<input type="text" name="company_name" value="{$listbillingdata.company_name}" />
+<label>业务员名字:</label>
+<input type="text" name="sale_name" value="{$listbillingdata.sale_name}" />
+<label>用户名:</label>
+<input type="text" name="user_name" value="{$listbillingdata.user_name}" />
+<label>预录入单:</label>
+<input type="text" name="prerecorded_file" value="{$listbillingdata.prerecorded_file}" value  readonly="readonly"/>
+<label>内销合同:</label>
+<input type="text" name="contract_file" value="{$listbillingdata.contract_file}"  readonly="readonly" />
+<label>清关资料:</label>
+<input type="text" name="clearance_file" value="{$listbillingdata.clearance_file}"  readonly="readonly" />
+<label>发货清单:</label>
+<input type="text" name="sendgoods_file" value="{$listbillingdata.sendgoods_file}"  readonly="readonly" />
+<label>备注:</label>
+<input type="text" name="sendgoods_file" value="{$listbillingdata.rem}" />
+
+<input type="submit" value="修改" id="submit-button" />
+<p></p>
+</form>
+
+</block> 

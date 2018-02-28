@@ -1,0 +1,33 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>新增购方公司基础资料</h3>
+</center>
+<form method="POST" action="AddBillingCompanyBasicResult" id="contact-form" >
+<label>开票公司名称:</label>
+<select name="mekacompany">
+<volist name="company_data" id="vo">
+<option value="{$vo.company_name}">{$vo.company_name}</option>
+</volist>
+</select>
+<label>购方公司名称:</label>
+<input type="text" name="Gfmc" />
+<label>购方公司税号:</label>
+<input type="text" name="Gfsh">
+<label>购方银行账号:</label>
+<input type="text" name="Gfyhzh">
+<label>购方地址电话:</label>
+<input type="text" name="Gfdzdh">
+<label>复核人:</label>
+<input type="text" name="Fhr">
+<label>收款人:</label>
+<input type="text" name="Skr">
+<label>备注:</label>
+<input type="text" name="Bz">
+<button type="button" class="tolink" url="FormatBillingDetailList" id="submit-button">返回</button><input type="submit" value="新增" id="submit-button">
+<p></p>
+</form>
+
+
+
+</block> 

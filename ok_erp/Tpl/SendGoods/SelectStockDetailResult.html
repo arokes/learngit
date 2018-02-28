@@ -1,0 +1,23 @@
+<extend name="/base" />
+<block name="main">
+<php>$j=0;</php>
+<volist name="stock_data" id="vo_1" >
+<empty name="vo_1"><php>$j++;$stock=0;</php><else/>
+<b>{$key}---存货明细账</b>
+<table id="table-5">
+<thead>
+<th>单据类别</th><th>订单号</th><th>品号</th><th width="250px">品名</th><th>客户编号</th><th>单号</th><th>单据日期</th><th>入库数量</th><th>出库数量</th><th>出库金额</th><th>结存数量</th>
+</thead>
+<tbody>
+<volist name="vo_1" id="vo">
+<tr><td>{$vo.ps_id|iconv="GBK","utf-8",###}</td><td>{$vo.bat_no}</td><td>{$vo.prd_no}</td><td width="250px">{$vo.prd_name|iconv="GBK","utf-8",###}</td><td>{$vo.prd_mark}</td><td>{$vo.ps_no}</td><td>{$vo.eff_dd}</td><td>{$vo.pc_qty|round=###,0}</td><td>{$vo.sa_qty|round=###,0}</td><td>{$vo.sa_amt|round=###,2}</td><td><php>$stock=$stock+$vo['pc_qty']-$vo['sa_qty'];</php>{$stock}</td></tr>
+
+</volist>
+</tbody>
+</table>
+</empty>
+</volist>
+<in name="j" value="3">查询不到数据</in>
+<a href="javascript:history.back(-1);">返回</a>
+<br />
+</block>

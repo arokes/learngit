@@ -1,0 +1,1187 @@
+[ 2018-01-30T16:29:16+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001073s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001084s ]
+ERR: 表达式错误:
+
+[ 2018-01-30T16:30:24+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001257s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001091s ]
+ERR: 表达式错误:
+
+[ 2018-01-30T16:30:29+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000951s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001191s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000658s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017017s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001068s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000937s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000761s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003982s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001171s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001243s ]
+
+[ 2018-01-30T16:30:30+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000857s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001106s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000655s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015279s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001179s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000764s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000821s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003985s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001182s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2018-01-30T16:30:30+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001104s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001128s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000792s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020070s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001095s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000903s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001753s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005102s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001148s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2018-01-30T16:30:31+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001357s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001475s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001174s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000654s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017953s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001067s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000864s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000723s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003807s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001198s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2018-01-30T16:30:31+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001318s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001091s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000684s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017774s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001258s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000821s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000786s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004141s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002768s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002843s ]
+
+[ 2018-01-30T16:30:51+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001169s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001058s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017398s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000928s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000703s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003649s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001157s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001230s ]
+
+[ 2018-01-30T16:30:51+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001157s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001048s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000658s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017447s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001374s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000708s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003857s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001054s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2018-01-30T16:30:52+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001167s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001068s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000677s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017185s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000937s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000703s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000657s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003397s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001049s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2018-01-30T16:30:54+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001068s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1514.45,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='1' WHERE ( `id` = 0 ) AND ( `itm` = 1 ) [ RunTime:0.000299s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=3288.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 2 ) [ RunTime:0.000249s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=6521.74,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 3 ) [ RunTime:0.000223s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=77048.5,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 4 ) [ RunTime:0.000206s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=21948,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 5 ) [ RunTime:0.000239s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=8032,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 6 ) [ RunTime:0.000234s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1760,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 7 ) [ RunTime:0.000244s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=18577.78,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 8 ) [ RunTime:0.000248s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32100.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 9 ) [ RunTime:0.000183s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32183.12,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 10 ) [ RunTime:0.000198s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=29298,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 11 ) [ RunTime:0.000184s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=143059.92,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 12 ) [ RunTime:0.000188s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=33537.97,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 13 ) [ RunTime:0.000213s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=172188.86,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 14 ) [ RunTime:0.000250s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=148.88,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 15 ) [ RunTime:0.000211s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=70219.88,`brokerage`=3,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 16 ) [ RunTime:0.000218s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=59663.3,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 17 ) [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: result_sum C:\xampp\htdocs\ok_erp\Lib\Action\ClaimAction.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009417s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000763s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000686s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003201s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001048s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001115s ]
+
+[ 2018-01-30T16:30:57+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001163s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001088s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1514.45,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='1' WHERE ( `id` = 0 ) AND ( `itm` = 1 ) [ RunTime:0.000269s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=3288.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 2 ) [ RunTime:0.000208s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=6521.74,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 3 ) [ RunTime:0.000204s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=77048.5,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 4 ) [ RunTime:0.000206s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=21948,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 5 ) [ RunTime:0.000198s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=8032,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 6 ) [ RunTime:0.000194s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1760,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 7 ) [ RunTime:0.000197s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=18577.78,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 8 ) [ RunTime:0.000197s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32100.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 9 ) [ RunTime:0.000625s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32183.12,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 10 ) [ RunTime:0.000198s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=29298,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 11 ) [ RunTime:0.000221s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=143059.92,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 12 ) [ RunTime:0.000209s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=33537.97,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 13 ) [ RunTime:0.000205s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=172188.86,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 14 ) [ RunTime:0.000202s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=148.88,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 15 ) [ RunTime:0.000198s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=70219.88,`brokerage`=3,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 16 ) [ RunTime:0.000197s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=59663.3,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 17 ) [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: result_sum C:\xampp\htdocs\ok_erp\Lib\Action\ClaimAction.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009579s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000769s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001016s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000677s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003551s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001051s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2018-01-30T16:31:00+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001170s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001076s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1514.45,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 1 ) [ RunTime:0.000303s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=3288.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 2 ) [ RunTime:0.000245s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=6521.74,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 3 ) [ RunTime:0.000262s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=77048.5,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 4 ) [ RunTime:0.000206s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=21948,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 5 ) [ RunTime:0.000200s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=8032,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 6 ) [ RunTime:0.000232s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1760,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 7 ) [ RunTime:0.000219s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=18577.78,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 8 ) [ RunTime:0.000241s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32100.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 9 ) [ RunTime:0.000263s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32183.12,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 10 ) [ RunTime:0.000340s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=29298,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 11 ) [ RunTime:0.000198s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=143059.92,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 12 ) [ RunTime:0.000198s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=33537.97,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 13 ) [ RunTime:0.000208s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=172188.86,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 14 ) [ RunTime:0.000199s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=148.88,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 15 ) [ RunTime:0.000193s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=70219.88,`brokerage`=3,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 16 ) [ RunTime:0.000194s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=59663.3,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 17 ) [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: result_sum C:\xampp\htdocs\ok_erp\Lib\Action\ClaimAction.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009587s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000780s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000691s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003230s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001053s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2018-01-30T16:31:32+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001123s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1514.45,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='123',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 1 ) [ RunTime:0.000302s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=3288.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='123',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 2 ) [ RunTime:0.000182s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=6521.74,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='123',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 3 ) [ RunTime:0.000259s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=77048.5,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 4 ) [ RunTime:0.000166s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=21948,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 5 ) [ RunTime:0.000210s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=8032,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 6 ) [ RunTime:0.000205s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1760,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 7 ) [ RunTime:0.000204s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=18577.78,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 8 ) [ RunTime:0.000206s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32100.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 9 ) [ RunTime:0.000204s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32183.12,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 10 ) [ RunTime:0.000207s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=29298,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 11 ) [ RunTime:0.000201s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=143059.92,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 12 ) [ RunTime:0.000205s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=33537.97,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 13 ) [ RunTime:0.000185s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=172188.86,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 14 ) [ RunTime:0.000250s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=148.88,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 15 ) [ RunTime:0.000206s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=70219.88,`brokerage`=3,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 16 ) [ RunTime:0.000199s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=59663.3,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 0 ) AND ( `itm` = 17 ) [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: result_sum C:\xampp\htdocs\ok_erp\Lib\Action\ClaimAction.class.php 第 221 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008814s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000770s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000691s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003208s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001051s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2018-01-30T16:31:37+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001111s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000721s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015316s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000977s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000703s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000690s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003483s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001154s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2018-01-30T16:31:38+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000950s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001064s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000711s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015441s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000938s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000703s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000909s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003408s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001066s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2018-01-30T16:31:38+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001052s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000712s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015200s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000970s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000702s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000661s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003434s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001070s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2018-01-30T16:31:38+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000870s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001009s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000717s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: vo C:\xampp\htdocs\ok_erp\Runtime\Cache\a4505d6603998c392b465407d6856ca4.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015530s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000923s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000708s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003401s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001228s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2018-01-30T16:32:42+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001368s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001066s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000701s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015999s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000976s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000810s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003552s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001103s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2018-01-30T16:32:42+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000830s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001109s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000636s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015181s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000970s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000735s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000704s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003574s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001073s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2018-01-30T16:32:43+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001260s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001050s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000724s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017188s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000975s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000843s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000705s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003684s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001098s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2018-01-30T16:32:43+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001163s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001054s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000717s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.105871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105980s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000946s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000713s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000671s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003440s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001057s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2018-01-30T16:32:43+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001111s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000734s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015246s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001009s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000743s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003511s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2018-01-30T16:32:43+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001163s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001058s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000721s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017161s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001252s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000742s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003754s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001052s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2018-01-30T16:32:44+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001162s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001075s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017204s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000927s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000703s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003386s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001044s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2018-01-30T16:32:44+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001069s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016608s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001109s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000782s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003658s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2018-01-30T16:32:44+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001227s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001089s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000722s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016751s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000912s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000698s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003354s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001459s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001538s ]
+
+[ 2018-01-30T16:32:44+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001190s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001071s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000755s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016417s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000911s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000698s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000657s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003358s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001043s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2018-01-30T16:32:44+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001080s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016598s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000911s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000700s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003358s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001203s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2018-01-30T16:32:48+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001071s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1514.45,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='123' WHERE ( `id` = 1503 ) AND ( `itm` = 1 ) [ RunTime:0.000387s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=3288.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='123' WHERE ( `id` = 1503 ) AND ( `itm` = 2 ) [ RunTime:0.000299s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=6521.74,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='123' WHERE ( `id` = 1503 ) AND ( `itm` = 3 ) [ RunTime:0.000289s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=77048.5,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='123' WHERE ( `id` = 1503 ) AND ( `itm` = 4 ) [ RunTime:0.000293s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=21948,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='345' WHERE ( `id` = 1503 ) AND ( `itm` = 5 ) [ RunTime:0.000247s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=8032,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 6 ) [ RunTime:0.000255s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1760,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 7 ) [ RunTime:0.000272s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=18577.78,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 8 ) [ RunTime:0.000250s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32100.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 9 ) [ RunTime:0.000236s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32183.12,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 10 ) [ RunTime:0.000276s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=29298,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 11 ) [ RunTime:0.000243s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=143059.92,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 12 ) [ RunTime:0.000267s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=33537.97,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 13 ) [ RunTime:0.000250s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=172188.86,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 14 ) [ RunTime:0.000272s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=148.88,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 15 ) [ RunTime:0.000257s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=70219.88,`brokerage`=3,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 16 ) [ RunTime:0.000208s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=59663.3,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 17 ) [ RunTime:0.000210s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009553s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000774s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000684s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003203s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001352s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2018-01-30T16:32:49+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimDetail?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001193s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001052s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.001033s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015718s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000874s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000698s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003322s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001058s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2018-01-30T16:32:52+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001278s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001087s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000636s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017147s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001040s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000750s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000707s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003732s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001091s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001162s ]
+
+[ 2018-01-30T16:32:56+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001064s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1514.45,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 1 ) [ RunTime:0.000391s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=3288.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 2 ) [ RunTime:0.000269s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=6521.74,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 3 ) [ RunTime:0.000264s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=77048.5,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 4 ) [ RunTime:0.000261s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=21948,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 5 ) [ RunTime:0.000259s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=8032,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 6 ) [ RunTime:0.000226s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1760,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 7 ) [ RunTime:0.000227s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=18577.78,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 8 ) [ RunTime:0.000221s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32100.8,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 9 ) [ RunTime:0.000245s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32183.12,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 10 ) [ RunTime:0.000239s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=29298,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 11 ) [ RunTime:0.000255s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=143059.92,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 12 ) [ RunTime:0.000283s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=33537.97,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 13 ) [ RunTime:0.000252s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=172188.86,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 14 ) [ RunTime:0.000244s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=148.88,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 15 ) [ RunTime:0.000248s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=70219.88,`brokerage`=3,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 16 ) [ RunTime:0.000315s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=59663.3,`brokerage`=4,`is_declare`='是',`lz_cust`='',`connect_cust`='',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 17 ) [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009460s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000803s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000690s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003220s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001044s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2018-01-30T16:32:58+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimDetail?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001159s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001062s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016055s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000846s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000693s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000669s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003581s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001288s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2018-01-30T16:33:27+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001162s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001316s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004492s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013616s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000835s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000686s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000660s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003265s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001035s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2018-01-30T16:33:31+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001309s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 15,15   [ RunTime:0.004395s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013988s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000899s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000749s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000711s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003458s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001058s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2018-01-30T16:33:38+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim/p/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001168s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001327s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004600s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013831s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000857s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000692s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003298s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001051s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2018-01-30T16:34:02+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001302s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004435s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014439s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000865s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000801s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000690s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003450s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001048s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2018-01-30T16:34:07+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001166s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000900s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000208s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013745s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000863s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000696s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003351s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001072s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2018-01-30T16:34:21+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '陈丹妮%' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-30' ) ) AND ( a.claim = '1' ) LIMIT 1   [ RunTime:0.003058s ]
+SQL: SELECT * FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '陈丹妮%' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-30' ) ) AND ( a.claim = '1' ) ORDER BY b.record_dd LIMIT 0,15   [ RunTime:0.024430s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014421s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000666s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000598s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000689s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003041s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000840s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-01-30T16:34:23+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/claimDetail?id=1457
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001152s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1457 )  [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001077s ]
+SQL: SELECT DISTINCT  `sal_name` FROM `account` WHERE ( write_off='F' )  [ RunTime:0.002016s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020774s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000895s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000813s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000689s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003504s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001237s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2018-01-30T16:34:26+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/getAccountData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1457 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001124s ]
+SQL: SELECT * FROM `account` WHERE ( `write_off` = 'F' ) AND ( `sal_name` IN ('王炎波','') ) ORDER BY so_no  [ RunTime:0.001529s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014228s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000853s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000797s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003399s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001032s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2018-01-30T16:34:27+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimResult/company_id/%25/sal_name/%E9%99%88%E4%B8%B9%E5%A6%AE%25/p/35.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '陈丹妮%' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-30' ) ) AND ( a.claim = '1' ) LIMIT 1   [ RunTime:0.003155s ]
+SQL: SELECT * FROM mf_exchange as a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( b.so_no LIKE '%' ) AND ( a.sal_name LIKE '陈丹妮%' ) AND ( a.company_id LIKE '%' ) AND (  (a.pay_dd BETWEEN '2016-12-01' AND '2018-01-30' ) ) AND ( a.claim = '1' ) ORDER BY b.record_dd LIMIT 510,15   [ RunTime:0.011075s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012870s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000446s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000377s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002502s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2018-01-30T16:34:33+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1457 ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001077s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` IN ('8','227') ) ORDER BY so_no  [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008582s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000778s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000795s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000669s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003335s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001046s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001115s ]
+
+[ 2018-01-30T16:34:35+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimDetail?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001105s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000750s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013718s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000391s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000576s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002302s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000607s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-01-30T16:34:40+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/writeExchangeValue
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000951s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SELECT * FROM mf_exchange a,company b,bank c WHERE ( a.claim=0 and a.company_id=b.company_id and a.bank_id=c.bank_id and id=1457 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `account` [ RunTime:0.001047s ]
+SQL: SELECT * FROM `account` WHERE ( `so_id` IN ('444') ) ORDER BY so_no  [ RunTime:0.000244s ]
+SQL: SELECT `sal_name` FROM `account` WHERE ( `so_id` IN ('444') ) GROUP BY sal_name  [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017789s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000844s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000699s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003295s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001056s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2018-01-30T16:34:44+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaim?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001056s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000700s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017259s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000929s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000813s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003511s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001040s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2018-01-30T16:35:15+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/changeClaimResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001269s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `tf_exchange` [ RunTime:0.001109s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1514.45,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 1 ) [ RunTime:0.000428s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=3288.8,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 2 ) [ RunTime:0.000271s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=6521.74,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 3 ) [ RunTime:0.000265s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=77048.5,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 4 ) [ RunTime:0.000307s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=21948,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 5 ) [ RunTime:0.000364s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=8032,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 6 ) [ RunTime:0.000301s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=1760,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 7 ) [ RunTime:0.000338s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=18577.78,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 8 ) [ RunTime:0.000315s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32100.8,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 9 ) [ RunTime:0.000267s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=32183.12,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 10 ) [ RunTime:0.000266s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=29298,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 11 ) [ RunTime:0.000258s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=143059.92,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 12 ) [ RunTime:0.000261s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=33537.97,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 13 ) [ RunTime:0.000255s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=172188.86,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 14 ) [ RunTime:0.000312s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=148.88,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 15 ) [ RunTime:0.000278s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=70219.88,`brokerage`=3,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 16 ) [ RunTime:0.000292s ]
+SQL: UPDATE `tf_exchange` SET `amount_apart`=59663.3,`brokerage`=4,`is_declare`='是',`lz_cust`='VTAC',`connect_cust`='VTAC',`debit`='',`rem`='' WHERE ( `id` = 1503 ) AND ( `itm` = 17 ) [ RunTime:0.000333s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009776s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000772s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000908s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003450s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001081s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2018-01-30T16:35:16+08:00 ] 115.231.193.202 /ok_erp/index.php/Claim/selectClaimDetail?id=1503
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001161s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001251s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001058s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN tf_exchange b on a.id=b.id LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( a.id=1503 )  [ RunTime:0.000781s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015463s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000926s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000697s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000663s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003384s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001062s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001134s ]
+

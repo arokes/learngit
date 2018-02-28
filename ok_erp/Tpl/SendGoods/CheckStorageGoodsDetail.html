@@ -1,0 +1,40 @@
+<extend name="/base" />
+
+<block name="main">
+<empty name="storagegoods_data">没有需要核对的库存商品<else/>
+<h3>核对库存商品</h3>
+<p>现在存在于系统中没有出货的数据</p>
+<form method="POST" action="CheckStorageGoodsDetailResult">
+<table id="table-4">
+<thead>
+<th>公司名称</th><th>订单号</th><th width="450px">品名</th><th>库存数量</th><th>状态</th><th>备注</th>
+</thead>
+<tbody>
+
+<volist name="storagegoods_data" id="vo">
+<tr><td><input type="hidden" name="id[]" value="{$vo.id}">{$vo.company_name}</td>
+<td>{$vo.so_no}</td>
+<td width="450px"><input type="hidden" name="prd_name[]" value="{$vo.prd_name}">{$vo.prd_name}</td>
+<td>{$vo.qty}</td>
+<td><select name="state[]">
+<option value=''>-----请选择------</option>
+<option value="实物已报关出货，未给开票资料">实物已报关出货，未给开票资料</option>
+<option value="实物已报关出货，已给开票资料">实物已报关出货，已给开票资料</option>
+<option value="实物暂未报关出货，待后续报关">实物暂未报关出货，待后续报关</option>
+<option value="实物暂未报关出货，待后续转内销">实物暂未报关出货，待后续转内销</option>
+<option value="不再出货，呆滞品">不再出货，呆滞品料</option>
+<option value="不再出货，诉讼中">不再出货，诉讼中</option>
+<option value="实物已出货，不报关不开票">实物已出货，不报关不开票</option>
+<option value="其他">其他</option>
+</select></td>
+<td><input type="text" name="rem[]"></td>
+</tr>
+</volist>
+
+</tbody>
+</table>
+业务员名字<input type="text" name="sale_name"><br />
+<input type="submit" value="提交">&nbsp;<button onclick="javascript:history.back(-1);">返回</button>
+</form>
+</empty>
+</block>

@@ -1,0 +1,63 @@
+<extend name="/admin_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".resetpswd").click(function(){
+		if(confirm("要重置密码吗？")){
+			var userid=$(this).attr("userid");
+			$.ajax({
+				type:'POST',
+				url: '__URL__/ResetUserPswd',
+				data:{user_id: userid},
+				success:function(msg){
+					alert(msg);
+				}
+			});
+		}
+	});
+	$(".disableuser").click(function(){
+		var userid=$(this).attr("userid");
+		$.ajax({
+			type:'POST',
+			url:'__URL__/DisableUser',
+			data:{user_id:userid},
+			success:function(msg){
+				alert(msg);
+				window.location.reload();
+			}
+		});
+	});
+
+	$(".enableuser").click(function(){
+		var userid=$(this).attr("userid");
+		$.ajax({
+			type:'POST',
+			url:'__URL__/EnableUser',
+			data:{user_id:userid},
+			success:function(msg){
+				alert(msg);
+				window.location.reload();
+			}
+		});
+	});
+});
+</script>
+</block>
+<block name="main">
+
+<h4>查询用户列表</h4>
+<center>
+<table id="table-4">
+<thead>
+<th>编号</th><th>用户名</th><th>姓名</th><th>用户组</th><th>部门</th><th>用户等级</th><th>状态</th><th width="200px">操作</th>
+</thead>
+<tbody>
+<volist name="user_data" id="vo">
+<tr><td>{$vo.user_id}</td><td>{$vo.user_name}</td><td>{$vo.name}</td><td>{$vo.user_group_name}</td><td>{$vo.user_dep_no}</td><td>{$vo.user_level}</td><td>{$vo.disable}</td><td width="200px"><button class="resetpswd" userid="{$vo.user_id}">重置密码</button>&nbsp;&nbsp;<button class="modify" url="__URL__/ModifyUser?user_id={$vo.user_id}">修改</button>&nbsp;&nbsp;<eq name="vo.disable" value="0"> <button class="enableuser" userid="{$vo.user_id}">启用</button><else/><button class="disableuser" userid="{$vo.user_id}">禁用</button> </eq></td></tr>
+</volist>
+
+</tbody>
+</table>
+{$show}<a href="__URL__/SelectUsers">返回</a>
+</center>
+</block>

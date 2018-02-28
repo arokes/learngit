@@ -1,0 +1,21 @@
+<extend name="/admin_base" />
+<block name="menu">
+</block>
+<block name="main">
+<center>
+<volist name="billdetail_so_result" id ='vo'>
+<font>{$key}--销售订单明细</font>
+<table id="table-2">
+<thead>
+<th width="100px">客户</th><th>业务员</th><th>批号</th><th>品号</th><th width="300px">品名</th><th>订单数量</th><th>退回数量</th>
+</thead>
+<volist name="vo" id="vo_1">
+<tbody>
+<tr><td width="100px">{$vo_1.cus_name|iconv="GBK","UTF-8",###}</td><td>{$vo_1.sal_name|iconv="GBK","UTF-8",###}</td><td>{$vo_1.bat_no|iconv="GBK","UTF-8",###}</td><td>{$vo_1.prd_no}</td><td width="300px">{$vo_1.prd_name|iconv="GBK","UTF-8",###}</td><td>{$vo_1.qty|round=###,0}</td><td>{$vo_1.qty_pre|round=###,0}</td></tr>
+</tbody>
+</volist>
+</table>
+</volist>
+
+</center>
+</block> 

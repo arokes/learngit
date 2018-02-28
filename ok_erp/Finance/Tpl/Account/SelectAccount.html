@@ -1,0 +1,13 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>查询客户台帐</font>
+
+<form method="post" action="__URL__/ad/BusinessAction!list.action" name="form1">
+核销:<select name="write_off"><option value="%">----所有----</option><option value="T">---已核销---</option><option value="F">---未核销---</option></select><br /><br />
+订单号:<input type="text" name="so_no" /><br /><br />
+业务员:<input type="text" name="sal_name" /><br /><br />
+<input id="button" type="button" value="查询" onclick="manySend('SelectAccountResult')" />&nbsp;&nbsp;&nbsp;<input id="button" type="button" value="下载" onclick="manySend('DownloadAccountDetail')" />
+</form>
+</center>
+</block>

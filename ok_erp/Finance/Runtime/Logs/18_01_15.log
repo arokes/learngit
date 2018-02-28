@@ -1,0 +1,9 @@
+[ 2018-01-15T09:13:34+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/CheckTemporaryStock/SelectPoDetail?bat_no=EB1600935&prd_no=1310005241675000&prd_mark=43165
+ERR: 模板不存在[./Finance/Tpl/CheckTemporaryStock/SelectPoDetail.html]
+
+[ 2018-01-15T09:25:43+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/CheckTemporaryStock/SelectPoDetail?bat_no=EB1600935&prd_no=1310005241675000&prd_mark=43165
+ERR: 非法操作:SelectPoDetail
+
+[ 2018-01-15T14:59:52+08:00 ] 192.168.1.230 /ok_erp/finance_index.php/CheckTemporaryStock/FindSoDetail?bat_no=EB1600947&prd_no=1B4020201060
+ERR: 模板不存在[./Finance/Tpl/CheckTemporaryStock/FindSoDetail.html]
+

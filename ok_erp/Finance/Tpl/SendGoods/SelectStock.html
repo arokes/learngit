@@ -1,0 +1,17 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>查询ERP系统库存</h3>
+
+<form action="SelectStockResult" method="post" >
+
+批号:<input type="text" name="bat_no" id="bat_no" /><br />
+参数:<input type="text" name="parameter" id="parameter"><br />
+货号:<input type="text" name="prd_mark" id="prd_mark"><br />
+参数例:A60 E27 10W 2700 <br />
+<input type="submit" value="查询" url="SelectStockResult" />
+</form>
+<div id="stock"></div>
+<br />
+</center>
+</block> 

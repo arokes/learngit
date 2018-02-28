@@ -1,0 +1,56 @@
+<extend name="/admin_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".newwincheck").click(function(){
+		document.form1.action=$(this).attr("url");
+		window.open('','NEW','height=600, width=1000, top=0, left=25%, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');
+		document.form1.target='NEW';
+		document.form1.submit();
+	});
+});
+</script>
+</block>
+<block name="main">
+<center>
+<font>{$factory_name}&nbsp;&nbsp;&nbsp;对比&nbsp;&nbsp;&nbsp;{$company_name}</font><br />
+<table id="table-4">
+<thead>
+<th>公司</th><th>批号</th><th>品号</th><th>品名</th><th>编号</th>
+</thead>
+<tbody>
+<tr><td>{$factory_name}</td>
+<td>{$check_result[0]['fc_bat_no']}</td><td>{$check_result[0]['fc_prd_no']|iconv="GBK","UTF-8",###}</td><td>{$check_result[0]['fc_prd_name']|iconv="GBK","UTF-8",###}</td><td>{$check_result[0]['fc_prd_mark']}</td>
+</tr>
+<tr><td>{$company_name}</td>
+<td>{$company_result[0]['bat_no']}</td><td>{$company_result[0]['prd_no']|iconv="GBK","UTF-8",###}</td><td>{$company_result[0]['prd_name']|iconv="GBK","UTF-8",###}</td><td>{$company_result[0]['prd_mark']|iconv="GBK","UTF-8",###}</td>
+</tr>
+</tbody>
+</table>
+<br />
+<table id="table-4">
+<thead>
+<th>发票号码</th><th>备注</th><th>开票单号</th><th>开票日期</th><th>开票数量</th><th>开票金额</th><th>收票单号</th><th>收票日期</th><th>备注</th><th>收票数量</th><th>收票金额</th>
+</thead>
+<volist name="check_result" id="vo">
+<tbody>
+<tr><td><a target="_blank" href="FindInvnoResult?inv_no={$vo.inv_no|iconv='GBK','UTF-8',###|urlencode=###}">{$vo.inv_no}</a></td><td>{$vo.fc_rem|iconv="GBK","UTF-8",###}</td><td><a target="_blank" href="FindLzDetail?lz_no={$vo.fc_lz_no}&factory_name={$factory_name}">{$vo.fc_lz_no}</a></td><td>{$vo.fc_eff_dd}</td><td>{$vo.fc_qty}</td><td>{$vo.fc_amtn_net}</td><td><a target="_blank" href="FindLpDetail?lz_no={$vo.com_lz_no}&company_name={$company_name}">{$vo.com_lz_no}</td><td>{$vo.com_eff_dd}</td><td>{$vo.com_rem|iconv="GBK","UTF-8",###}</td><td>{$vo.com_qty}</td><td>{$vo.com_amtn_net}</td></tr>
+</tbody>
+</volist>
+</table>
+<br /><br />
+<form name="form1" method="post">
+<input type="hidden" name="factory_param" value="{$factory_name};{$check_result[0]['fc_prd_no']|iconv='GBK','UTF-8',###}" />
+<input type="hidden" name="company_param" value="{$company_name};{$company_result[0]['prd_no']|iconv='GBK','UTF-8',###}" />
+开票号码:<input type="text" name="factory_lz_no" />
+&nbsp;&nbsp;&nbsp;
+收票号码:<input type="text" name="company_lz1_no" />
+&nbsp;&nbsp;&nbsp;
+参数:<input type="text" name="param" />
+<br /><br />
+<button type="button" class="newwincheck" url="CheckLzResult">对比</button>
+
+
+</form>
+</center>
+</block> 

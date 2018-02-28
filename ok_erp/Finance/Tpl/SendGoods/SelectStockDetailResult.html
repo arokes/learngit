@@ -1,0 +1,50 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<php>$j=0;</php>
+<volist name="stock_data" id="vo_1" >
+<empty name="vo_1"><php>$j++;$stock=0;</php><else/>
+<php>$company_name=$key;</php>
+<b>{$key}---存货明细账</b>
+<table id="table-5">
+<thead>
+<th>类别</th>
+<th>批号</th>
+<th>品号</th>
+<th width="250px">品名</th>
+<th>客户编号</th>
+<th>单号</th>
+<th>单据日期</th>
+<th>入库数量</th>
+<th>收票数量</th>
+<th>出库数量</th>
+<th>开票数量</th>
+<th>出库金额</th>
+<th>结存数量</th>
+</thead>
+<tbody>
+<volist name="vo_1" id="vo">
+<tr><td>{$vo.ps_id}</td>
+<td>{$vo.bat_no|iconv="GBK","utf-8",###}</td>
+<td>{$vo.prd_no|iconv="GBK","utf-8",###}</td>
+<td width="250px">{$vo.prd_name|iconv="GBK","utf-8",###}</td>
+<td>{$vo.prd_mark|iconv="GBK","utf-8",###}</td>
+<td><a target="_blank" href="SelectPsBillDetail?ps_no={$vo.ps_no}&ps_id={$vo.ps_id}&company_name={$company_name}">{$vo.ps_no}</a></td>
+<td>{$vo.eff_dd}</td>
+<td>{$vo.pc_qty|round=###,0}</td>
+<td><in name="vo['ps_id']" value="PC,PB"><a target="_blank"  href="../CheckTemporaryStock/FindBillingList?ps_id={$vo.ps_id}&ps_no={$vo.ps_no}&prd_no={$vo.prd_no|iconv='GBK','utf-8',###|urlencode=###}&company_name={$company_name}">{$vo.pc_fp_qty|round=###,0}</a><else />{$vo.pc_fp_qty|round=###,0}</in></td>
+<td>{$vo.sa_qty|round=###,0}</td>
+<td><in name="vo['ps_id']" value="SA,SB"><a target="_blank"  href="../CheckTemporaryStock/FindBillingList?ps_id={$vo.ps_id}&ps_no={$vo.ps_no}&prd_no={$vo.prd_no|iconv='GBK','utf-8',###|urlencode=###}&company_name={$company_name}">{$vo.sa_fp_qty|round=###,0}</a><else />{$vo.sa_fp_qty|round=###,0}</in></td>
+<td>{$vo.sa_amt|round=###,2}</td>
+<td><php>$stock=$stock+$vo['pc_qty']-$vo['sa_qty'];</php>{$stock}</td>
+</tr>
+</volist>
+</tbody>
+</table>
+</empty>
+</volist>
+<in name="j" value="3">查询不到数据</in>
+<a href="javascript:history.back(-1);">返回</a>
+<br />
+</center>
+</block>

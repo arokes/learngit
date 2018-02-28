@@ -1,0 +1,17 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>查询发出商品</font>
+
+<form method="post" action="__URL__/ad/BusinessAction!list.action" name="form1">
+公司:<select name="company_name"><option value="%">----所有----</option><option value="进出口">进出口</option><option value="景德镇欧科">景德镇欧科</option><option value="上虞欧科">上虞欧科</option></select><br /><br />
+订单号:<input type="text" name="so_no" /><br /><br />
+业务员:<input type="text" name="sale_name" /><br /><br />
+出库单:<input type="text" name="ps_no" /><br /><br />
+<input id="button" type="button" value="查询" onclick="manySend('ListSendGoodsResult')" />&nbsp;&nbsp;&nbsp;
+<!--
+<input id="button" type="button" value="下载" onclick="manySend('DownloadAccountDetail')" />
+-->
+</form>
+</center>
+</block>

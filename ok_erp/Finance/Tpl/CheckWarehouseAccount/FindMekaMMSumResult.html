@@ -1,0 +1,19 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>美科缴库--进出口入库对比</font><br />
+<table id="table-4">
+<thead>
+<th>批号</th><th>缴库数量</th><th>入库数量</th><th>差异</th>
+</thead>
+<tbody>
+<volist name="mekamm_list" id="vo">
+<tr><td><a href="FindMekaMMResult?bat_no={$vo.bat_no|urlencode=###}&date_min={$date_min}&date_max={$date_max}">{$vo.bat_no}</a></td><td>{$vo.mm_qty}</td><td>{$vo.pc_qty}</td><td>{$vo.diff}</td></tr>
+</volist>
+</tbody>
+
+
+</table>
+<button type="button" onclick="javascript:history.back(-1);">返回</button>
+</center>
+</block>

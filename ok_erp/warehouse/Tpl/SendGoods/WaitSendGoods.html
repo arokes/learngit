@@ -1,0 +1,24 @@
+<extend name="/wh_base" />
+<block name="main">
+<empty name="shipment_data"><h3>没有需要发的货物</h3><else />
+<h3>待发货物列表</h3>
+<table id="table-4">
+<thead>
+<th>进仓单号</th><th>发货单位</th><th>合同编号</th><th>发货时间</th><th>业务员</th><th>发货地点</th><th>到达地址</th><th>备注</th>
+</thead>
+<tbody>
+<volist name="shipment_data" id="vo">
+<tr><td><a href="SendDetail?shipment_id={$vo.shipment_id}">{$vo.warehouse_no}</a></td>
+<td>{$vo.company_name}</td>
+<td>{$vo.bat_no}</td>
+<td>{$vo.send_time}</td>
+<td>{$vo.sale_name}</td>
+<td>{$vo.send_add}</td>
+<td>{$vo.arrive_add}</td>
+<td>{$vo.rem}</td>
+</tr>
+</volist>
+</tbody>
+</table>
+</empty>
+</block>

@@ -1,0 +1,21 @@
+<extend name="/wh_base" />
+<block name="title"></block>
+<block name="menu"></block>
+<block name="index_script"></block>
+<block name="main">
+<table id="table-4">
+<thead>
+<th>公司</th><th>批号</th><th>采购订单号</th><th>品号</th><th>品名</th><th>厂商名称</th><th></th>
+</thead>
+<tbody>
+<volist name="PO_data" id="vo">
+<empty name="vo"><else />
+<volist name="vo" id="vo1">
+	<tr><td>{$vo1.company_name|iconv="GBK","utf-8",###}</td><td>{$vo1.bat_no|iconv="GBK","utf-8",###}</td><td>{$vo1.os_no|iconv="GBK","utf-8",###}</td><td>{$vo1.prd_no|iconv="GBK","utf-8",###}</td><td>{$vo1.prd_name|iconv="GBK","utf-8",###}</td><td>{$vo1.name|iconv="GBK","utf-8",###}</td><td><input type="button" value="生成条码" text="{$vo1.bat_no|iconv="GBK","utf-8",###}@{$vo1.prd_no}" prd_name="{$vo1.prd_name|iconv="GBK","utf-8",###}"  company_name="{$vo1.company_name|iconv="GBK","utf-8",###}{$vo1.cus_no}" class="create_barcode" url="CreateBarCode"></td></tr>
+</volist>
+</empty>
+</volist>
+</tbody>
+
+</block>
+<block name="footer"></block>

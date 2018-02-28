@@ -1,0 +1,14 @@
+<extend name="/base" />
+<block name="main" >
+<h3>查询时间:{$title_name}</h3>
+<table id="table-5">
+<thead><th>编号</th><th>销售方式</th><th>公司</th><th>银行</th><th>付款日期</th><th>汇款客户</th><th>汇款国家</th><th>币别</th><th>到账金额</th><th>业务员</th><th>认领金额</th><th>手续费</th><th width="150px">订单号</th><th>订单PI总金额</th></thead>
+<tbody>
+<volist name="list" id="vo">
+<tr><td><a target="_blank" href="__URL__/selectClaimDetail?id={$vo.id}">{$vo.id}</a></td><td>{$vo.foreign_trade}</td><td>{$vo.company_snm}</td><td>{$vo.bank_snm}</td><td>{$vo.pay_dd}</td><td>{$vo.bank_cust}</td><td>{$vo.country}</td><td>{$vo.CUR_ID}</td><td>{$vo.amount}</td><td>{$vo.sal_name}</td><td>{$vo.amount_apart}</td><td>{$vo.brokerage}</td><td width="150px"><a target="_blank" href="__URL__/../Account/SelectAccountDetail?so_id={$vo.so_id}">{$vo.so_no}</a></td><td>{$vo.so_pi}</td></tr>
+</volist>
+</tbody>
+</table>
+<div class="result page">{$page}</div><br />
+<button type="button" onclick="javascript:history.back(-1)">返回</button><br />
+</block>

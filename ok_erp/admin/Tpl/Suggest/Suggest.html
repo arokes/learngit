@@ -1,0 +1,13 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<table class="table-5">
+<thead><th>标题</th><th>内容</th></thead>
+<tbody>
+<volist name="data" id="vo">
+<tr><td>{$vo.title}</td><td>{$vo.text}</td></tr>
+</volist>
+</tbody>
+</table>
+</center>
+</block>

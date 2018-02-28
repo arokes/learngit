@@ -1,0 +1,45 @@
+<extend name="/admin_base" />
+<block name="once_script">
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#date").change(function(){
+		var date=$('#date').val();
+		$.post("nongLi",{date:date},function(result){
+				$("#nongLi").html(result);
+		});
+	});
+	var date=$('#date').val();
+	$.post("nongLi",{date:date},function(result){
+			$("#nongLi").html(result);
+	});
+});
+
+
+
+</script>
+
+</block>
+<block name="main">
+
+<center>
+<input type="text" name="date" id="date" />
+<div id="nongLi"></div>
+<script>
+//执行一个laydate实例
+laydate.render({
+	elem: '#date' //指定元素
+	,calendar:true
+	,done: function(value){
+		$(document).ready(function(){
+			var date=$('#date').val();
+			$.post("nongLi",{date:date},function(result){
+				$("#nongLi").html(result);
+			});
+		});
+	}
+});
+</script>
+</center>
+</block>

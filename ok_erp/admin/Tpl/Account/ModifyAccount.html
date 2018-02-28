@@ -1,0 +1,39 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>修改客户台帐</font>
+<form action="ModifyAccountResult" method="POST">
+<input type="hidden" name="so_id" value="{$listaccount.so_id}" />
+<table id="table-5">
+	<thead>
+		<th>客户名称</th><th>国家</th><th>订单号</th><th>币别</th><th>香港PI金额</th><th>国内PI金额</th>
+	</thead>
+	<tbody>
+		<tr><td><input type="text" name="cust_name" value="{$listaccount.cust_name}" /></td>
+			<td><input type="text" name="country" value="{$listaccount.country}" /></td>
+			<td><input type="text" name="so_no" value="{$listaccount.so_no}"/></td>
+			<td><input type="text" name="CUR_ID" value="{$listaccount.CUR_ID}" /></td>
+			<td><input type="text" name="HONGKONG_PI" value="{$listaccount.HONGKONG_PI}" /></td>
+			<td><input type="text" name="CHINA_PI" value="{$listaccount.CHINA_PI}" /></td>
+		</tr>
+	</tbody>
+	<tr></tr><tr></tr><tr></tr><tr></tr>
+	<thead>
+		<th>预交日期</th><th>应收账款</th><th>账期</th><th>预打款日期</th><th>业务员</th><th>备注</th>
+	</thead>
+	<tbody>
+	<tr>
+		<td><input type="text" name="expect_sale" value="{$listaccount.expect_sale}" /></td>
+		<td><input type="text" name="receivable" value="{$listaccount.receivable}" /></td>
+		<td><input type="text" name="account_period" value="{$listaccount.account_period}" /></td>
+		<td><input type="text" name="recevable_dd" value="{$listaccount.recevable_dd}" /></td>
+		<td><input type="text" name="sal_name" value="{$listaccount.sal_name}" /></td>
+		<td><input type="text" name="rem" value="{$listaccount.rem}"/></td>
+	</tr>
+	</tbody>
+</table>
+<p>将使用强制修改,请注意数据类型,修改有可能涉及account,mf_exchange,tfexchange三张表</p>
+<input type="submit" value="修改" />&nbsp;&nbsp;<button type="button" onclick="javascript:history.back(-1)">返回</button>
+</form>
+</center>
+</block>

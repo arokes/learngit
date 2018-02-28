@@ -1,0 +1,20 @@
+<extend name="/base" />
+<block name="main">
+<font>查询客户台帐</font>
+
+<form method="post" action="SelectAccountResult" id="contact-form">
+<label>选择:</label>
+<select name="selectmode">
+<option value="sal_name">业务员</option>
+<option value="cust_name">客户名称</option>
+<option value="so_no">订单号</option>
+<option value="country">国家</option>
+
+<option value="CHINA_PI">国内公司订单金额</option>
+</select>
+<label></label>
+<input type="text" placeholder="请输入..." name="parameter" />
+<input type="submit" value="查询" />
+
+</form>
+</block>

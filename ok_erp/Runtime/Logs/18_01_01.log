@@ -1,0 +1,8 @@
+[ 2018-01-01T17:19:24+08:00 ] 37.110.29.246 /ok_erp/index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004425s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004520s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+

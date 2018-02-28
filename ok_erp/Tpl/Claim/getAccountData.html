@@ -1,0 +1,71 @@
+<extend name="/base" />
+<block name="once_script">
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#screen").keyup(function(){
+			var str_screen=$("#screen").val();
+			if(!str_screen){
+				$("tr[class]").show();
+			}else{
+				$("tr[class][name*!="+str_screen.toUpperCase()+"]").hide();
+				$("tr[class][name*="+str_screen.toUpperCase()+"]").show();
+			}
+		});
+		$("#table-5 tbody").click(function(){
+			var rowObj=dataExample.row($(this).closest("tr"));
+                 var checkbox = document.getElementById(rowObj.data().tbid);
+                 if(checkbox.checked==true){
+                     checkbox.checked=false
+                 }else{
+                     checkbox.checked=true 
+                 }
+		});
+
+		$(":checkbox").each(function(){
+			if($(this).is(":checked")){
+				$(this).parents("tr").css("background-color","yellow");
+			}
+		});
+
+
+		$(":checkbox").change(function(){
+			var len = $("input:checkbox:checked").length;
+			$("input[type='submit']").val("共选择"+len+"项");
+			if($(this).is(":checked")){
+				$(this).parents("tr").css("background-color","yellow");
+			}else{
+				$(this).parents("tr").css("background-color","");
+			}
+		});
+	});
+</script>
+</block>
+<block name="main">
+<table id="table-4">
+<thead><th>销售方式</th><th>公司</th><th>银行</th><th>到款日期</th><th>汇款人名字</th><th>汇款人国家</th><th>币别</th><th>到账金额</th></thead>
+<tbody>
+<tr><td>{$data_mf.foreign_trade}</td><td>{$data_mf.company_name}</td><td>{$data_mf.bank_name}</td><td>{$data_mf.pay_dd}</td><td>{$data_mf.bank_cust}</td><td>{$data_mf.country}</td><td>{$data_mf.CUR_ID}</td><td>{$data_mf.amount}</td></tr>
+</tbody>
+</table>
+<br /><br /><h3>请选择这笔到汇所属台账(可多选)</h3>
+收汇确认业务员或跟单:<b>{$sal_name}</b>
+<empty name="data_acc">没有可以选择的订单!<else />
+<p>订单号筛选:<input name="screen" id="screen" type="text"></p>
+<form action="writeExchangeValue" method="post">
+<input type="hidden" name="id" value="{$data_mf.id}" />
+<input type="hidden" name="sal_name" value="{$sal_name}">
+<table id="table-5">
+<thead>
+<th>选择</th><th>订单号</th><th>客户名称</th><th>业务员</th><th>可收金额</th><th>应收账款</th><th>已收金额</th><th>手续费</th><th>币别</th><th>香港PI金额</th><th>国内PI金额</th>
+</thead>
+<tbody>
+<volist name="data_acc" id="vo">
+<tr name="{$vo.so_no}" class="screen" ><td><input type="checkbox" name="so_id[]" value="{$vo.so_id}" /></td><td><a target="_blank" href="../Account/SelectAccountDetail?so_id={$vo.so_id}">{$vo.so_no}</td><td>{$vo.cust_name}</td><td>{$vo.sal_name}</td><td>{$vo.balance_amount}</td><td>{$vo.receivable}</td><td>{$vo.amount_apart}</td><td>{$vo.brokerage}</td><td>{$vo.CUR_ID}</td><td>{$vo.HONGKONG_PI}</td><td>{$vo.CHINA_PI}</td></tr>
+</volist>
+</tbody>
+</table>
+</empty>
+<input type="submit" value="选择完毕" />&nbsp;<a href="{$url_back}">返回</a><br /><br />
+<b>如果没有您想选的订单，请更新台账</b>
+</form>
+</block>

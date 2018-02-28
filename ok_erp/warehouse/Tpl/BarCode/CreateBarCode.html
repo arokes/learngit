@@ -1,0 +1,18 @@
+<extend name="/wh_base" />
+<block name="title"></block>
+<block name="menu"></block>
+<block name="index_script"></block>
+<block name="main">
+<img src="BarCode?bat_no={$bat_no}&prd_no={$prd_no}" border="0" style="display:none;"/> 
+<center>
+<div id="div_print">
+{$company_name}{$cus_no}<br />
+<img src="../Public/barcode/{$bat_no}{$prd_no}.gif" alt="barcode"><br />
+<table padding-left="20px">
+<td width="350px">{$prd_name}</td>
+</table>
+</div>
+<input name="print" type="button" id="bt" value="点击打印" /> 
+</center>
+</block>
+<block name="footer"></block>

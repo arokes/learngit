@@ -1,0 +1,20 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>查询美科缴库单数据列表</font><br />
+<font>{$date_min}---{$date_max}</font>
+<table id="table-4">
+<thead>
+<th>批号</th><th>品号</th><th>品名</th><th>缴库数量</th>
+</thead>
+<tbody>
+<volist name="mekamm_list" id="vo">
+<tr><td>{$vo.bat_no}</td><td><a href="FindWarehouseAccountSum?bat_no={$vo.bat_no|urlencode=###}&prd_no={$vo.prd_no}">{$vo.prd_no}</a></td><td >{$vo.name|iconv="GBK","utf-8",###}</td><td>{$vo.qty}</td></tr>
+</volist>
+</tbody>
+
+
+</table>
+<button type="button" onclick="javascript:history.back(-1);">返回</button>
+</center>
+</block>

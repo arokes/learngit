@@ -1,0 +1,2148 @@
+[ 2018-02-07T08:56:56+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/BillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004421s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004523s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+
+[ 2018-02-07T08:57:05+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.016465s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.067344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067440s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002685s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000890s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000621s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005233s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000989s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2018-02-07T08:57:09+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.019200s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.060077s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029498s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000637s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000590s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002680s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000851s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2018-02-07T08:57:16+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=798
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 798 ) LIMIT 1   [ RunTime:0.000315s ]
+
+[ 2018-02-07T08:57:20+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000986s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=798 ) [ RunTime:0.002570s ]
+
+[ 2018-02-07T08:57:21+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001056s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000856s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011855s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000396s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000395s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001692s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000618s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2018-02-07T08:57:28+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/BillingData/BillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-02-07T08:57:32+08:00 ] 106.120.160.109 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2018-02-07T08:57:42+08:00 ] 106.120.160.109 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=798
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2018-02-07T08:57:52+08:00 ] 106.120.160.109 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2018-02-07T08:57:56+08:00 ] 101.199.112.49 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+
+[ 2018-02-07T08:58:22+08:00 ] 101.199.108.52 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000829s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-02-07T08:58:25+08:00 ] 220.181.132.196 /ok_erp/finance_index.php/BillingData/BillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2018-02-07T09:01:39+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000985s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000928s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012321s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000395s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000377s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001690s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000635s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2018-02-07T09:05:41+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=794
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001058s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001004s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 794 ) LIMIT 1   [ RunTime:0.000282s ]
+
+[ 2018-02-07T09:05:42+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001002s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=794 ) [ RunTime:0.000268s ]
+
+[ 2018-02-07T09:05:42+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000813s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001025s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018445s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000623s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002546s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000852s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2018-02-07T09:33:27+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000903s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018895s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000625s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000631s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002632s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000832s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2018-02-07T09:33:29+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001006s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000919s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011859s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000382s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001590s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2018-02-07T09:34:28+08:00 ] 58.247.212.98 /ok_erp/finance_index.php/claim/selectclaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+ERR: 无法加载模块:claim
+
+[ 2018-02-07T09:34:30+08:00 ] 120.204.17.71 /ok_erp/finance_index.php/billingdata/undownloadbillingdata
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+ERR: 无法加载模块:billingdata
+
+[ 2018-02-07T09:48:29+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001153s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000944s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013510s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000622s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000585s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000458s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002536s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000841s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-02-07T09:48:41+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001058s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000905s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018463s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000623s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000586s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000455s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002535s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2018-02-07T09:48:45+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=791
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001002s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 791 ) LIMIT 1   [ RunTime:0.000290s ]
+
+[ 2018-02-07T09:48:46+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=791
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000916s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 791 ) LIMIT 1   [ RunTime:0.000278s ]
+
+[ 2018-02-07T09:48:46+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=791
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 791 ) LIMIT 1   [ RunTime:0.000283s ]
+
+[ 2018-02-07T09:48:48+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001036s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=791 ) [ RunTime:0.000268s ]
+
+[ 2018-02-07T09:48:50+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001029s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000905s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018481s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000623s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000587s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002577s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000851s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2018-02-07T09:48:54+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=792
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000863s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001004s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 792 ) LIMIT 1   [ RunTime:0.000276s ]
+
+[ 2018-02-07T09:48:54+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=792
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001002s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 792 ) LIMIT 1   [ RunTime:0.000277s ]
+
+[ 2018-02-07T09:48:54+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=792
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000972s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 792 ) LIMIT 1   [ RunTime:0.000274s ]
+
+[ 2018-02-07T09:48:59+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001102s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=792 ) [ RunTime:0.000214s ]
+
+[ 2018-02-07T09:49:00+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001011s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000898s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012992s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000622s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002541s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000832s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2018-02-07T09:49:43+08:00 ] 120.204.17.69 /ok_erp/finance_index.php/billingdata/downloadallbillingdata
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+ERR: 无法加载模块:billingdata
+
+[ 2018-02-07T10:41:18+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001496s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000920s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013527s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000648s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000599s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000497s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002666s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000912s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2018-02-07T10:50:24+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000995s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000908s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013177s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000605s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000582s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000454s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002513s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2018-02-07T10:51:01+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001013s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000894s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013089s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000611s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000587s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002529s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-02-07T10:51:20+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=799
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001013s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 799 ) LIMIT 1   [ RunTime:0.000316s ]
+
+[ 2018-02-07T10:51:20+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=799
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001006s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 799 ) LIMIT 1   [ RunTime:0.000278s ]
+
+[ 2018-02-07T10:51:20+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=799
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000983s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 799 ) LIMIT 1   [ RunTime:0.000279s ]
+
+[ 2018-02-07T10:51:23+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=794
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000998s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 794 ) LIMIT 1   [ RunTime:0.000277s ]
+
+[ 2018-02-07T10:51:24+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000993s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=794 ) [ RunTime:0.000304s ]
+
+[ 2018-02-07T10:51:25+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001020s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000849s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011631s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000360s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000561s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000267s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001846s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000609s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2018-02-07T10:51:43+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001001s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=799 ) [ RunTime:0.000266s ]
+
+[ 2018-02-07T10:51:44+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001013s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.002363s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013754s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000611s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000594s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000675s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002966s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000840s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2018-02-07T10:51:47+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001011s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000892s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013364s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000584s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000583s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000457s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002499s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000838s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-02-07T10:52:50+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000872s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000235s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010099s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000357s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000348s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001566s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2018-02-07T10:52:56+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000859s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `bank` [ RunTime:0.000736s ]
+SQL: SELECT * FROM `bank`  [ RunTime:0.000191s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024264s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000616s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000736s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002839s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000849s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2018-02-07T10:53:12+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchangeResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001230s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001032s ]
+SQL: SELECT * FROM `mf_exchange` WHERE ( `bank_cust` = 'UNISAT SIA' ) AND ( `pay_dd` = '2018-02-07' ) AND ( `amount` = 7700 ) AND ( `rem` = '第一笔' )  [ RunTime:0.000323s ]
+SQL: INSERT INTO `mf_exchange` (`foreign_trade`,`company_id`,`bank_id`,`pay_dd`,`bank_cust`,`country`,`CUR_ID`,`amount`,`rem`,`record_dd`) VALUES ('外销',2,1,'2018-02-07','UNISAT SIA','拉脱维亚','USD',7700,'第一笔','2018-02-07 10:53:12') [ RunTime:0.034922s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014046s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000332s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001530s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000607s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2018-02-07T10:53:13+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000871s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `bank` [ RunTime:0.000719s ]
+SQL: SELECT * FROM `bank`  [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011029s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000363s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000347s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001562s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2018-02-07T10:53:27+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchangeResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001038s ]
+SQL: SELECT * FROM `mf_exchange` WHERE ( `bank_cust` = 'WATERON PTE. LTD.' ) AND ( `pay_dd` = '2018-02-07' ) AND ( `amount` = 16412.85 ) AND ( `rem` = '第一笔' )  [ RunTime:0.000374s ]
+SQL: INSERT INTO `mf_exchange` (`foreign_trade`,`company_id`,`bank_id`,`pay_dd`,`bank_cust`,`country`,`CUR_ID`,`amount`,`rem`,`record_dd`) VALUES ('外销',2,1,'2018-02-07','WATERON PTE. LTD.','香港','USD',16412.85,'第一笔','2018-02-07 10:53:27') [ RunTime:0.024104s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007123s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000317s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000343s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001507s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-02-07T10:53:28+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000863s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `bank` [ RunTime:0.000756s ]
+SQL: SELECT * FROM `bank`  [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010910s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000362s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000443s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001663s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-02-07T10:53:40+08:00 ] 106.120.161.68 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2018-02-07T10:53:43+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchangeResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001041s ]
+SQL: SELECT * FROM `mf_exchange` WHERE ( `bank_cust` = 'ALUMBRA PRODUTOS ELETRICOS E ELET' ) AND ( `pay_dd` = '2018-02-07' ) AND ( `amount` = 7622 ) AND ( `rem` = '第一笔' )  [ RunTime:0.000342s ]
+SQL: INSERT INTO `mf_exchange` (`foreign_trade`,`company_id`,`bank_id`,`pay_dd`,`bank_cust`,`country`,`CUR_ID`,`amount`,`rem`,`record_dd`) VALUES ('外销',2,1,'2018-02-07','ALUMBRA PRODUTOS ELETRICOS E ELET','巴西','USD',7622,'第一笔','2018-02-07 10:53:43') [ RunTime:0.033232s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007153s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000319s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000346s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000219s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001515s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-02-07T10:53:44+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000874s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `bank` [ RunTime:0.000808s ]
+SQL: SELECT * FROM `bank`  [ RunTime:0.000204s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011100s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000369s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001573s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2018-02-07T10:53:46+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001370s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004616s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017122s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000380s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000348s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001586s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-02-07T10:53:50+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/ModifyExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001031s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( claim=0 ) ORDER BY id  [ RunTime:0.002620s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015902s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000396s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001619s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2018-02-07T10:53:55+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001340s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004597s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010359s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000382s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001587s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000783s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2018-02-07T10:54:12+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001373s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 15,15   [ RunTime:0.004613s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010367s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000368s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000350s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000224s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001578s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000588s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-02-07T10:54:35+08:00 ] 101.199.112.52 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-02-07T10:57:28+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000874s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.000230s ]
+SQL: SHOW COLUMNS FROM `bank` [ RunTime:0.000731s ]
+SQL: SELECT * FROM `bank`  [ RunTime:0.000181s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012563s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000602s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000586s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000458s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002516s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2018-02-07T10:57:46+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchangeResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001030s ]
+SQL: SELECT * FROM `mf_exchange` WHERE ( `bank_cust` = 'ASUS' ) AND ( `pay_dd` = '2018-02-07' ) AND ( `amount` = 18146 ) AND ( `rem` = '第一笔' )  [ RunTime:0.000337s ]
+SQL: INSERT INTO `mf_exchange` (`foreign_trade`,`company_id`,`bank_id`,`pay_dd`,`bank_cust`,`country`,`CUR_ID`,`amount`,`rem`,`record_dd`) VALUES ('外销',2,6,'2018-02-07','ASUS','巴西','USD',18146,'第一笔','2018-02-07 10:57:46') [ RunTime:0.025250s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007284s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000319s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000347s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001516s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-02-07T10:57:48+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000893s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `bank` [ RunTime:0.000721s ]
+SQL: SELECT * FROM `bank`  [ RunTime:0.000199s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010951s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000362s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000346s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001562s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-02-07T10:58:04+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchangeResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001045s ]
+SQL: SELECT * FROM `mf_exchange` WHERE ( `bank_cust` = 'ASUS' ) AND ( `pay_dd` = '2018-02-07' ) AND ( `amount` = 32364.5 ) AND ( `rem` = '第一笔' )  [ RunTime:0.000357s ]
+SQL: INSERT INTO `mf_exchange` (`foreign_trade`,`company_id`,`bank_id`,`pay_dd`,`bank_cust`,`country`,`CUR_ID`,`amount`,`rem`,`record_dd`) VALUES ('外销',2,6,'2018-02-07','ASUS','巴西','USD',32364.5,'第一笔','2018-02-07 10:58:04') [ RunTime:0.021446s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007112s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000317s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000345s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000219s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001508s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-02-07T10:58:05+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/NewExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000823s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000863s ]
+SQL: SELECT * FROM `company`  [ RunTime:0.000230s ]
+SQL: SHOW COLUMNS FROM `bank` [ RunTime:0.000733s ]
+SQL: SELECT * FROM `bank`  [ RunTime:0.000181s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011120s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000361s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000346s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000222s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001559s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000598s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-02-07T10:58:14+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001360s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004670s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010502s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000375s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001580s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000589s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-02-07T10:58:16+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/NewClaim/p/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001362s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 15,15   [ RunTime:0.004533s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010439s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000371s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000348s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001572s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-02-07T10:58:20+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/NewClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: select count(distinct bank_cust) count from mf_exchange where claim=0 [ RunTime:0.001378s ]
+SQL: SELECT * FROM mf_exchange a left join company b on a.company_id=b.company_id left join bank c on a.bank_id=c.bank_id WHERE ( a.claim=0 ) GROUP BY bank_cust  ORDER BY id LIMIT 0,15   [ RunTime:0.004625s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010511s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000375s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000349s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001577s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000589s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2018-02-07T10:58:26+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Exchange/ModifyExchange
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `mf_exchange` [ RunTime:0.001093s ]
+SQL: SELECT * FROM mf_exchange a LEFT JOIN company c on a.company_id=c.company_id LEFT JOIN bank d on a.bank_id=d.bank_id WHERE ( claim=0 ) ORDER BY id  [ RunTime:0.002624s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010961s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000423s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000360s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001727s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2018-02-07T11:29:19+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/BillingDataSelect
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013692s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000581s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000586s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000570s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002638s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000844s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2018-02-07T11:29:24+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/BillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000973s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `billingdata` WHERE ( `sale_name` LIKE '%%' ) AND ( `contract_no` LIKE '%331097%' ) LIMIT 1   [ RunTime:0.001101s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `sale_name` LIKE '%%' ) AND ( `contract_no` LIKE '%331097%' ) LIMIT 0,15   [ RunTime:0.001046s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007330s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000318s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000220s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001580s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2018-02-07T11:29:36+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/BillingDataSelectResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001107s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `billingdata` WHERE ( `sale_name` LIKE '%%' ) AND ( `contract_no` LIKE '%331097%' ) LIMIT 1   [ RunTime:0.001088s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `sale_name` LIKE '%%' ) AND ( `contract_no` LIKE '%331097%' ) LIMIT 0,15   [ RunTime:0.001009s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019220s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000357s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001583s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-02-07T12:31:25+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001058s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001411s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000904s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013014s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000608s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000584s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000455s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002519s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000837s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-02-07T12:31:33+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=800
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001054s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000999s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 800 ) LIMIT 1   [ RunTime:0.000281s ]
+
+[ 2018-02-07T12:31:33+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=800
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000989s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 800 ) LIMIT 1   [ RunTime:0.000276s ]
+
+[ 2018-02-07T12:31:33+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=800
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001053s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000967s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 800 ) LIMIT 1   [ RunTime:0.000241s ]
+
+[ 2018-02-07T12:31:37+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000991s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=800 ) [ RunTime:0.000300s ]
+
+[ 2018-02-07T12:31:37+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001011s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000897s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012969s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000637s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000685s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002764s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000888s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2018-02-07T12:33:43+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=801
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001016s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 801 ) LIMIT 1   [ RunTime:0.000277s ]
+
+[ 2018-02-07T12:33:43+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=801
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001055s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000998s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 801 ) LIMIT 1   [ RunTime:0.000276s ]
+
+[ 2018-02-07T12:33:43+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadAllBillingData?id=801
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001016s ]
+SQL: SELECT * FROM `billingdata` WHERE ( `ID` = 801 ) LIMIT 1   [ RunTime:0.000260s ]
+
+[ 2018-02-07T12:33:46+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/DownloadConfirmBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000842s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001002s ]
+SQL: UPDATE `billingdata` SET `download_confirm`='T' WHERE ( ID=801 ) [ RunTime:0.000301s ]
+
+[ 2018-02-07T12:33:47+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.000974s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000868s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012566s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000358s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000354s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000576s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002267s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000606s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-02-07T13:32:06+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000854s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000219s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011281s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000388s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000402s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002463s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000652s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2018-02-07T13:32:54+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/SetParam
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001061s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016545s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000598s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000621s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002798s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000832s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2018-02-07T13:34:02+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindTemporaryStockSumResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000831s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.045641s ]
+SQL: select bat_no,prd_no,prd_name,cast(sum(case when os_id = 'SO' then qty else -qty end) as numeric(13,2)) so_qty from DB_MK15.dbo.tf_pos where bat_no like upper('%TS-20161031%') and os_id like 'S%' and prd_name like upper('%%')  group by bat_no,prd_no,prd_name [ RunTime:0.135283s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_mm' [ RunTime:0.038796s ]
+SQL: select ltrim(bat_no) bat_no,prd_no,sum(cast(qty as numeric(13,2))) mm_qty from DB_MK15.dbo.tf_mm where bat_no like upper('%%TS-20161031%') and convert(varchar,eff_dd,023)<='2999-01-01' and prd_no in (select prd_no from DB_MK15.dbo.tf_pos where bat_no like upper('%TS-20161031%') and os_id = 'SO' and prd_name like upper('%%') ) group by ltrim(bat_no),prd_no  [ RunTime:0.090271s ]
+SQL: select bat_no,prd_no,sum(case when ps_id = 'SA' then  cast(qty as numeric(13,2)) when ps_id = 'SB' then cast(-qty as numeric(13,2)) end) sa_qty from DB_MK15.dbo.tf_pss where bat_no like upper('%TS-20161031%') and ps_id like 'S%' and convert(varchar,eff_dd,023)<='2999-01-01' and prd_no in (select prd_no from DB_MK15.dbo.tf_pos where bat_no like upper('%TS-20161031%') and os_id = 'SO' and prd_name like upper('%%') ) group by bat_no,prd_no  [ RunTime:0.110245s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_lz' [ RunTime:0.036297s ]
+SQL: select a.bat_no,a.prd_no,sum(cast(a.qty as numeric(13,2))) lz_qty,sum(cast(a.amtn_net as numeric(13,2))) lz_amtn_net from DB_MK15.dbo.tf_lz a,DB_MK15.dbo.mf_lz b where a.lz_no = b.lz_no and  a.bat_no like upper('%TS-20161031%') and convert(varchar,b.eff_dd,023)<='2999-01-01' and a.prd_no in (select prd_no from DB_MK15.dbo.tf_pos where bat_no like upper('%TS-20161031%') and os_id = 'SO' and prd_name like upper('%%') ) group by a.bat_no,a.prd_no  [ RunTime:0.123765s ]
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Common\functions.php 第 6 行.
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.035810s ]
+SQL: select 'TS-20161031' bat_no,prd_no,prd_name,prd_mark,sum(case when ps_id='PC' then cast(qty as numeric(13,2)) when ps_id ='PB' then cast(-qty as numeric(13,2)) end) pc_qty from DB_SXMK.dbo.tf_pss where (upper(os_no) like upper('TS-20161031') or os_no in (select ps_no from DB_SXMK.dbo.tf_pss where upper(os_no) like upper('TS-20161031'))) and convert(varchar,eff_dd,023)<='2999-01-01' and prd_name like upper('%%')  group by prd_no,prd_name,prd_mark order by prd_no [ RunTime:1.420240s ]
+SQL: select 'TS-20161031' bat_no,a.prd_no,a.prd_name,a.prd_mark,sum(cast(a.qty as numeric(13,2))) lz1_qty,sum(cast(a.amtn_net as numeric(13,2))) lz1_amtn_net from DB_SXMK.dbo.tf_lz1 a,DB_SXMK.dbo.mf_lz1 b where a.lz_no = b.lz_no and convert(varchar,b.eff_dd,023)<='2999-01-01' and (a.os_no like 'TS-20161031' or a.os_no in (select ps_no from DB_SXMK.dbo.tf_pss where upper(os_no) like upper('TS-20161031'))) group by a.prd_no,a.prd_name,a.prd_mark [ RunTime:0.147773s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  mm_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  mm_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  lz_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  lz_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  mm_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  lz_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  lz_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 150 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 160 行.
+NOTIC: [8] Undefined index:  lz_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\da91698b62525a4fb5cee4205b2599ae.php 第 160 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029895s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000407s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000359s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000598s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002007s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2018-02-07T13:38:05+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-02-07T13:38:11+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Claim/selectClaim
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `company` [ RunTime:0.000904s ]
+SQL: SELECT * FROM `company` ORDER BY company_id  [ RunTime:0.000223s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011588s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000632s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002811s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000865s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2018-02-07T13:38:12+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/BillingData/UndownloadBillingData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `billingdata` [ RunTime:0.001132s ]
+SQL: SELECT * FROM `billingdata` WHERE ( download_confirm='F' )  [ RunTime:0.000912s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011995s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000349s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000578s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001918s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-02-07T13:39:07+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindPoDetail?bat_no=TS-20161031&prd_no=MK-D040101BA
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001444s ]
+SQL: select c.name,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_MKJC.dbo.tf_pos a,DB_MKJC.dbo.mf_pos b,DB_MKJC.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.bat_no) like upper('%TS-20161031') and a.prd_no like 'MK-D040101BA'  and a.os_id = 'PO' and a.os_id = b.os_id [ RunTime:0.022047s ]
+SQL: select c.name,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_OK01.dbo.tf_pos a,DB_OK01.dbo.mf_pos b,DB_OK01.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.bat_no) like upper('%TS-20161031') and a.prd_no like 'MK-D040101BA'  and a.os_id = 'PO' and a.os_id = b.os_id [ RunTime:0.043300s ]
+SQL: select c.name,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_JXOK.dbo.tf_pos a,DB_JXOK.dbo.mf_pos b,DB_JXOK.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.bat_no) like upper('%TS-20161031') and a.prd_no like 'MK-D040101BA'  and a.os_id = 'PO' and a.os_id = b.os_id [ RunTime:0.030866s ]
+SQL: select c.name,a.os_no bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_SXMK.dbo.tf_pos a,DB_SXMK.dbo.mf_pos b,DB_SXMK.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.os_no) like upper('%TS-20161031') and a.prd_no like '%MK-D040101BA' and a.os_id = 'PO' [ RunTime:0.025126s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015350s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000582s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000594s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002716s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000828s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2018-02-07T13:39:47+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindPoDetail?bat_no=TS-20161031&prd_no=MK-D040101BA
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000827s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001304s ]
+SQL: select c.name,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_MKJC.dbo.tf_pos a,DB_MKJC.dbo.mf_pos b,DB_MKJC.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.bat_no) like upper('%TS-20161031') and a.prd_no like 'MK-D040101BA'  and a.os_id = 'PO' and a.os_id = b.os_id [ RunTime:0.000535s ]
+SQL: select c.name,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_OK01.dbo.tf_pos a,DB_OK01.dbo.mf_pos b,DB_OK01.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.bat_no) like upper('%TS-20161031') and a.prd_no like 'MK-D040101BA'  and a.os_id = 'PO' and a.os_id = b.os_id [ RunTime:0.000699s ]
+SQL: select c.name,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_JXOK.dbo.tf_pos a,DB_JXOK.dbo.mf_pos b,DB_JXOK.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.bat_no) like upper('%TS-20161031') and a.prd_no like 'MK-D040101BA'  and a.os_id = 'PO' and a.os_id = b.os_id [ RunTime:0.000545s ]
+SQL: select c.name,a.os_no bat_no,a.prd_no,a.prd_name,a.prd_mark,a.wh,a.qty,a.qty_pre,a.qty_ps from DB_SXMK.dbo.tf_pos a,DB_SXMK.dbo.mf_pos b,DB_SXMK.dbo.cust c where a.os_no = b.os_no and c.cus_no = b.cus_no and upper(a.os_no) like upper('%TS-20161031') and a.prd_no like '%MK-D040101BA' and a.os_id = 'PO' [ RunTime:0.004093s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011754s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000334s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000577s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001900s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000581s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-02-07T13:39:51+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindNakedDetail?bat_no=TS-20161031-MK&prd_no=1D3013000424
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000848s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001356s ]
+SQL: select bat_no,mrp_no_so,a.prd_no,b.name prd_name,sum(qty) qty from DB_MK15.dbo.tf_mm a left join DB_MK15.dbo.prdt b on a.prd_no =b.prd_no where  a.bat_no like '%TS-20161031-MK' and mrp_no_so like '1D3013000424' and a.wh=90 group by  bat_no,mrp_no_so,a.prd_no,b.name [ RunTime:0.055960s ]
+SQL: select bat_no,mrp_no_so,a.prd_no,b.name prd_name,sum(qty) qty from DB_JX16.dbo.tf_mm a left join DB_JX16.dbo.prdt b on a.prd_no =b.prd_no where  a.bat_no like '%TS-20161031-MK' and mrp_no_so like '1D3013000424' and a.wh=90 group by  bat_no,mrp_no_so,a.prd_no,b.name [ RunTime:0.019471s ]
+SQL: select bat_no,mrp_no_so,a.prd_no,b.name prd_name,sum(qty) qty from DB_JM17.dbo.tf_mm a left join DB_JM17.dbo.prdt b on a.prd_no =b.prd_no where  a.bat_no like '%TS-20161031-MK' and mrp_no_so like '1D3013000424' and a.wh=90 group by  bat_no,mrp_no_so,a.prd_no,b.name [ RunTime:0.013143s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014621s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000339s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000355s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000580s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001909s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-02-07T13:40:00+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/SendGoods/SelectFactoryStockDetail?factory_db=DB_MK15&bat_no=TS-20161031-MK&prd_no=1D3013000432
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_mm' [ RunTime:0.001357s ]
+SQL: select 'MM' ps_id,a.mm_no ps_no,convert(varchar,a.eff_dd,023) eff_dd,a.bat_no,a.prd_no,b.name prd_name,a.qty pc_qty,'' sa_qty,'' sa_amtn_net,'' qty_fp from DB_MK15.dbo.tf_mm a,DB_MK15.dbo.prdt b where a.prd_no = b.prd_no and a.bat_no like '%TS-20161031-MK' and a.prd_no like '1D3013000432' [ RunTime:0.007840s ]
+SQL: select ps_id,ps_no,convert(varchar,eff_dd,023) eff_dd,bat_no,prd_no,prd_name,case when ps_id = 'PC' then qty when ps_id = 'PB' then -qty end pc_qty,case when ps_id = 'SA' then qty when ps_id= 'SB' then -qty end sa_qty,case when ps_id = 'SA' then amtn_net when ps_id = 'SB' then -amtn_net end sa_amtn_net,qty_fp from DB_MK15.dbo.tf_pss where bat_no like '%TS-20161031-MK' and prd_no like '1D3013000432' [ RunTime:0.006552s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016706s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000369s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001992s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-02-07T13:40:04+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/SendGoods/SelectStockDetailResult?bat_no=TS-20161031&prd_no=MK-D040101BA
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001846s ]
+SQL: select ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty,inv_no,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,isnull(case when ps_id='SA' then qty_fp when ps_id='SB' then -qty_fp end,0) sa_fp_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('TS-20161031') and prd_no like 'MK-D040101BA' and prd_mark like '%' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.011980s ]
+SQL: select ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty,inv_no,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,isnull(case when ps_id='SA' then qty_fp when ps_id='SB' then -qty_fp end,0) sa_fp_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('TS-20161031') and prd_no like 'MK-D040101BA' and prd_mark like '%' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.014119s ]
+SQL: select ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty,inv_no,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,isnull(case when ps_id='SA' then qty_fp when ps_id='SB' then -qty_fp end,0) sa_fp_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('TS-20161031') and prd_no like 'MK-D040101BA' and prd_mark like '%' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.010991s ]
+SQL: select ps_id,os_no bat_no,prd_no,prd_name,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty, isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty from DB_SXMK.dbo.tf_pss where prd_no like 'MK-D040101BA' and (os_no like 'TS-20161031' or os_no in (select ps_no from tf_pss where os_no like 'TS-20161031')) [ RunTime:0.044472s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 146 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 151 行.
+NOTIC: [8] Undefined index:  sa_fp_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 152 行.
+NOTIC: [8] Undefined index:  sa_amt C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 153 行.
+NOTIC: [8] Undefined variable: stock C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 146 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 151 行.
+NOTIC: [8] Undefined index:  sa_fp_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 152 行.
+NOTIC: [8] Undefined index:  sa_amt C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 153 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 146 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 151 行.
+NOTIC: [8] Undefined index:  sa_fp_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 152 行.
+NOTIC: [8] Undefined index:  sa_amt C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 153 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000366s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000357s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000585s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001996s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-02-07T13:41:21+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindTemporaryStockDetailResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001064s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001323s ]
+SQL: select b.inv_no ,b.lz_no fc_lz_no,convert(varchar,b.eff_dd,023) fc_eff_dd,b.rem fc_rem,a.bat_no fc_bat_no,a.prd_no fc_prd_no,a.prd_name fc_prd_name,cast(sum(a.qty) as numeric(13,2)) fc_qty,cast(sum(a.amtn_net) as numeric(13,2)) fc_amtn_net from DB_MK15.dbo.tf_lz a,DB_MK15.dbo.mf_lz b where a.lz_no = b.lz_no and  a.bat_no='TS-20161031-MK' and a.prd_no ='1D3013000432' and b.amtn_net!=0 group by b.inv_no,b.lz_no,b.rem,a.bat_no,a.prd_no,a.prd_name,b.eff_dd [ RunTime:0.023588s ]
+SQL: select b.inv_no ,b.lz_no com_lz_no,convert(varchar,b.eff_dd,023) com_eff_dd,b.rem com_rem,'TS-20161031' bat_no,a.prd_no prd_no,a.prd_name prd_name,a.prd_mark prd_mark,cast(sum(a.qty) as numeric(13,2) ) com_qty,cast(sum(a.amtn_net) as numeric(13,2)) com_amtn_net from DB_SXMK.dbo.tf_lz1 a,DB_SXMK.dbo.mf_lz1 b where a.lz_no = b.lz_no and  a.ps_no in (select ps_no from DB_SXMK.dbo.tf_pss where os_no like 'TS-20161031' or os_no in (select ps_no from DB_SXMK.dbo.tf_pss where os_no like 'TS-20161031'))and a.prd_no ='MK-D040101BA' and b.amtn_net!=0 group by b.inv_no,b.lz_no,b.rem,a.bat_no,a.prd_no,a.prd_name,a.prd_mark,B.EFF_DD [ RunTime:0.198398s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  fc_prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 139 行.
+NOTIC: [8] Undefined index:  com_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_eff_dd C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_rem C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_eff_dd C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_rem C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_eff_dd C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_rem C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  fc_rem C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  fc_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  fc_lz_no C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  fc_eff_dd C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\9ac809000e2edb64fde6727e017587f9.php 第 152 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022639s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000612s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000590s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002744s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2018-02-07T13:41:48+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindInvnoResult?inv_no=12535356
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001559s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_MK15.dbo.mf_lz a,DB_MK15.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.031148s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JX16.dbo.mf_lz a,DB_JX16.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.022949s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JM17.dbo.mf_lz a,DB_JM17.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.013565s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_MKJC.dbo.mf_lz1 a,DB_MKJC.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.025127s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_OK01.dbo.mf_lz1 a,DB_OK01.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.028288s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JXOK.dbo.mf_lz1 a,DB_JXOK.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.021493s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.os_no bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_SXMK.dbo.mf_lz1 a,DB_SXMK.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.os_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.os_no,b.prd_no [ RunTime:0.016154s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000479s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000406s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000582s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002134s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000584s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-02-07T13:43:17+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindInvnoResult?inv_no=12535356
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001372s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_MK15.dbo.mf_lz a,DB_MK15.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.006928s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JX16.dbo.mf_lz a,DB_JX16.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.001240s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JM17.dbo.mf_lz a,DB_JM17.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.000552s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_MKJC.dbo.mf_lz1 a,DB_MKJC.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.004097s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_OK01.dbo.mf_lz1 a,DB_OK01.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.005409s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JXOK.dbo.mf_lz1 a,DB_JXOK.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.001655s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.os_no bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_SXMK.dbo.mf_lz1 a,DB_SXMK.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '12535356%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.os_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.os_no,b.prd_no [ RunTime:0.001182s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016891s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000422s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000376s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000580s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002028s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000592s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2018-02-07T13:43:29+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/CheckLzResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001056s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001343s ]
+SQL: select bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) fc_qty,cast(sum(amtn_net) as numeric(13,2)) fc_amtn_net  from DB_MK15.dbo.tf_lz where lz_no = 'LZ77110001' and  prd_no like '1D3013000432' group by bat_no,prd_no,prd_name order by bat_no [ RunTime:0.007506s ]
+SQL: select os_no bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) com_qty,cast(sum(amtn_net) as numeric(13,2)) com_amtn_net from DB_SXMK.dbo.tf_lz1 where lz_no = 'LP7A310007' and prd_no like 'MK-D040101BA' group by os_no,prd_no,prd_name order by os_no  [ RunTime:0.007182s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined variable: fc_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined variable: com_sum_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined variable: com_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014336s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000575s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000586s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002690s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000827s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2018-02-07T13:44:10+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindLzDetail?lz_no=LZ77110001&factory_name=%E6%B5%99%E6%B1%9F%E7%BE%8E%E7%A7%91%E7%94%B5%E5%99%A8
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000925s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001341s ]
+SQL: select a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.inv_no,a.rem,b.name,cast(a.amtn_net as numeric(13,2)) amtn_net,a.voh_no,a.usr from DB_MK15.dbo.mf_lz a,DB_MK15.dbo.cust b where a.cus_no = b.cus_no and a.lz_no = 'LZ77110001' [ RunTime:0.007038s ]
+SQL: select lz_no,ck_no,bat_no,prd_no,prd_name,cast(qty as numeric(13,2)) qty,cast(amtn_net as numeric(13,2)) amtn_net from DB_MK15.dbo.tf_lz where lz_no = 'LZ77110001' order by bat_no,prd_no,qty  [ RunTime:0.005513s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017855s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000563s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002338s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000607s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2018-02-07T13:44:15+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/SendGoods/SelectStockDetailResult?bat_no=TS-20161031&prd_no=MK-D040101BA
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pss' [ RunTime:0.001873s ]
+SQL: select ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty,inv_no,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,isnull(case when ps_id='SA' then qty_fp when ps_id='SB' then -qty_fp end,0) sa_fp_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_MKJC.dbo.tf_pss where upper(bat_no) like upper('TS-20161031') and prd_no like 'MK-D040101BA' and prd_mark like '%' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.000641s ]
+SQL: select ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty,inv_no,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,isnull(case when ps_id='SA' then qty_fp when ps_id='SB' then -qty_fp end,0) sa_fp_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_OK01.dbo.tf_pss where upper(bat_no) like upper('TS-20161031') and prd_no like 'MK-D040101BA' and prd_mark like '%' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.002734s ]
+SQL: select ps_id,bat_no,prd_no,prd_name,prd_mark,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty,isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty,inv_no,isnull(case when ps_id='SA' then qty when ps_id='SB' then -qty end,0) sa_qty,isnull(case when ps_id='SA' then qty_fp when ps_id='SB' then -qty_fp end,0) sa_fp_qty,case when ps_id='SA' then amt when ps_id='SB' then -AMT end sa_amt from DB_JXOK.dbo.tf_pss where upper(bat_no) like upper('TS-20161031') and prd_no like 'MK-D040101BA' and prd_mark like '%' and (ps_id= 'SA' or ps_id='SB' or ps_id='PC' or ps_id='PB') order by prd_no,prd_mark,eff_dd,ps_id  [ RunTime:0.000526s ]
+SQL: select ps_id,os_no bat_no,prd_no,prd_name,ps_no,convert(varchar,eff_dd,023) eff_dd,isnull(case when ps_id='PC' then qty when ps_id='PB' then -qty end,0) pc_qty, isnull(case when ps_id='PC' then qty_fp when ps_id='PB' then -qty_fp end,0) pc_fp_qty from DB_SXMK.dbo.tf_pss where prd_no like 'MK-D040101BA' and (os_no like 'TS-20161031' or os_no in (select ps_no from tf_pss where os_no like 'TS-20161031')) [ RunTime:0.005372s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 146 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 151 行.
+NOTIC: [8] Undefined index:  sa_fp_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 152 行.
+NOTIC: [8] Undefined index:  sa_amt C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 153 行.
+NOTIC: [8] Undefined variable: stock C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 146 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 151 行.
+NOTIC: [8] Undefined index:  sa_fp_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 152 行.
+NOTIC: [8] Undefined index:  sa_amt C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 153 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 146 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 151 行.
+NOTIC: [8] Undefined index:  sa_fp_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 152 行.
+NOTIC: [8] Undefined index:  sa_amt C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 153 行.
+NOTIC: [8] Undefined index:  sa_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\03cb5f5913dafd44d06c9352fd3828c5.php 第 154 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017285s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000405s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000382s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000626s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002176s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-02-07T13:44:18+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindBillingList?ps_id=PC&ps_no=PC77270003&prd_no=MK-D040101BA&company_name=%E7%BB%8D%E5%85%B4%E7%BE%8E%E7%A7%91%E7%85%A7%E6%98%8E%E7%A7%91%E6%8A%80
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001549s ]
+SQL: select lz_no,os_no bat_no,ps_no,prd_no,prd_name,prd_mark,qty,amt,amtn_net,tax from DB_SXMK.dbo.tf_lz1 where ps_no='PC77270003' and prd_no = 'MK-D040101BA' [ RunTime:0.004140s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017948s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000357s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000355s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000583s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001929s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2018-02-07T13:46:43+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/FindInvnoResult?inv_no=13615966-974
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001237s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001361s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_MK15.dbo.mf_lz a,DB_MK15.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '13615966%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.032260s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JX16.dbo.mf_lz a,DB_JX16.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '13615966%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.022608s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JM17.dbo.mf_lz a,DB_JM17.dbo.tf_lz b where a.lz_no = b.lz_no and a.inv_no like '13615966%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.014017s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_MKJC.dbo.mf_lz1 a,DB_MKJC.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '13615966%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.025251s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_OK01.dbo.mf_lz1 a,DB_OK01.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '13615966%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.026860s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_JXOK.dbo.mf_lz1 a,DB_JXOK.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '13615966%' group by a.inv_no,a.lz_no,a.rem,a.lz_dd,b.bat_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.bat_no,b.prd_no [ RunTime:0.021058s ]
+SQL: select a.inv_no,a.lz_no,convert(varchar,a.lz_dd,023) lz_dd,a.rem,b.os_no bat_no,b.prd_no,b.prd_name,cast(sum(b.qty) as numeric(13,2)) qty,cast(sum(b.amtn_net) as numeric(13,2)) amtn_net from DB_SXMK.dbo.mf_lz1 a,DB_SXMK.dbo.tf_lz1 b where a.lz_no = b.lz_no and a.inv_no like '13615966%' group by a.inv_no,a.lz_no,a.lz_dd,a.rem,b.os_no,b.prd_no,b.prd_name order by a.inv_no,a.lz_no,b.os_no,b.prd_no [ RunTime:0.017587s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019027s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000923s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000625s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003194s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2018-02-07T13:51:58+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/CheckLzResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001356s ]
+SQL: select bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) fc_qty,cast(sum(amtn_net) as numeric(13,2)) fc_amtn_net  from DB_MK15.dbo.tf_lz where lz_no = 'LZ77110001' and  prd_no like '1D3013000432' group by bat_no,prd_no,prd_name order by bat_no [ RunTime:0.000671s ]
+SQL: select os_no bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) com_qty,cast(sum(amtn_net) as numeric(13,2)) com_amtn_net from DB_SXMK.dbo.tf_lz1 where lz_no = 'LP7A310007' and prd_no like 'MK-D040101BA' group by os_no,prd_no,prd_name order by os_no  [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined variable: fc_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined variable: com_sum_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined variable: com_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012702s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000574s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000583s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002684s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000828s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2018-02-07T13:52:03+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/CheckLzResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001355s ]
+SQL: select bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) fc_qty,cast(sum(amtn_net) as numeric(13,2)) fc_amtn_net  from DB_MK15.dbo.tf_lz where lz_no = 'LZ77110001' and  prd_no like '1D3013000432' group by bat_no,prd_no,prd_name order by bat_no [ RunTime:0.000674s ]
+SQL: select os_no bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) com_qty,cast(sum(amtn_net) as numeric(13,2)) com_amtn_net from DB_SXMK.dbo.tf_lz1 where lz_no = 'LP7A310007' and prd_no like 'MK-D040101BA' group by os_no,prd_no,prd_name order by os_no  [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined variable: fc_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined variable: com_sum_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined variable: com_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011494s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000348s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000581s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001913s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000591s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-02-07T13:52:33+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/CheckTemporaryStock/CheckLzResult
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'tf_pos' [ RunTime:0.001323s ]
+SQL: select bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) fc_qty,cast(sum(amtn_net) as numeric(13,2)) fc_amtn_net  from DB_MK15.dbo.tf_lz where lz_no = 'LZ77110001' and  prd_no like '1D3013000432' group by bat_no,prd_no,prd_name order by bat_no [ RunTime:0.000670s ]
+SQL: select os_no bat_no,prd_no,prd_name,cast(sum(qty) as numeric(13,2)) com_qty,cast(sum(amtn_net) as numeric(13,2)) com_amtn_net from DB_SXMK.dbo.tf_lz1 where lz_no = 'LP7A310007' and prd_no like 'MK-D040101BA' group by os_no,prd_no,prd_name order by os_no  [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined variable: fc_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined variable: com_sum_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 89 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined variable: com_sum_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  com_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 90 行.
+NOTIC: [8] Undefined index:  prd_mark C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 86 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_qty C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 87 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+NOTIC: [8] Undefined index:  fc_amtn_net C:\xampp\htdocs\ok_erp\Finance\Runtime\Cache\37038eb1495ddaea82ed97171c7e90dd.php 第 88 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011374s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000446s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000433s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000602s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002130s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2018-02-07T13:52:55+08:00 ] 115.231.193.202 /ok_erp/finance_index.php/Index/Logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000898s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007599s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000509s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000572s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002072s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000658s ]
+

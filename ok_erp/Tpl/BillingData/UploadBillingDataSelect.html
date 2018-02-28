@@ -1,0 +1,14 @@
+<extend name="/base" />
+<block name="main">
+<h3>查询开票资料</h3>
+<form method="POST" action="UploadBillingDataSelectResult" id="contact-form" >
+<label>合同协议号:</label>
+<input type="text" name="contract_no" />
+<label>业务员名字:</label>
+<input type="text" name="sale_name" value="{$Think.session.name}" >
+<br /><br />
+<input type="submit" value="查询">
+</form>
+
+
+</block> 

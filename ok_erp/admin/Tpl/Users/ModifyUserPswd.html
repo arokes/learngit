@@ -1,0 +1,15 @@
+<extend name="/admin_base" />
+<block name="main">
+
+<h4>修改密码</h4>
+<form action="ModifyUserPswdResult" method="post" id="contact-form">
+<label>现在使用的密码:</label>
+<input type="password" name="user_pswd_old"  />
+<label>新密码:</label>
+<input type="password" name="user_pswd_new1"  />
+<label>再输一次:</label>
+<input type="password" name="user_pswd_new2"  />
+<input type="submit" value="修改" id="submit-button">
+<p></p>
+</form>
+</block>

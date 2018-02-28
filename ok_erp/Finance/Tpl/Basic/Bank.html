@@ -1,0 +1,26 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>银行设定</h3>
+
+<table id="table-3">
+<thead>
+<th>银行名称</th><th>操作</th>
+</thead>
+<tbody>
+<volist name="bank" id="vob">
+<tr>
+<td>{$vob.bank_name}</td><td><button class="modify" url="__URL__/Modifybank?bank_id={$vob.bank_id}">修改</button>&nbsp;&nbsp;<button  class="deletebasic" url="__URL__/Deletebank?bank_id={$vob.bank_id}">删除</button></td>
+</tr>
+</volist>
+<form method="POST" action="__URL__/Addbank">
+<tr><td>
+银行全称:<input type="text" name="bank_name" /><br />
+银行简称:<input type="text" name="bank_snm" /><br />
+</td><td><input type="submit" value="添加"></td></tr>
+</form>
+</tbody>
+</table>
+</center>
+</block>
+<block name="left"></block>

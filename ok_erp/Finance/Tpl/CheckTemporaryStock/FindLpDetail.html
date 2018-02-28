@@ -1,0 +1,41 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+	<font>{$company_name}--未记账收/开票明细</font><br />
+	收票单号:<b>{$list_mf[0]['lz_no']}</b>&nbsp;&nbsp;收票日期:<b>{$list_mf[0]['lz_dd']}</b>&nbsp;&nbsp; 发票号码:<b>{$list_mf[0]['inv_no']|iconv="GBK","utf-8",###}</b> <br />
+	总金额:<b>{$list_mf[0]['amtn_net']}</b>&nbsp;&nbsp;凭证号:<b>{$list_mf[0]['voh_no']}</b>&nbsp;&nbsp;制单人:<b>{$list_mf[0]['usr']}</b><br />
+	厂商名称:<b>{$list_mf[0]['name']|iconv="GBK","utf-8",###}</b>&nbsp;&nbsp;备注:<b>{$list_mf[0]['rem']|iconv="GBK","utf-8",###}</b><br />
+<table id="table-4">
+<thead>
+
+<th>收/开票单号</th>
+<th>转入单号</th>
+<th>批号</th>
+<th>品号</th>
+<th width="350px">品名</th>
+<th>客户编号</th>
+<th>数量</th>
+<th>金额</th>
+</thead>
+<tbody>
+		<php>$sum_qty=0;$sum_amtn=0;</php>
+<volist name="list_tf" id="vo" >
+<tr>
+<td>{$vo.lz_no|iconv="GBK","utf-8",###}</td>
+<td>{$vo.ps_no}</td>
+<td >{$vo.bat_no|iconv="GBK","utf-8",###}</td>
+<td>{$vo.prd_no|iconv="GBK","utf-8",###}</td>
+<td width="350px"width="250px">{$vo.prd_name|iconv="GBK","utf-8",###}</a></td>
+<td>{$vo.prd_mark|iconv="GBK","utf-8",###}</td>
+<td><php>$sum_qty=$sum_qty+$vo['qty'];</php>{$vo.qty}</td>
+<td><php>$sum_amtn=$sum_amtn+$vo['amtn_net'];</php>{$vo.amtn_net}</td>
+</tr>
+</volist>
+<tr><td>合计</td><td></td><td></td><td></td><td></td><td></td><td>{$sum_qty}</td><td>{$sum_amtn}</td></tr>
+</tbody>
+</table>
+</volist>
+<a href="javascript:history.back(-1);">返回</a>
+<br />
+</center>
+</block>

@@ -1,0 +1,58 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<div id="myModal" class="reveal-modal">
+	<form action="__URL__/Manwrite_offAccount" method="POST" >
+		<input type="hidden" name="so_id" value={$account.so_id} />
+		<empty name="data_tf">没有可以选择的订单!<else />
+		<table id="table-4" width="1000px">
+		<thead>
+		<th></th><th>订单号</th><th>币别</th><th>到账金额</th><th>手续费</th><th>订单PI金额</th><th>开票客户</th><th>备注</th><th>业务员</th>
+		</thead>
+		<tbody>
+		<volist name="data_tf" id="vo1">
+			<tr><td><input type="checkbox" value="id={$vo1.id} and itm={$vo1.itm}" name="tf_id[]" /></td><td>{$vo1.so_no}</td><td>{$vo1.CUR_ID}</td><td>{$vo1.amount_apart}</td><td>{$vo1.brokerage}</td><td>{$vo1.so_pi}</td><td>{$vo1.lz_cust}</td><td>{$vo1.rem}</td><td>{$vo1.sal_name}</td></tr>
+		</volist>
+		</tbody>
+		</table>
+		不选择收款,则单独核销台帐<br />
+		</empty>
+		<a class="close-reveal-modal">&#215;</a>
+		
+		<input type="submit" value="强制核销" /><a class="close-reveal-modal">&#215;</a>
+	</form>
+</div>
+<font>客户台帐</font>
+<table id="table-5">
+	<thead>
+		<th>编号</th><th>客户名称</th><th>国家</th><th>订单号</th><th>币别</th><th>香港PI金额</th><th>国内PI金额</th><th>预交日期</th>
+		<th>应收款</th><th>账期</th><th>预计打款日期</th><th>业务员</th><th width="200px">备注</th><th>核销</th>
+	</thead>
+	<tbody>
+		<tr><td>{$account.so_id}</td><td>{$account.cust_name}</td><td>{$account.country}</td><td>{$account.so_no}</td><td>{$account.CUR_ID}</td>
+		<td>{$account.HONGKONG_PI}</td>
+		<td>{$account.CHINA_PI}</td><td>{$account.expect_sale}</td><td>{$account.receivable}</td><td>{$account.account_period}</td><td>{$account.recevable_dd}</td>
+		<td>{$account.sal_name}</td><td width="200px">{$account.rem}</td><td>{$account.write_off}</td>
+		</tr>
+	</tbody>
+</table>
+<empty name="tf_exchange">
+<a target="_blank" href="ModifyAccount?so_id={$account.so_id}">修改</a>&nbsp;
+<a href="#" data-reveal-id="myModal" data-animation="none">强制核销</a>&nbsp;
+<a href="javascript:history.back(-1);">返回</a><br />
+<else />
+	<font>收汇明细</font>
+	<table id="table-5">
+	<thead>
+	<th>币别</th><th>金额</th><th>手续费</th><th>订单号</th><th>是否报关</th><th>合同客户名称</th><th>开票客户</th><th>扣款/罚款</th><th>备注</th>
+	</thead>
+	<tbody>
+	<volist name="tf_exchange" id="vo">
+	<tr><td>{$vo.CUR_ID}</td><td>{$vo.amount_apart}</td><td>{$vo.brokerage}</td><td><a href="../Claim/selectClaimDetail?id={$vo.id}">{$vo.so_no}</a></td><td>{$vo.is_declare}</td><td>{$vo.contract_cust}</td><td>{$vo.lz_cust}</td><td>{$vo.debit}</td><td>{$vo.rem}</td></tr>
+	</volist>
+	</tbody>
+	</table>
+	<eq name="account.write_off" value="F"><a  target="_blank" href="ModifyAccount?so_id={$account.so_id}">修改</a>&nbsp;<a href="__URL__/Write_offAccount?so_id={$account.so_id}">核销</a> &nbsp;<a href="#" class="big-link" data-reveal-id="myModal">手动核销</a><else /><a  target="_blank" href="ModifyAccount?so_id={$account.so_id}">修改</a>&nbsp;已核销</eq>&nbsp;<a href="javascript:history.back(-1);">返回</a><br />
+</empty>	
+</center>
+</block>

@@ -1,0 +1,45 @@
+<extend name="/admin_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#mekacompany').change(function(){
+		var txt=$("#mekacompany").val();
+		$.post('getGfmcData',{mekacompany:txt},function(result){
+			$("#Gfmc").empty();
+			$("#Gfmc").append(result);
+		});
+	});
+
+	$('#Gfmc').change(function(){
+		var txt=$('#Gfmc').val();
+		$.post('getCompanyBasic',{id:txt},function(result){
+			$("#companybasic").html(result);
+		});
+	});
+});
+</script>
+</block>
+<block name="main">
+<center>
+<h3>上传开票清单</h3>
+<form method="POST" action="__URL__/FormatBillingDetailListResult" enctype="multipart/form-data" id="contact-form">
+<label>开票公司名称：</label>
+<select name="mekacompany" id="mekacompany">
+<option value="">-----------请选择----------</option>
+<volist name="mekacompany_data" id="vo">
+<option value="{$vo.mekacompany}">{$vo.mekacompany}</option>
+</volist>
+</select>
+<label>购方公司名称：</label>
+<select name="Gfmc" id="Gfmc"><option value="">-----------请选择----------</option></select>
+<label>上传开票清单: </label>
+<input type="file" name="billingdetail">
+
+<button type="button" class="tolink" url="FormatBillingDetailList" id="submit-button">返回</button><input type="submit" value="转换" id="submit-button" >
+<p></p>
+</form>
+<div id="companybasic"></div>
+</center>
+
+
+</block> 

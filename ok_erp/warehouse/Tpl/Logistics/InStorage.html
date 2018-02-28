@@ -1,0 +1,14 @@
+<extend name="/base" />
+<block name="main">
+<h2>查询近期贸易公司出入库数据</h2>
+<form action="" method="post">
+出库入库:<select name="state" id="state"><option value="PC">入库</option><option value="SA">出库</option></select>
+查询时间:<select name="date_min" id="date_min">
+<foreach name="date" item="vo" >
+<option value="{$vo}">{$key}</option>
+</foreach>
+</select>
+<input type="button" value="查询" url="SelectInStorage" id="select_storage">
+</form>
+<div id="storage"></div>
+</block>

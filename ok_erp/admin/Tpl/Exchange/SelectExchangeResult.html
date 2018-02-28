@@ -1,0 +1,53 @@
+<extend name="/admin_base" />
+<block name="once_script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".deletemf").click(function(){
+		var id=$(this).attr('id');
+		$.ajax({
+			type:'POST',
+			url:'__URL__/DeleteExchange',
+			data:{id:id},
+			success:function(msg){
+				alert(msg);
+				window.location.reload();
+			}
+		});
+	});
+
+	$(".nodeletemf").click(function(){
+		var id=$(this).attr('id');
+		$.ajax({
+			type:'POST',
+			url:'__URL__/NoDeleteExchange',
+			data:{id:id},
+			success:function(msg){
+				alert(msg);
+				window.location.reload();
+			}
+		});
+	});
+});
+
+
+</script>
+</block>
+<block name="main">
+<center>
+<h3>查询汇款结果</h3>
+<table id="table-5">
+<thead>
+<th>销售方式</th><th>公司</th><th>银行</th><th width="200px">汇款客户</th><th>国家</th><th>到账日期</th><th>币别</th><th>金额</th><th>业务员</th><th>认领</th><th>备注</th><th  width="100px">操作</th>
+</thead>
+<tbody>
+<volist name="listmf" id="vo">
+<tr><td>{$vo.foreign_trade}</td><td>{$vo.company_id}</td><td>{$vo.bank_id}</td><td width="200px">{$vo.bank_cust}</td><td>{$vo.country}</td><td>{$vo.pay_dd}</td><td>{$vo.CUR_ID}</td><td>{$vo.amount}</td>
+<td>{$vo.sal_name}</td><td>{$vo.claim}</td><td>{$vo.rem}</td><td  width="100px"><in name="vo.claim" value="0,1"><button type="button" class="deletemf" id="{$vo.id}">删除</button><else /><button type="button" class="nodeletemf" id="{$vo.id}">恢复</button> </in>&nbsp;&nbsp;<button type="button" class="modify" url="__URL__/ModifyExchangeDetail?id={$vo.id}">修改</button></td>
+</tr>
+</volist>
+</tbody>
+</table>
+{$show}<br />
+<button type="button" onclick="javascript:history.back(-1);">返回</button>
+</center>
+</block>

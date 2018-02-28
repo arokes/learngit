@@ -1,0 +1,28 @@
+<extend name="/base" />
+<block name="main">
+<h3>添加发货清单到临时表单</h3>
+<table id="table-4">
+<thead>
+<th>进仓编号</th><th>发货单位</th><th>合同编号</th><th> 外箱整唛</th>
+</thead>
+<tbody><tr><td>{$shipment_data.warehouse_no}</td><td>{$shipment_data.company_name}</td><td>{$shipment_data.bat_no}</td>
+<td rowspan="5"><img src="../Public/upload/{$shipment_data.box_mark_savename}" ></td>
+</tr>
+<th>发货时间</th><th>出货地点</th><th>跟单员</th>
+<tr><td>{$shipment_data.send_time}</td><td>{$shipment_data.send_add}</td><td>{$shipment_data.sale_name}</td></tr>
+<th>到货地址</th><th>进仓单</th><th>备注</th>
+<tr><td>{$shipment_data.arrive_add}</td><td><a href="DownloadFile?filename={$shipment_data.warehouse_file_savename}&showname={$shipment_data.warehouse_no}">{$shipment_data.warehouse_no}.doc</a></td><td>{$shipment_data.rem}</td>
+</tbody>
+</table>
+
+<form action="" method="post" >
+<input type="hidden" name="db" value="{$db}" id="db" />
+<input type="hidden" name="shipment_id" value="{$shipment_data.shipment_id}" id="shipment_id">
+订单号:<input type="text" name="bat_no" id="bat_no" />*<br />
+参数：<input type="text" name="parameter" id="parameter"><br />
+<input type="button" value="查询" id="select_stock">
+</form>
+<div id="stock"></div><br /><br />
+<a href="ModifySendDetail?shipment_id={$shipment_data.shipment_id}">添加完成，生成发货清单</a>
+<br />
+</block> 

@@ -1,0 +1,25 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<font>{$company_name}</font><br />
+<font>{$bill_name}</font><br />
+<volist name="billdetail_mf" id="vo">
+单据日期:<b>{$vo.ps_dd}</b>&nbsp;&nbsp;&nbsp;&nbsp;单据号码:<b>{$vo.ps_no}</b>&nbsp;&nbsp;&nbsp;&nbsp;客户/厂商:<b>{$vo.cus_name|iconv="GBK","utf-8",###}</b><br />
+立账方式:<b>{$zhang_name}</b>&nbsp;&nbsp;&nbsp;&nbsp;计税方式:<b>{$tax_name}</b>&nbsp;&nbsp;&nbsp;&nbsp;币别:<b>{$vo.cur_id}</b>&nbsp;&nbsp;&nbsp;&nbsp;汇率<b>{$vo.exc_rto|round=###,4}</b><br />
+生效日期:<b>{$vo.eff_dd}</b>&nbsp;&nbsp;&nbsp;&nbsp;录入日期:<b>{$vo.record_dd}</b>&nbsp;&nbsp;&nbsp;&nbsp;制单人:<b>{$vo.usr_name|iconv="GBK","utf-8",###}</b>
+
+</volist>
+<table id="table-5">
+
+<thead>
+<th width="100px">来源单号</th><th>品号</th><th>客户编号</th><th width="250px">品名</th><th>数量</th><th>收/开票数量</th><th>退回数量</th><th>金额</th><th>未税金额</th><th>税额</th><th>记录</th>
+</thead>
+<tbody>
+<volist name="billdetail_tf" id="vo">
+<tr><td width="100px">{$vo.bat_no|iconv="GBK","utf-8",###}</td><td>{$vo.prd_no|iconv="GBK","utf-8",###}</td><td>{$vo.prd_mark|iconv="GBK","utf-8",###}</td><td width="250px">{$vo.prd_name|iconv="GBK","utf-8",###}</td><td>{$vo.qty|round=###,0}</td><td>{$vo.qty_fp|round=###,0}</td><td>{$vo.qty_rtn|round=###,0}</td><td>{$vo.amt|round=###,2}</td><td>{$vo.amtn_net|round=###,2}</td><td>{$vo.tax|round=###,2}</td><td><a target="_blank"  href="../CheckTemporaryStock/FindBillingList?ps_id={$vo.ps_id}&ps_no={$vo.ps_no}&prd_no={$vo.prd_no|iconv='GBK','utf-8',###|urlencode=###}&company_name={$company_name}">查看 收/开票</a></td></tr>
+</volist>
+</tbody>
+</table>
+<br />
+</center>
+</block>

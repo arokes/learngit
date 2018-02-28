@@ -1,0 +1,20 @@
+<extend name="/admin_base" />
+<block name="main">
+<center>
+<h3>查询认领到款明细</h3>
+<form method="post" action="__URL__/selectClaimResult">
+公司名称:
+<select name="company_id">
+<option value="%">所有公司</option>
+<volist name="data" id="vo">
+<option value={$vo.company_id}>{$vo.company_name}</option>
+</volist>
+</select>
+<br /><br />
+订单:<input id="date" name="so_no" type="text" />业务员:<input id="date" name="sal_name" type="text" /><br /><br />
+日期:<input id="date" name="date_min" onClick="laydate()" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" >-------<input onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9--]+/,'');}).call(this)" onblur="this.v();" id="date" name="date_max" onClick="laydate()"><br /><br />
+
+<input id="button" type="submit" value="查询">
+</form>
+</center>
+</block>

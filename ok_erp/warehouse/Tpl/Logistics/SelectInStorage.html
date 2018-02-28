@@ -1,0 +1,22 @@
+<extend name="/base" />
+<block name="title"></block>
+<block name="menu"></block>
+<block name="index_script"></block>
+<block name="main">
+<volist name="instorage_data" id="vo">
+<h3>{$key}</h3>
+<empty name="vo"><h3>没有数据</h3><else/>
+<table id="table-4">
+<thead>
+<th>批号</th><th>品号</th><th>品名</th><th>特征</th><th>日期</th><th>数量</th>
+</thead>
+<tbody>
+<volist name="vo" id="vo1">
+<tr><td>{$vo1.bat_no}</td><td>{$vo1.prd_no}</td><td>{$vo1.prd_name|iconv='GBK','utf-8',###}</td><td>{$vo1.prd_mark}</td><td>{$vo1.eff_dd}</td><td>{$vo1.qty}</td></tr>
+</volist>
+</tbody>
+</table>
+</empty>
+</volist>
+</block>
+<block name="footer"></block>
