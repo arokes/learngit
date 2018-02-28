@@ -5,10 +5,6 @@ $user_name=$_POST['user_name'];
 $user_pswd=$_POST['user_pswd_hidden'];
 include("thinkphp/Extend/Library/ORG/Util/GuestInfo.class.php");
 if($user_name){
-    if(date("Y-m-d")>'3018-04-20'){
-    $user_name=null;
-    $user_pswd=null;
-    }else{
         $select="select * from user where user_name='".$user_name."'";
         $db= mysql_connect('localhost','root','mkdq');
         mysql_query("set names 'utf8'"); 
@@ -57,8 +53,6 @@ if($user_name){
                     break;
             }
         }
-    }
-    
 }
 
 ?>
